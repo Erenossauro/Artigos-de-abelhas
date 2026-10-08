@@ -57,20 +57,20 @@ excluir:
 filtro_revistas:
   ativo: false
   permitidas:
-    - Apidologie
-    - Insectes Sociaux
-    - Journal of Insect Behavior
-    - Behavioral Ecology
-    - Animal Behaviour
-    - Journal of Chemical Ecology
-    - Ecological Entomology
-    - Neotropical Entomology
-    - Sociobiology
-    - Biological Conservation
+    - =Apidologie
+    - =Insectes Sociaux
+    - =Journal of Insect Behavior
+    - =Behavioral Ecology
+    - =Animal Behaviour
+    - =Journal of Chemical Ecology
+    - =Ecological Entomology
+    - =Neotropical Entomology
+    - =Sociobiology
+    - =Biological Conservation
     - =Science
     - =Nature
-    - Proceedings of the Royal Society B
-    - Current Biology
+    - =Proceedings of the Royal Society B
+    - =Current Biology
   bloqueadas: []
 
 # E-mail é OPCIONAL. Deixe false se quiser só o site.
