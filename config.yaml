@@ -18,7 +18,7 @@ site:
 
 busca:
   dias_para_tras: 7          # janela diária (o que já apareceu nunca se repete)
-  primeira_vez_dias: 90      # na 1ª execução, busca mais para encher o site
+  primeira_vez_dias: 7      # na 1ª execução, busca mais para encher o site
   max_por_topico: 20         # máximo de artigos novos por tópico por dia
   pontuacao_minima: 3        # 3 = termo no título (ou vários no resumo). Mais alto = mais seletivo
   paginas: 3                 # quantas "páginas" de 100 resultados buscar por tópico
