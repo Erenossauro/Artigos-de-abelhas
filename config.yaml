@@ -55,7 +55,7 @@ excluir:
 #  - O nome da revista precisa conter o texto. "=Science" exige nome igual.
 # ------------------------------------------------------------
 filtro_revistas:
-  ativo: false
+  ativo: true
   permitidas:
     - =Apidologie
     - =Insectes Sociaux
