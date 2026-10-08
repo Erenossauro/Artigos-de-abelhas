@@ -2385,21 +2385,6 @@
  "fila_classicos": {
   "Comportamento de abelhas sem ferrão": [
    {
-    "titulo": "Reproductive Harmony via Mutual Policing by Workers in Eusocial Hymenoptera",
-    "autores": [
-     "Francis L. W. Ratnieks"
-    ],
-    "revista": "The American Naturalist",
-    "data": "1988-08-01",
-    "ano": 1988,
-    "resumo": "When queens of eusocial Hymenoptera mate two or more times (assuming equal sperm contributions from males and random sperm use), the workers are more closely related to the queen's sons than to the sons of a randomly chosen worker. This suggests that workers should try to prevent other workers from reproducing, and hence producing sons, in species with queens that mate two or more times. It also provides a possible reason for the absence of reproductive workers in many hymenopteran societies. Reproductive harmony may, therefore, and counterintuitively, result from lowered relatedness among wor",
-    "doi": "10.1086/284846",
-    "url": "https://doi.org/10.1086/284846",
-    "citacoes": 739,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1086/284846"
-   },
-   {
     "titulo": "Stingless bee nesting biology",
     "autores": [
      "David Ward Roubik"
@@ -2449,37 +2434,6 @@
     "key": "doi:10.1051/apido:2006022"
    },
    {
-    "titulo": "A MONOGRAPH OF THE BALTIC AMBER BEES AND EVOLUTION OF THE APOIDEA (HYMENOPTERA)",
-    "autores": [
-     "Michael S. Engel"
-    ],
-    "revista": "Bulletin of the American Museum of Natural History",
-    "data": "2001-04-01",
-    "ano": 2001,
-    "resumo": "Abstract The bees found as Baltic amber inclusions are revised and the history of studies on these fossils is briefly reviewed. In total this subtropical Eocene fauna contains 36 species and 18 genera, all extinct. These are classified here into nine tribes, six subfamilies, and five families of which six tribes and one family are unknown in the modern fauna. The following taxa are described as new to science: PALEOMELITTIDAE, new family; Boreallodapini, Electrobombini, Eomacropidini, Melikertini, Protolithurgini, new tribes; Ctenoplectrellina, new subtribe; Boreallodape, Electrobombus, Electr",
-    "doi": "10.1206/0003-0090(2001)259<0001:amotba>2.0.co;2",
-    "url": "https://doi.org/10.1206/0003-0090(2001)259<0001:amotba>2.0.co;2",
-    "citacoes": 464,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1206/0003-0090(2001)259<0001:amotba>2.0.co;2"
-   },
-   {
-    "titulo": "Evolution of Sociality in Insects",
-    "autores": [
-     "Norman Lin",
-     "Charles Duncan Michener"
-    ],
-    "revista": "The Quarterly Review of Biology",
-    "data": "1972-06-01",
-    "ano": 1972,
-    "resumo": "Kin selection has been used to explain evolution of man altruistic traits found in those social insect castes which have reduced reproductivity. Kin selection is most probable among organisms living in family groups. It is commonly assumed, therefore, that (1) the most primitive social insects, like the more specialized ones, live in mother-daughter (eusocial) colonies, (2) colonies of individuals of the same generation and showing castes (semisocial colonies) are abnormal or originate only in inbreeding populations, and (3) transfer of individuals among colonies must be selected against, exce",
-    "doi": "10.1086/407216",
-    "url": "https://doi.org/10.1086/407216",
-    "citacoes": 432,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1086/407216"
-   },
-   {
     "titulo": "The rarity of multiple mating by females in the social Hymenoptera",
     "autores": [
      "Joan E. Strassmann"
@@ -2493,56 +2447,6 @@
     "citacoes": 370,
     "fonte": "OpenAlex",
     "key": "doi:10.1007/pl00001737"
-   },
-   {
-    "titulo": "Global stingless bee phylogeny supports ancient divergence, vicariance, and long distance dispersal",
-    "autores": [
-     "Claus Rasmussen",
-     "Sydney A. Cameron"
-    ],
-    "revista": "Biological Journal of the Linnean Society",
-    "data": "2009-12-18",
-    "ano": 2009,
-    "resumo": "Stingless bees (Meliponini) are one of only two highly eusocial bees, the other being the well studied honey bee (Apini). Unlike Apini, with only 11 species in the single genus Apis, stingless bees are a large and diverse taxon comprising some 60 genera, many of which are poorly known. This is the first attempt to infer a phylogeny of the group that includes the world fauna and extensive molecular data. Understanding the evolutionary relationships of these bees would provide a basis for behavioural studies within an evolutionary framework, illuminating the origins of complex social behaviour, ",
-    "doi": "10.1111/j.1095-8312.2009.01341.x",
-    "url": "https://doi.org/10.1111/j.1095-8312.2009.01341.x",
-    "citacoes": 368,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.1095-8312.2009.01341.x"
-   },
-   {
-    "titulo": "The ecology of solitary bees",
-    "autores": [
-     "Earle Gorton Linsley"
-    ],
-    "revista": "Hilgardia",
-    "data": "1958-10-01",
-    "ano": 1958,
-    "resumo": "Bees play an important and necessary role in the pollination of agricultural crops grown for fruit and seed and of forage and browse plants important in range management for production of both livestock and game animals. Nearly 20,000 different kinds of bees are now known, some, like the imported honey bee, the bumble bees, and the stingless bees of the tropics, are social and live together in colonies subject to manipulation and movement from place to place. However, by far the majority of bees are solitary, living in burrows in the ground, in wood, or in plant stems, where they store pollen ",
-    "doi": "10.3733/hilg.v27n19p543",
-    "url": "https://doi.org/10.3733/hilg.v27n19p543",
-    "citacoes": 299,
-    "fonte": "OpenAlex",
-    "key": "doi:10.3733/hilg.v27n19p543"
-   },
-   {
-    "titulo": "The effects of forest fragmentation on bee communities in tropical countryside",
-    "autores": [
-     "Berry J. Brosi",
-     "Gretchen C. Daily",
-     "Tiffany M. Shih",
-     "Federico Oviedo",
-     "Guillermo Durán"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2007-11-14",
-    "ano": 2007,
-    "resumo": "Summary Despite ongoing concerns and controversy over a putative ‘global pollination crisis’ there is little information on the response of bees, the most important group of pollinators, to land‐use change. In particular, there are no published studies of the effects of tropical forest fragmentation on entire bee communities. We examined bee community responses to forest fragment size, shape, isolation and landscape context (forest variables) by sampling foraging bees at ground level using aerial netting within, and in pastures adjacent to, 22 forest fragments ranging in area from c. 0·25 ha t",
-    "doi": "10.1111/j.1365-2664.2007.01412.x",
-    "url": "https://doi.org/10.1111/j.1365-2664.2007.01412.x",
-    "citacoes": 289,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.1365-2664.2007.01412.x"
    },
    {
     "titulo": "Evolution of multiple mating in the genus Apis",
@@ -2561,37 +2465,6 @@
     "key": "doi:10.1051/apido:2000119"
    },
    {
-    "titulo": "Aggression and Competition among Stingless Bees: Field Studies",
-    "autores": [
-     "Leslie K. Johnson",
-     "Stephen P. Hubbell"
-    ],
-    "revista": "Ecology",
-    "data": "1974-01-01",
-    "ano": 1974,
-    "resumo": "Many species of stingless bees exhibit complex intraspecific and interspecific aggressive behavior towards each other when they meet on flowers or artificial baits. Such aggressive encounters significantly lower the amount of time that bees spend on food sources, as well as the amount of nectar or pollen which they can gather per visit. In addition, the intensity and duration of aggression at artificial baits rises sharply with increased sugar concentration. Different species vary markedly in inherent aggressiveness. Learning and recruitment appear to reinforce the effects of aggression on the",
-    "doi": "10.2307/1934624",
-    "url": "https://doi.org/10.2307/1934624",
-    "citacoes": 229,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1934624"
-   },
-   {
-    "titulo": "Stingless bees and mass flowering trees in the canopy of Atlantic Forest: a tight relationship",
-    "autores": [
-     "Mauro Ramalho"
-    ],
-    "revista": "Acta Botanica Brasilica",
-    "data": "2004-03-01",
-    "ano": 2004,
-    "resumo": "This study demonstrates that stingless bees (Apidae, Hymenoptera) amount to approximately 70% of all bees foraging on flowers in the Brazilian Tropical Atlantic Rainforest. They also are the unique bee group concentrated in the upper stratum. It is hypothesized that this vertical distribution is a result of an uneven distribution of preferred floral resources within the forest strata. In the upper stratum, most of the trees that are highly visited by stingless bees produce small, inconspicuous, generalized flowers, clustered in dense inflorescences (mass flowering). These trees represent only ",
-    "doi": "10.1590/s0102-33062004000100005",
-    "url": "https://doi.org/10.1590/s0102-33062004000100005",
-    "citacoes": 228,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1590/s0102-33062004000100005"
-   },
-   {
     "titulo": "The Antiquity and Evolutionary History of Social Behavior in Bees",
     "autores": [
      "Sophie Cardinal",
@@ -2606,23 +2479,6 @@
     "citacoes": 225,
     "fonte": "OpenAlex",
     "key": "doi:10.1371/journal.pone.0021086"
-   },
-   {
-    "titulo": "Disturbance‐induced density‐dependent seed set in Shorea siamensis (Dipterocarpaceae), a tropical forest tree",
-    "autores": [
-     "Jaboury Ghazoul",
-     "Katharine A. Liston",
-     "Boyle T.J.B."
-    ],
-    "revista": "Journal of Ecology",
-    "data": "1998-06-01",
-    "ano": 1998,
-    "resumo": "1 The reproductive output of Shorea siamensis, a widespread dipterocarp tree, was assessed in relation to disturbance and tree density at three sites in western Thailand during the 1996 and 1997 flowering seasons. The locations were similar except in disturbance history, which was reflected in decreasing tree density from undisturbed via moderately disturbed to disturbed sites. 2 Hand pollination experiments showed S. siamensis to be partially self‐incompatible due to differential pollen tube growth and abortion of inbred fruit. Although more than 90% of flowers from trees at all sites were po",
-    "doi": "10.1046/j.1365-2745.1998.00270.x",
-    "url": "https://doi.org/10.1046/j.1365-2745.1998.00270.x",
-    "citacoes": 223,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1365-2745.1998.00270.x"
    },
    {
     "titulo": "Nectar selection by Melipona and Apis mellifera (Hymenoptera: Apidae) and the ecology of nectar intake by bee colonies in a tropical forest",
@@ -2688,21 +2544,6 @@
     "key": "doi:10.1080/0005772x.1960.11095309"
    },
    {
-    "titulo": "Morphism and evolution",
-    "autores": [
-     "Julian Sorell Huxley"
-    ],
-    "revista": "Heredity",
-    "data": "1955-04-01",
-    "ano": 1955,
-    "resumo": "",
-    "doi": "10.1038/hdy.1955.1",
-    "url": "https://doi.org/10.1038/hdy.1955.1",
-    "citacoes": 184,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1038/hdy.1955.1"
-   },
-   {
     "titulo": "Mate number, kin selection and social conflicts in stingless bees and honeybees",
     "autores": [
      "John M. Peters",
@@ -2738,39 +2579,6 @@
     "key": "doi:10.1038/nature01127"
    },
    {
-    "titulo": "Competition and Nest Spacing in a Tropical Stingless Bee Community",
-    "autores": [
-     "Stephen P. Hubbell",
-     "Leslie K. Johnson"
-    ],
-    "revista": "Ecology",
-    "data": "1977-09-01",
-    "ano": 1977,
-    "resumo": "The density and dispersion patterns of nests of 5 stingless bee species are described for a tract of Costa Rican tropical dry forest. Features of suitable nest sites are analyzed, but it does not appear that nest site availability limits colony density or determines colony dispersion. Rather, food limitation is suggested by a linear relationship between the logarithm of colony biomass and the logarithm of foraging \"home range.\" Colonies were uniformly dispersed intraspecifically in 4 species. The pattern in a 5th species could not be distinguished from a random dispersion. Partial nest counts ",
-    "doi": "10.2307/1936917",
-    "url": "https://doi.org/10.2307/1936917",
-    "citacoes": 178,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1936917"
-   },
-   {
-    "titulo": "BEE COMMUNITY SHIFTS WITH LANDSCAPE CONTEXT IN A TROPICAL COUNTRYSIDE",
-    "autores": [
-     "Berry J. Brosi",
-     "Gretchen C. Daily",
-     "Paul R. Ehrlich"
-    ],
-    "revista": "Ecological Applications",
-    "data": "2007-03-01",
-    "ano": 2007,
-    "resumo": "The ongoing scientific controversy over a putative \"global pollination crisis\" underscores the lack of understanding of the response of bees (the most important taxon of pollinators) to ongoing global land-use changes. We studied the effects of distance to forest, tree management, and floral resources on bee communities in pastures (the dominant land-use type) in southern Costa Rica. Over two years, we sampled bees and floral resources in 21 pastures at three distance classes from a large (approximately 230-ha) forest patch and of three common types: open pasture; pasture with remnant trees; a",
-    "doi": "10.1890/06-0029",
-    "url": "https://doi.org/10.1890/06-0029",
-    "citacoes": 176,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/06-0029"
-   },
-   {
     "titulo": "Thermal constraints for stingless bee foragers: the importance of body size and coloration",
     "autores": [
      "Zjef Pereboom",
@@ -2785,59 +2593,6 @@
     "citacoes": 176,
     "fonte": "OpenAlex",
     "key": "doi:10.1007/s00442-003-1324-2"
-   },
-   {
-    "titulo": "Food Exploitation By Social Insects : Ecological, Behavioral, and Theoretical Approaches",
-    "autores": [
-     "Stefan Jarau",
-     "Michael Hrncir"
-    ],
-    "revista": "",
-    "data": "2009-05-21",
-    "ano": 2009,
-    "resumo": "Measuring the Adaptiveness of Social Insect Foraging Strategies: An Empirical Approach, N.E. Raine and L. Chittka Social Cues and Adaptive Foraging Strategies in Ants, C. Detrain and J.-L. Deneubourg Individual and Social Foraging in Social Wasps, R.L. Jeanne and B.J. Taylor Season-Dependent Foraging Patterns: Case Study of a Neotropical Forest-Dwelling Ant (Pachycondyla striata Ponerinae), F.N.S. Medeiros and P.S. Oliveira Foraging Range and the Spatial Distribution of Worker Bumble Bees, D. Goulson and J.L. Osborne How to Tell Your Mates: Costs and Benefits of Different Recruitment Mechanism",
-    "doi": "",
-    "url": "https://openalex.org/W1575399897",
-    "citacoes": 171,
-    "fonte": "OpenAlex",
-    "key": "t:food exploitation by social insects ecological behavioral and theoretical approaches"
-   },
-   {
-    "titulo": "Chemical composition and free radical scavenging activity of pollen loads from stingless bee Melipona subnitida Ducke",
-    "autores": [
-     "Tânia Maria Sarmento Silva",
-     "Celso A. Câmara",
-     "Antônio Cláudio da Silva Lins",
-     "José Maria Barbosa‐Filho",
-     "Eva Mônica Sarmento da Silva",
-     "Breno Magalhães Freitas",
-     "Francisco de Assis Ribeiro dos Santos"
-    ],
-    "revista": "Journal of Food Composition and Analysis",
-    "data": "2006-05-19",
-    "ano": 2006,
-    "resumo": "",
-    "doi": "10.1016/j.jfca.2005.12.011",
-    "url": "https://doi.org/10.1016/j.jfca.2005.12.011",
-    "citacoes": 171,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.jfca.2005.12.011"
-   },
-   {
-    "titulo": "Beyond flowers: including non-floral resources in bee conservation schemes",
-    "autores": [
-     "Fabrice Réquier",
-     "Sara D. Leonhardt"
-    ],
-    "revista": "Journal of Insect Conservation",
-    "data": "2020-01-02",
-    "ano": 2020,
-    "resumo": "",
-    "doi": "10.1007/s10841-019-00206-1",
-    "url": "https://doi.org/10.1007/s10841-019-00206-1",
-    "citacoes": 166,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1007/s10841-019-00206-1"
    },
    {
     "titulo": "Quo vadis Aethina tumida? Biology and control of small hive beetles",
@@ -2875,70 +2630,6 @@
     "key": "doi:10.1073/pnas.1113398109"
    },
    {
-    "titulo": "GENETIC DETERMINATION OF CASTES IN THE GENUS MELIPONA",
-    "autores": [
-     "Warwick Estevam Kerr"
-    ],
-    "revista": "Genetics",
-    "data": "1950-03-30",
-    "ano": 1950,
-    "resumo": "IFFERENT mechanisms of caste determination are encountered in dif-D ferent genera of stingless bees (KERR 1946(KERR ,1947(KERR , 1948)).In Trigona and in Lestrimelitta a phenotypic caste determination, long known in Apis, is observed: a larva develops into a queen or into a worker depending upon the food it receives.In Melipona, on the other hand, caste determination is genotypic.Fertile females (queens) are heterozygous in some species for two, and in other species for three, pairs of genes, homozygosis for any one of which makes the individual develop into a worker.A review of the previously",
-    "doi": "10.1093/genetics/35.2.143",
-    "url": "https://doi.org/10.1093/genetics/35.2.143",
-    "citacoes": 163,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1093/genetics/35.2.143"
-   },
-   {
-    "titulo": "Phylogenetic analysis of honey bee behavioral evolution",
-    "autores": [
-     "Rika Raffiudin",
-     "Ross H. Crozier"
-    ],
-    "revista": "Molecular Phylogenetics and Evolution",
-    "data": "2006-10-21",
-    "ano": 2006,
-    "resumo": "",
-    "doi": "10.1016/j.ympev.2006.10.013",
-    "url": "https://doi.org/10.1016/j.ympev.2006.10.013",
-    "citacoes": 160,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.ympev.2006.10.013"
-   },
-   {
-    "titulo": "Foraging Behavior of Competing Africanized Honeybees and Stingless Bees",
-    "autores": [
-     "David Ward Roubik"
-    ],
-    "revista": "Ecology",
-    "data": "1980-08-01",
-    "ano": 1980,
-    "resumo": "The colonizing success and potential influence of immigrant Africanized honeybees in the neotropics depends on their foraging style and competitive ability. Experiments were performed to compare the foraging tactics of this invading species to those of its most abundant competitors, highly social stingless bees of the genera Melipona and Trigona. In an area containing a rich assemblage of stingless bees in French Guiana, Africanized honeybees were significantly more abundant on honey—water feeders during a high \"nectar flow\" period than combined stingless bee and wasp species. During the last ",
-    "doi": "10.2307/1936754",
-    "url": "https://doi.org/10.2307/1936754",
-    "citacoes": 157,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1936754"
-   },
-   {
-    "titulo": "Sporadic food competition with the African honey bee: projected impact on neotropical social bees",
-    "autores": [
-     "David Ward Roubik",
-     "J. Enrique Moreno",
-     "Carlos Vergara",
-     "Dieter Wittmann"
-    ],
-    "revista": "Journal of Tropical Ecology",
-    "data": "1986-05-01",
-    "ano": 1986,
-    "resumo": "ABSTRACT Bee colonies in lowland forest in Panama were monitored for pollen and nectar harvest, pollen species utilization and nectar quality and quantity per returning forager. Despite sharing most pollen resources and nectar of the same quality with 20 introduced colonies of the African honey bee (Apis mellifera), native stingless bees of 12 species were largely unaffected by its activity. Pollen and nectar harvested by the honey bees were 10–200 times that procured by 17 stingless bee colonies. This discrepancy in total harvest and general lack of competitive effect is explained by a honey ",
-    "doi": "10.1017/s0266467400000699",
-    "url": "https://doi.org/10.1017/s0266467400000699",
-    "citacoes": 156,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1017/s0266467400000699"
-   },
-   {
     "titulo": "Meliponini neotropicais: o gênero Partamona Schwarz, 1939 (Hymenoptera, Apidae, Apinae) - bionomia e biogeografia",
     "autores": [
      "João M. F. Camargo",
@@ -2955,25 +2646,6 @@
     "key": "doi:10.1590/s0085-56262003000300001"
    },
    {
-    "titulo": "Urban gardens promote bee foraging over natural habitats and plantations",
-    "autores": [
-     "Benjamin F. Kaluza",
-     "Helen Margaret Wallace",
-     "Tim A. Heard",
-     "Alexandra‐Maria Klein",
-     "Sara D. Leonhardt"
-    ],
-    "revista": "Ecology and Evolution",
-    "data": "2016-01-28",
-    "ano": 2016,
-    "resumo": "Increasing human land use for agriculture and housing leads to the loss of natural habitat and to widespread declines in wild bees. Bee foraging dynamics and fitness depend on the availability of resources in the surrounding landscape, but how precisely landscape related resource differences affect bee foraging patterns remains unclear. To investigate how landscape and its interaction with season and weather drive foraging and resource intake in social bees, we experimentally compared foraging activity, the allocation of foragers to different resources (pollen, nectar, and resin) and overall r",
-    "doi": "10.1002/ece3.1941",
-    "url": "https://doi.org/10.1002/ece3.1941",
-    "citacoes": 149,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1002/ece3.1941"
-   },
-   {
     "titulo": "Boundary disputes in the territorial ant Azteca trigona: effects of asymmetries in colony size",
     "autores": [
      "Eldridge S. Adams"
@@ -2987,21 +2659,6 @@
     "citacoes": 149,
     "fonte": "OpenAlex",
     "key": "doi:10.1016/s0003-3472(05)80877-2"
-   },
-   {
-    "titulo": "Comparative Dietary Ecology of Sympatric, Insectivorous Neotropical Flycatchers (Tyrannidae)",
-    "autores": [
-     "Thomas W. Sherry"
-    ],
-    "revista": "Ecological Monographs",
-    "data": "1984-09-01",
-    "ano": 1984,
-    "resumo": "This study compares and contrasts diets, based on 2834 prey individuals from 126 stomachs, of 16 insectivorous, aerially foraging Neotropical flycatcher species (Tyrannidae) that are seasonally sympatric in the humid Caribbean lowlands of Costa Rica. Dietary parameters examined are prey type, diversity (breadth) of prey types, heterogeneity of prey types among individuals of a species, \"patchiness\" of morphologically indistinguishable prey within individual stomachs, and number of prey items per stomach. An R—type factor analysis of prey taxa in flycatchers' stomachs delimited four interpretab",
-    "doi": "10.2307/1942500",
-    "url": "https://doi.org/10.2307/1942500",
-    "citacoes": 149,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1942500"
    },
    {
     "titulo": "Imidacloprid-Induced Impairment of Mushroom Bodies and Behavior of the Native Stingless Bee Melipona quadrifasciata anthidioides",
@@ -3053,22 +2710,6 @@
     "citacoes": 146,
     "fonte": "OpenAlex",
     "key": "doi:10.1126/science.1174096"
-   },
-   {
-    "titulo": "Contrasting Foraging Strategies and Coexistence of Two Bee Species on a Single Resource",
-    "autores": [
-     "Leslie K. Johnson",
-     "Stephen P. Hubbell"
-    ],
-    "revista": "Ecology",
-    "data": "1975-10-01",
-    "ano": 1975,
-    "resumo": "The foraging patterns of two eusocial stingless bees, Trigona fuscipennis and Trigona fulviventris, were studied on a population of the shrub, Cassia biflora, in a tropical dry forest in Costa Rica. Trigona fuscipennis, which forages in large groups that monopolize plants, restricted its visits to large, dense clumps of Cassia. Visited plants had significantly more flowers than nonvisited plants. Trigona fulviventris, which forages as individuals of in small groups, visited more widely spaced or isolated plants. In the isolated plants visited by T. fulviventris, there was no significant differ",
-    "doi": "10.2307/1934706",
-    "url": "https://doi.org/10.2307/1934706",
-    "citacoes": 143,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1934706"
    },
    {
     "titulo": "Aggressive foraging of social bees as a mechanism of floral resource partitioning in an Asian tropical rainforest",
@@ -3126,21 +2767,6 @@
     "key": "doi:10.1007/s00442-001-0848-6"
    },
    {
-    "titulo": "A natural history of amphibians",
-    "autores": [
-     "Andrew R. Blaustein"
-    ],
-    "revista": "Trends in Ecology & Evolution",
-    "data": "1996-06-01",
-    "ano": 1996,
-    "resumo": "",
-    "doi": "10.1016/0169-5347(96)81119-0",
-    "url": "https://doi.org/10.1016/0169-5347(96)81119-0",
-    "citacoes": 136,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/0169-5347(96)81119-0"
-   },
-   {
     "titulo": "The oldest fossil bee: Apoid history, evolutionary stasis, and antiquity of social behavior",
     "autores": [
      "Charles Duncan Michener",
@@ -3179,76 +2805,460 @@
     "key": "doi:10.1371/journal.pone.0137198"
    },
    {
-    "titulo": "Caste fate conflict in swarm-founding social Hymenoptera: an inclusive fitness analysis",
+    "titulo": "Repeated evolution of soldier sub-castes suggests parasitism drives social complexity in stingless bees",
     "autores": [
-     "Tom Wenseleers",
-     "Francis L. W. Ratnieks",
-     "JOHAN P. J. BILLEN"
+     "Christoph Grüter",
+     "Francisca H. I. D. Segers",
+     "Cristiano Menezes",
+     "Ayrton Vollet-Neto",
+     "Tiago Falcón",
+     "Lucas von Zuben",
+     "Márcia Maria Gentile Bitondi",
+     "Fábio Santos do Nascimento",
+     "Eduardo A. B. Almeida"
     ],
-    "revista": "Journal of Evolutionary Biology",
-    "data": "2003-06-18",
-    "ano": 2003,
-    "resumo": "A caste system in which females develop into morphologically distinct queens or workers has evolved independently in ants, wasps and bees. Although such reproductive division of labour may benefit the colony it is also a source of conflict because individual immature females can benefit from developing into a queen in order to gain greater direct reproduction. Here we present a formal inclusive fitness analysis of caste fate conflict appropriate for swarm-founding social Hymenoptera. Three major conclusions are reached: (1) when caste is self-determined, many females should selfishly choose to",
-    "doi": "10.1046/j.1420-9101.2003.00574.x",
-    "url": "https://doi.org/10.1046/j.1420-9101.2003.00574.x",
-    "citacoes": 126,
+    "revista": "Nature Communications",
+    "data": "2017-02-09",
+    "ano": 2017,
+    "resumo": "The differentiation of workers into morphological castes represents an important evolutionary innovation that is thought to improve division of labor in insect societies. Given the potential benefits of task-related worker differentiation, it is puzzling that physical worker castes, such as soldiers, are extremely rare in social bees and absent in wasps. Following the recent discovery of soldiers in a stingless bee, we studied the occurrence of worker differentiation in 28 stingless bee species from Brazil and found that several species have specialized soldiers for colony defence. Our results",
+    "doi": "10.1038/s41467-016-0012-y",
+    "url": "https://doi.org/10.1038/s41467-016-0012-y",
+    "citacoes": 123,
     "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1420-9101.2003.00574.x"
+    "key": "doi:10.1038/s41467-016-0012-y"
    },
    {
-    "titulo": "Catalog of the Indo-Malayan/Australasian stingless bees (Hymenoptera: Apidae: Meliponini)",
+    "titulo": "Physiological and genetic mechanisms underlying caste development, reproduction and division of labor in stingless bees",
     "autores": [
-     "Claus Rasmussen"
+     "Klaus Hartfelder",
+     "Gustavo R. Makert",
+     "Carla C. Judice",
+     "Gonçalo Amarante Guimarães Pereira",
+     "Weyder Cristiano Santana",
+     "Rodrigo Pires Dallacqua",
+     "Márcia Maria Gentile Bitondi"
     ],
-    "revista": "Zootaxa",
-    "data": "2008-11-17",
-    "ano": 2008,
-    "resumo": "This catalog of the published literature on stingless bees from the Indo-Malayan/Australasian region was compiled from 520 references and deals with 129 proposed names for species-group taxa of which 89 are considered currently valid. Information is summarized on organisms associated with stingless bee colonies as well as the 225 plants from which the bees have been reported to forage. Lectotypes are designated for Trigona ornata described by Rayment and the following species described by Friese: Trigona anamitica, T. australis, T. borneënsis, T. flaviventris, T. keyensis, T. luteiventris, T. ",
-    "doi": "10.11646/zootaxa.1935.1.1",
-    "url": "https://doi.org/10.11646/zootaxa.1935.1.1",
-    "citacoes": 125,
+    "revista": "Apidologie",
+    "data": "2006-03-01",
+    "ano": 2006,
+    "resumo": "",
+    "doi": "10.1051/apido:2006013",
+    "url": "https://doi.org/10.1051/apido:2006013",
+    "citacoes": 123,
     "fonte": "OpenAlex",
-    "key": "doi:10.11646/zootaxa.1935.1.1"
+    "key": "doi:10.1051/apido:2006013"
+   },
+   {
+    "titulo": "Agrochemical-induced stress in stingless bees: peculiarities, underlying basis, and challenges",
+    "autores": [
+     "Maria Augusta Pereira Lima",
+     "Gustavo Ferreira Martins",
+     "Eugenio Eduardo de Oliveira",
+     "R. N. C. Guedes"
+    ],
+    "revista": "Journal of Comparative Physiology A",
+    "data": "2016-07-11",
+    "ano": 2016,
+    "resumo": "",
+    "doi": "10.1007/s00359-016-1110-3",
+    "url": "https://doi.org/10.1007/s00359-016-1110-3",
+    "citacoes": 121,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00359-016-1110-3"
+   },
+   {
+    "titulo": "Information flow and organization of stingless bee foraging",
+    "autores": [
+     "Jacobus Christiaan Biesmeijer",
+     "Ester Judith Slaa"
+    ],
+    "revista": "Apidologie",
+    "data": "2004-03-01",
+    "ano": 2004,
+    "resumo": "",
+    "doi": "10.1051/apido:2004003",
+    "url": "https://doi.org/10.1051/apido:2004003",
+    "citacoes": 121,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:2004003"
+   },
+   {
+    "titulo": "Conflict over male parentage in stingless bees",
+    "autores": [
+     "E. T�th",
+     "David C. Queller",
+     "Anne Dollin",
+     "Joan E. Strassmann"
+    ],
+    "revista": "Insectes Sociaux",
+    "data": "2004-02-01",
+    "ano": 2004,
+    "resumo": "",
+    "doi": "10.1007/s00040-003-0707-z",
+    "url": "https://doi.org/10.1007/s00040-003-0707-z",
+    "citacoes": 120,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00040-003-0707-z"
+   },
+   {
+    "titulo": "Sperm transfer and male competition in a bumblebee",
+    "autores": [
+     "Nicole Duvoisin",
+     "Boris Baer",
+     "Paul Schmid‐Hempel"
+    ],
+    "revista": "Animal Behaviour",
+    "data": "1999-10-01",
+    "ano": 1999,
+    "resumo": "",
+    "doi": "10.1006/anbe.1999.1196",
+    "url": "https://doi.org/10.1006/anbe.1999.1196",
+    "citacoes": 120,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1006/anbe.1999.1196"
+   },
+   {
+    "titulo": "The use of field–based social information in eusocial foragers: local enhancement among nestmates and heterospecifics in stingless bees",
+    "autores": [
+     "Ester Judith Slaa",
+     "Jacoba Wassenberg",
+     "Jacobus Christiaan Biesmeijer"
+    ],
+    "revista": "Ecological Entomology",
+    "data": "2003-05-27",
+    "ano": 2003,
+    "resumo": "Abstract. 1. Foragers of social insects can be guided to profitable food sources by social information transfer within the nest. This study showed that in addition to such an information‐centre strategy, social information in the field also plays an important role in individual foraging decisions. The effect of the presence of a nestmate on individual decision‐making on where to forage was investigated in six species of stingless bee that differ in their recruitment system. Some species preferred to feed close to a nestmate (local enhancement) whereas other species actively avoided landing clo",
+    "doi": "10.1046/j.1365-2311.2003.00512.x",
+    "url": "https://doi.org/10.1046/j.1365-2311.2003.00512.x",
+    "citacoes": 119,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1046/j.1365-2311.2003.00512.x"
+   },
+   {
+    "titulo": "Relation between size and foraging range in stingless bees (Apidae, Meliponinae)",
+    "autores": [
+     "M.G.L. van Nieuwstadt",
+     "C. E. Ruano Iraheta"
+    ],
+    "revista": "Apidologie",
+    "data": "1996-01-01",
+    "ano": 1996,
+    "resumo": "",
+    "doi": "10.1051/apido:19960404",
+    "url": "https://doi.org/10.1051/apido:19960404",
+    "citacoes": 118,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19960404"
+   },
+   {
+    "titulo": "On optimal nectar foraging by some tropical bees (Hymenoptera: Apidae)",
+    "autores": [
+     "David Ward Roubik",
+     "Douglas Yanega",
+     "[A[A[A[A[A[A[A[A[A M. Aluja",
+     "Stephen L. Buchmann",
+     "David W. Inouye"
+    ],
+    "revista": "Apidologie",
+    "data": "1995-01-01",
+    "ano": 1995,
+    "resumo": "",
+    "doi": "10.1051/apido:19950303",
+    "url": "https://doi.org/10.1051/apido:19950303",
+    "citacoes": 118,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19950303"
+   },
+   {
+    "titulo": "Pesticide Exposure Assessment Paradigm for Stingless Bees",
+    "autores": [
+     "Karina Cham",
+     "Roberta Cornélio Ferreira Nocelli",
+     "Leandro O Borges",
+     "Flávia Elizabeth C Viana-Silva",
+     "Carlos Augusto M Tonelli",
+     "Osmar Malaspina",
+     "Cristiano Menezes",
+     "Annelise de Souza Rosa",
+     "Betina Blochtein",
+     "Breno Magalhães Freitas",
+     "Carmen S. S. Pires",
+     "Favízia Freitas de Oliveira",
+     "Felipe Andrés León Contrera",
+     "Karoline R. S. Torezani",
+     "M. de F. Ribeiro",
+     "Maria Augusta Lima Siqueira",
+     "Maria Cecília L S A Rocha"
+    ],
+    "revista": "Environmental Entomology",
+    "data": "2018-08-31",
+    "ano": 2018,
+    "resumo": "Although the importance of bees as the pollinators responsible for maintaining gene flow for many native and cultivated plants in ecosystems around the world is recognized, much of their biodiversity and behavior remains to be discovered. Stingless bees are considered key pollinators for several plant species in tropical and subtropical ecosystems and they also provide pollination services for economically important agricultural crops. Many countries are using the honey bee (Apis mellifera Linnaeus, 1758, Hymenoptera: Apidae) as a surrogate to evaluate the risk of pesticides to all species of ",
+    "doi": "10.1093/ee/nvy137",
+    "url": "https://doi.org/10.1093/ee/nvy137",
+    "citacoes": 115,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/ee/nvy137"
+   },
+   {
+    "titulo": "A COMPARATIVE STUDY OF FORAGING BEHAVIOR AND POLLEN RESOURCES OF VARIOUS STINGLESS BEES (HYM., MELIPONINAE) AND HONEYBEES (HYM., APINAE) IN TRINIDAD, WEST-INDIES",
+    "autores": [
+     "Marinus Jan Sommeijer",
+     "G. A. DE ROOY",
+     "W. Punt",
+     "L.L.M. de Bruijn"
+    ],
+    "revista": "Apidologie",
+    "data": "1983-01-01",
+    "ano": 1983,
+    "resumo": "",
+    "doi": "10.1051/apido:19830306",
+    "url": "https://doi.org/10.1051/apido:19830306",
+    "citacoes": 114,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19830306"
+   },
+   {
+    "titulo": "The effects of human disturbance on a stingless bee community in a tropical rainforest",
+    "autores": [
+     "Hiromitsu Samejima",
+     "Marfaizal Marzuki",
+     "Teruyoshi Nagamitsu",
+     "Tohru Nakasizuka"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2004-05-31",
+    "ano": 2004,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2004.03.030",
+    "url": "https://doi.org/10.1016/j.biocon.2004.03.030",
+    "citacoes": 108,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2004.03.030"
+   },
+   {
+    "titulo": "Territory defense by the ant Azteca trigona: maintenance of an arboreal ant mosaic",
+    "autores": [
+     "Eldridge S. Adams"
+    ],
+    "revista": "Oecologia",
+    "data": "1994-03-01",
+    "ano": 1994,
+    "resumo": "",
+    "doi": "10.1007/bf00323150",
+    "url": "https://doi.org/10.1007/bf00323150",
+    "citacoes": 108,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/bf00323150"
+   },
+   {
+    "titulo": "Utilization of floral resources by species of Melipona (Apidae, Meliponinae): floral preferences",
+    "autores": [
+     "Mauro Ramalho",
+     "A. Kleinert-Giovannini",
+     "Vera Lúcia Imperatriz-Fonseca"
+    ],
+    "revista": "Apidologie",
+    "data": "1989-01-01",
+    "ano": 1989,
+    "resumo": "",
+    "doi": "10.1051/apido:19890301",
+    "url": "https://doi.org/10.1051/apido:19890301",
+    "citacoes": 107,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19890301"
+   },
+   {
+    "titulo": "Discrimination of Unrewarding Flowers by Bees; Direct Detection of Rewards and Use of Repellent Scent Marks",
+    "autores": [
+     "Dave Goulson",
+     "Jason W. Chapman",
+     "William O. H. Hughes"
+    ],
+    "revista": "Journal of Insect Behavior",
+    "data": "2001-09-01",
+    "ano": 2001,
+    "resumo": "",
+    "doi": "10.1023/a:1012231419067",
+    "url": "https://doi.org/10.1023/a:1012231419067",
+    "citacoes": 106,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1023/a:1012231419067"
+   },
+   {
+    "titulo": "Does intraspecific size variation in bumblebees allow colonies to efficiently exploit different flowers?",
+    "autores": [
+     "James Peat",
+     "J. Tucker",
+     "Dave Goulson"
+    ],
+    "revista": "Ecological Entomology",
+    "data": "2005-04-01",
+    "ano": 2005,
+    "resumo": "Abstract. 1. It has long been known that foraging bumblebee workers vary greatly in size, within species, and within single nests. This phenomenon has not been adequately explained. Workers of their relatives within the Apidae exhibit much less size variation. 2. For the bumblebee Bombus terrestris size, as measured by thorax width, was found to correspond closely with tongue length, so that larger bees are equipped to feed from deeper flowers. 3. The mean size of worker bees attracted to flowers was found to differ between plant species, and larger bees with longer tongues tended to visit dee",
+    "doi": "10.1111/j.0307-6946.2005.00676.x",
+    "url": "https://doi.org/10.1111/j.0307-6946.2005.00676.x",
+    "citacoes": 104,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1111/j.0307-6946.2005.00676.x"
+   },
+   {
+    "titulo": "The structure of eusocial bee assemblages in Brazil",
+    "autores": [
+     "Jacobus Christiaan Biesmeijer",
+     "Ester Judith Slaa"
+    ],
+    "revista": "Apidologie",
+    "data": "2006-03-01",
+    "ano": 2006,
+    "resumo": "",
+    "doi": "10.1051/apido:2006014",
+    "url": "https://doi.org/10.1051/apido:2006014",
+    "citacoes": 102,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:2006014"
+   },
+   {
+    "titulo": "Multiple origins of advanced eusociality in bees inferred from mitochondrial DNA sequences.",
+    "autores": [
+     "S. A. Cameron"
+    ],
+    "revista": "Proceedings of the National Academy of Sciences",
+    "data": "1993-09-15",
+    "ano": 1993,
+    "resumo": "The remarkably high level of colony organization found in the honey bees and stingless bees (family Apidae) is extremely rare among animals. Yet there is controversy over whether these two groups independently evolved advanced eusocial behavior or inherited it from a common ancestor. Phylogenetic analyses of DNA sequence information from the mitochondrial genome (large-subunit ribosomal RNA gene) of representative apid bees suggest that advanced eusocial behavior evolved twice independently within this assemblage. These results depart from previous hypotheses of apid relationships by indicatin",
+    "doi": "10.1073/pnas.90.18.8687",
+    "url": "https://doi.org/10.1073/pnas.90.18.8687",
+    "citacoes": 100,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1073/pnas.90.18.8687"
+   },
+   {
+    "titulo": "EXPLOITATION OF FLORAL RESOURCES BY PLEBEIA REMOTA HOLMBERG (APIDAE, MELIPONINAE)",
+    "autores": [
+     "Mauro Ramalho",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "A. KLEINEKT-GIOVANNINI",
+     "M. CORTOPASSl-LAURINO"
+    ],
+    "revista": "Apidologie",
+    "data": "1985-01-01",
+    "ano": 1985,
+    "resumo": "",
+    "doi": "10.1051/apido:19850306",
+    "url": "https://doi.org/10.1051/apido:19850306",
+    "citacoes": 100,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19850306"
+   },
+   {
+    "titulo": "Seasonal availability of floral resources and ambient temperature shape stingless bee foraging behavior (Scaptotrigona aff. depilis)",
+    "autores": [
+     "Kátia Paula Aleixo",
+     "Cristiano Menezes",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Cláudia Inês da Silva"
+    ],
+    "revista": "Apidologie",
+    "data": "2016-06-18",
+    "ano": 2016,
+    "resumo": "",
+    "doi": "10.1007/s13592-016-0456-4",
+    "url": "https://doi.org/10.1007/s13592-016-0456-4",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s13592-016-0456-4"
+   },
+   {
+    "titulo": "Evaluation of the Neotropical Stingless Bee Melipona quadrifasciata (Hymenoptera: Apidae) as Pollinator of Greenhouse Tomatoes",
+    "autores": [
+     "Mário César Laboissiérè Del Sarto",
+     "Rui Carlos Peruquetti",
+     "L. A. O. Campos"
+    ],
+    "revista": "Journal of Economic Entomology",
+    "data": "2005-04-01",
+    "ano": 2005,
+    "resumo": "The Neotropical stingless bee Melipona quadrifasciata Lepeletier was evaluated for pollinating tomatoes (variety Rodas; long-life hybrid) in greenhouses under plastic and with a hydroponic system and “organic concepts” in Minas Gerais State, Brazil. Flowers not pollinated did not set any fruit. Pollination by bees plus manual pollination did not differ from either bee or manual pollination. Maximum fruit diameter, fruit height, and roundness (quotient between maximum fruit diameter and fruit height) were not significantly different between treatments, but fruit visited by M. quadrifasciata had",
+    "doi": "10.1093/jee/98.2.260",
+    "url": "https://doi.org/10.1093/jee/98.2.260",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/jee/98.2.260"
+   },
+   {
+    "titulo": "Virgin queens in stingless bee (Apidae, Meliponinae) colonies: a review",
+    "autores": [
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Ronaldo Zucchi"
+    ],
+    "revista": "Apidologie",
+    "data": "1995-01-01",
+    "ano": 1995,
+    "resumo": "",
+    "doi": "10.1051/apido:19950305",
+    "url": "https://doi.org/10.1051/apido:19950305",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19950305"
+   },
+   {
+    "titulo": "Within-colony size variation of foragers and pollen load capacity in the stingless bee Melipona quadrifasciata anthidioides Lepeletier (Apidae, Hymenoptera)",
+    "autores": [
+     "Mauro Ramalho",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Tereza Cristina Giannini"
+    ],
+    "revista": "Apidologie",
+    "data": "1998-01-01",
+    "ano": 1998,
+    "resumo": "",
+    "doi": "10.1051/apido:19980302",
+    "url": "https://doi.org/10.1051/apido:19980302",
+    "citacoes": 96,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19980302"
+   },
+   {
+    "titulo": "Olfactory eavesdropping by a competitively foraging stingless bee,Trigona spinipes",
+    "autores": [
+     "James Charles Nieh",
+     "L. S. Barreto",
+     "Felipe Andrés León Contrera",
+     "Vera Lúcia Imperatriz-Fonseca"
+    ],
+    "revista": "Proceedings of the Royal Society B Biological Sciences",
+    "data": "2004-07-12",
+    "ano": 2004,
+    "resumo": "Signals that are perceived over long distances or leave extended spatial traces are subject to eavesdropping. Eavesdropping has therefore acted as a selective pressure in the evolution of diverse animal communication systems, perhaps even in the evolution of functionally referential communication. Early work suggested that some species of stingless bees (Hymenoptera, Apidae, Meliponini) may use interceptive olfactory eavesdropping to discover food sources being exploited by competitors, but it is not clear if any stingless bee can be attracted to the odour marks deposited by an interspecific c",
+    "doi": "10.1098/rspb.2004.2717",
+    "url": "https://doi.org/10.1098/rspb.2004.2717",
+    "citacoes": 92,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1098/rspb.2004.2717"
+   },
+   {
+    "titulo": "Ambient Temperature Influences Australian Native Stingless Bee (Trigona carbonaria) Preference for Warm Nectar",
+    "autores": [
+     "Melanie Norgate",
+     "Skye Boyd‐Gerny",
+     "Vera Simonov",
+     "Marcello G. P. Rosa",
+     "Tim A. Heard",
+     "Adrian G. Dyer"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2010-08-09",
+    "ano": 2010,
+    "resumo": "The interaction between flowers and insect pollinators is an important aspect of the reproductive mechanisms of many plant species. Several laboratory and field studies indicate that raising flower temperature above ambient can be an advantage in attracting pollinators. Here we demonstrate that this preference for warmer flowers is, in fact, context-dependent. Using an Australian native bee as a model, we demonstrate for the first time a significant shift in behaviour when the ambient temperature reaches 34 degrees C, at which point bees prefer ambient temperature nectar over warmer nectar. We",
+    "doi": "10.1371/journal.pone.0012000",
+    "url": "https://doi.org/10.1371/journal.pone.0012000",
+    "citacoes": 90,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0012000"
    }
   ],
   "Manejo e meliponicultura": [
-   {
-    "titulo": "Reproductive Harmony via Mutual Policing by Workers in Eusocial Hymenoptera",
-    "autores": [
-     "Francis L. W. Ratnieks"
-    ],
-    "revista": "The American Naturalist",
-    "data": "1988-08-01",
-    "ano": 1988,
-    "resumo": "When queens of eusocial Hymenoptera mate two or more times (assuming equal sperm contributions from males and random sperm use), the workers are more closely related to the queen's sons than to the sons of a randomly chosen worker. This suggests that workers should try to prevent other workers from reproducing, and hence producing sons, in species with queens that mate two or more times. It also provides a possible reason for the absence of reproductive workers in many hymenopteran societies. Reproductive harmony may, therefore, and counterintuitively, result from lowered relatedness among wor",
-    "doi": "10.1086/284846",
-    "url": "https://doi.org/10.1086/284846",
-    "citacoes": 739,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1086/284846"
-   },
-   {
-    "titulo": "Dynamic microbiome evolution in social bees",
-    "autores": [
-     "Waldan K. Kwong",
-     "Luis A. Medina",
-     "Hauke Koch",
-     "Kong‐Wah Sing",
-     "Eunice J. Y. Soh",
-     "John S. Ascher",
-     "Rodolfo Jaffé",
-     "Nancy A. Moran"
-    ],
-    "revista": "Science Advances",
-    "data": "2017-03-03",
-    "ano": 2017,
-    "resumo": "The highly social (eusocial) corbiculate bees, comprising the honey bees, bumble bees, and stingless bees, are ubiquitous insect pollinators that fulfill critical roles in ecosystem services and human agriculture. Here, we conduct wide sampling across the phylogeny of these corbiculate bees and reveal a dynamic evolutionary history behind their microbiota, marked by multiple gains and losses of gut associates, the presence of generalist as well as host-specific strains, and patterns of diversification driven, in part, by host ecology (for example, colony size). Across four continents, we found",
-    "doi": "10.1126/sciadv.1600513",
-    "url": "https://doi.org/10.1126/sciadv.1600513",
-    "citacoes": 613,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1126/sciadv.1600513"
-   },
    {
     "titulo": "Stingless bee nesting biology",
     "autores": [
@@ -3283,21 +3293,6 @@
     "key": "doi:10.1051/apido:2006022"
    },
    {
-    "titulo": "Reproductive Synchrony of a Tropical Shrub: Experimental Studies on Effects of Pollinators and Seed Predators in Hybanthus Prunifolius (Violaceae)",
-    "autores": [
-     "Carol K. Augspurger"
-    ],
-    "revista": "Ecology",
-    "data": "1981-06-01",
-    "ano": 1981,
-    "resumo": "This study compares reproductive success of individual plants flowering and fruiting in an out of synchrony with the population. I test the hypotheses that reproductive synchrony enhances a plant's ability to: (1) attract pollinators, and (2) avoid seed predators. The prediction is that an individual in synchrony with its population has higher fruit and ovule set after pollination and has more seeds at dispersal time than an individual out of synchrony. The test species is Hybanthus prunifolius (Schult.) Schulze (Violaceae), a shrub on Barro Colorado Island, Panama. It normally flowers in resp",
-    "doi": "10.2307/1937745",
-    "url": "https://doi.org/10.2307/1937745",
-    "citacoes": 496,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1937745"
-   },
-   {
     "titulo": "Global meliponiculture: challenges and opportunities",
     "autores": [
      "Marilda Cortopassi-Laurino",
@@ -3321,40 +3316,6 @@
     "key": "doi:10.1051/apido:2006027"
    },
    {
-    "titulo": "Biological and therapeutic effects of honey produced by honey bees and stingless bees: a comparative review",
-    "autores": [
-     "Visweswara Rao Pasupuleti",
-     "Kumara Thevan Krishnan",
-     "Naguib Salleh",
-     "Siew Hua Gan"
-    ],
-    "revista": "Revista Brasileira de Farmacognosia",
-    "data": "2016-07-21",
-    "ano": 2016,
-    "resumo": "Honey is a natural product produced by both honey bees and stingless bees . Both types of honey contain unique and distinct types of phenolic and flavonoid compounds of variable biological and clinical importance. Honey is one of the most effective natural products used for wound healing . In this review, the traditional uses and clinical applications of both honey bee and stingless bee honey – such as antimicrobial, antioxidant, anti-inflammatory, anticancer, antihyperlipidemic , and cardioprotective properties; the treatment of eye disorders , gastrointestinal tract diseases , neurological d",
-    "doi": "10.1016/j.bjp.2016.01.012",
-    "url": "https://doi.org/10.1016/j.bjp.2016.01.012",
-    "citacoes": 377,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.bjp.2016.01.012"
-   },
-   {
-    "titulo": "Global stingless bee phylogeny supports ancient divergence, vicariance, and long distance dispersal",
-    "autores": [
-     "Claus Rasmussen",
-     "Sydney A. Cameron"
-    ],
-    "revista": "Biological Journal of the Linnean Society",
-    "data": "2009-12-18",
-    "ano": 2009,
-    "resumo": "Stingless bees (Meliponini) are one of only two highly eusocial bees, the other being the well studied honey bee (Apini). Unlike Apini, with only 11 species in the single genus Apis, stingless bees are a large and diverse taxon comprising some 60 genera, many of which are poorly known. This is the first attempt to infer a phylogeny of the group that includes the world fauna and extensive molecular data. Understanding the evolutionary relationships of these bees would provide a basis for behavioural studies within an evolutionary framework, illuminating the origins of complex social behaviour, ",
-    "doi": "10.1111/j.1095-8312.2009.01341.x",
-    "url": "https://doi.org/10.1111/j.1095-8312.2009.01341.x",
-    "citacoes": 368,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.1095-8312.2009.01341.x"
-   },
-   {
     "titulo": "Diversity, threats and conservation of native bees in the Neotropics",
     "autores": [
      "Breno Magalhães Freitas",
@@ -3376,23 +3337,6 @@
     "key": "doi:10.1051/apido/2009012"
    },
    {
-    "titulo": "Nutraceutical values of natural honey and its contribution to human health and wealth",
-    "autores": [
-     "Abdulwahid Ajibola",
-     "Joseph Panashe Chamunorwa",
-     "Kennedy Honey Erlwanger"
-    ],
-    "revista": "Nutrition & Metabolism",
-    "data": "2012-01-01",
-    "ano": 2012,
-    "resumo": "The use of natural honey (NH) as a nutraceutical agent is associated with nutritional benefits and therapeutic promises. NH is widely accepted as food and medicine by all generations, traditions and civilizations, both ancient and modern. The nutritional profiles, including its use in infant and children feeding reported in different literatures as well as health indices and biomarkers observed by various researchers are illustrated in this manuscript. The review documents folk medicine, experimentation with animal models, and orthodox medical practices shown by clinical trials. This covers vi",
-    "doi": "10.1186/1743-7075-9-61",
-    "url": "https://doi.org/10.1186/1743-7075-9-61",
-    "citacoes": 350,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1186/1743-7075-9-61"
-   },
-   {
     "titulo": "Dating the origin of the Orchidaceae from a fossil orchid with its pollinator",
     "autores": [
      "Santiago R. Ramírez",
@@ -3410,138 +3354,6 @@
     "citacoes": 328,
     "fonte": "OpenAlex",
     "key": "doi:10.1038/nature06039"
-   },
-   {
-    "titulo": "The ecology of solitary bees",
-    "autores": [
-     "Earle Gorton Linsley"
-    ],
-    "revista": "Hilgardia",
-    "data": "1958-10-01",
-    "ano": 1958,
-    "resumo": "Bees play an important and necessary role in the pollination of agricultural crops grown for fruit and seed and of forage and browse plants important in range management for production of both livestock and game animals. Nearly 20,000 different kinds of bees are now known, some, like the imported honey bee, the bumble bees, and the stingless bees of the tropics, are social and live together in colonies subject to manipulation and movement from place to place. However, by far the majority of bees are solitary, living in burrows in the ground, in wood, or in plant stems, where they store pollen ",
-    "doi": "10.3733/hilg.v27n19p543",
-    "url": "https://doi.org/10.3733/hilg.v27n19p543",
-    "citacoes": 299,
-    "fonte": "OpenAlex",
-    "key": "doi:10.3733/hilg.v27n19p543"
-   },
-   {
-    "titulo": "The effects of forest fragmentation on bee communities in tropical countryside",
-    "autores": [
-     "Berry J. Brosi",
-     "Gretchen C. Daily",
-     "Tiffany M. Shih",
-     "Federico Oviedo",
-     "Guillermo Durán"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2007-11-14",
-    "ano": 2007,
-    "resumo": "Summary Despite ongoing concerns and controversy over a putative ‘global pollination crisis’ there is little information on the response of bees, the most important group of pollinators, to land‐use change. In particular, there are no published studies of the effects of tropical forest fragmentation on entire bee communities. We examined bee community responses to forest fragment size, shape, isolation and landscape context (forest variables) by sampling foraging bees at ground level using aerial netting within, and in pastures adjacent to, 22 forest fragments ranging in area from c. 0·25 ha t",
-    "doi": "10.1111/j.1365-2664.2007.01412.x",
-    "url": "https://doi.org/10.1111/j.1365-2664.2007.01412.x",
-    "citacoes": 289,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.1365-2664.2007.01412.x"
-   },
-   {
-    "titulo": "Honey and its nutritional and anti-inflammatory value",
-    "autores": [
-     "Yazan Ranneh",
-     "Abdah Md Akim",
-     "Hasiah Ab Hamid",
-     "Huzwah Khaza’ai",
-     "Abdulmannan Fadel",
-     "Zainul Amiruddin Zakaria",
-     "Mohammed H. Albujja",
-     "Mohd Fadzelly Abu Bakar"
-    ],
-    "revista": "BMC Complementary Medicine and Therapies",
-    "data": "2021-01-13",
-    "ano": 2021,
-    "resumo": "Inflammation is the main key role in developing chronic diseases including cancer, cardiovascular diseases, diabetes, arthritis, and neurodegenerative diseases which possess a huge challenge for treatment. With massively compelling evidence of the role played by nutritional modulation in preventing inflammation-related diseases, there is a growing interest into the search for natural functional foods with therapeutic and preventive actions. Honey, a nutritional healthy product, is produced mainly by two types of bees: honeybee and stingless bee. Since both types of honey possess distinctive ph",
-    "doi": "10.1186/s12906-020-03170-5",
-    "url": "https://doi.org/10.1186/s12906-020-03170-5",
-    "citacoes": 286,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1186/s12906-020-03170-5"
-   },
-   {
-    "titulo": "Body size and flight distance in stingless bees (Hymenoptera: Meliponini): inference of flight range and possible ecological implications",
-    "autores": [
-     "Edílson Divino de Araújo",
-     "Mateus José Rodrigues Paranhos da Costa",
-     "José Chaud-Netto",
-     "H. G. Fowler"
-    ],
-    "revista": "Brazilian Journal of Biology",
-    "data": "2004-08-01",
-    "ano": 2004,
-    "resumo": "We examined the spatial implications of maximum flight distance for several species of stingless bees. Data suggested that maximum flight distance in Meliponini is a function of body size, especially generalized wing size, which can be estimated through principal component analysis. For six species of stingless bees, flight distances and generalized wing sizes were highly correlated (r = 0.938). This indicates that species of Meliponini occupy an effectively larger area as body size increases, which has important implications in the spatial dynamics of local populations restricted to forest fr",
-    "doi": "10.1590/s1519-69842004000400003",
-    "url": "https://doi.org/10.1590/s1519-69842004000400003",
-    "citacoes": 277,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1590/s1519-69842004000400003"
-   },
-   {
-    "titulo": "Diversity and evolutionary patterns of bacterial gut associates of corbiculate bees",
-    "autores": [
-     "Hauke Koch",
-     "Dharam Pal Abrol",
-     "Jilian Li",
-     "Paul Schmid‐Hempel"
-    ],
-    "revista": "Molecular Ecology",
-    "data": "2013-01-24",
-    "ano": 2013,
-    "resumo": "The animal gut is a habitat for diverse communities of microorganisms (microbiota). Honeybees and bumblebees have recently been shown to harbour a distinct and species poor microbiota, which may confer protection against parasites. Here, we investigate diversity, host specificity and transmission mode of two of the most common, yet poorly known, gut bacteria of honeybees and bumblebees: Snodgrassella alvi (Betaproteobacteria) and Gilliamella apicola (Gammaproteobacteria). We analysed 16S rRNA gene sequences of these bacteria from diverse bee host species across most of the honeybee and bumbleb",
-    "doi": "10.1111/mec.12209",
-    "url": "https://doi.org/10.1111/mec.12209",
-    "citacoes": 276,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/mec.12209"
-   },
-   {
-    "titulo": "Physicochemical profiles, minerals and bioactive compounds of stingless bee honey (Meliponinae)",
-    "autores": [
-     "Fabíola Carina Biluca",
-     "Francieli Braghini",
-     "Luciano Valdemiro Gonzaga",
-     "Ana Carolina Oliveira Costa",
-     "Roseane Fett"
-    ],
-    "revista": "Journal of Food Composition and Analysis",
-    "data": "2016-05-25",
-    "ano": 2016,
-    "resumo": "",
-    "doi": "10.1016/j.jfca.2016.05.007",
-    "url": "https://doi.org/10.1016/j.jfca.2016.05.007",
-    "citacoes": 273,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.jfca.2016.05.007"
-   },
-   {
-    "titulo": "Sugar profile, physicochemical and sensory aspects of monofloral honeys produced by different stingless bee species in Brazilian semi-arid region",
-    "autores": [
-     "Janaína Maria Batista de Sousa",
-     "Evandro Leite de Souza",
-     "Gilmardes Marques",
-     "Marta de Toledo Benassi",
-     "Beatriz Gullón",
-     "Manuela Pintado",
-     "Marciane Magnani"
-    ],
-    "revista": "LWT",
-    "data": "2015-08-28",
-    "ano": 2015,
-    "resumo": "",
-    "doi": "10.1016/j.lwt.2015.08.058",
-    "url": "https://doi.org/10.1016/j.lwt.2015.08.058",
-    "citacoes": 264,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.lwt.2015.08.058"
    },
    {
     "titulo": "Crop pollinators in Brazil: a review of reported interactions",
@@ -3563,24 +3375,6 @@
     "citacoes": 257,
     "fonte": "OpenAlex",
     "key": "doi:10.1007/s13592-014-0316-z"
-   },
-   {
-    "titulo": "Physicochemical profiles of stingless bee (Apidae: Meliponini) honey from South East Asia (Thailand)",
-    "autores": [
-     "Bajaree Chuttong",
-     "Yaowaluk Chanbang",
-     "Korawan Sringarm",
-     "Michael D. Burgett"
-    ],
-    "revista": "Food Chemistry",
-    "data": "2015-06-27",
-    "ano": 2015,
-    "resumo": "",
-    "doi": "10.1016/j.foodchem.2015.06.089",
-    "url": "https://doi.org/10.1016/j.foodchem.2015.06.089",
-    "citacoes": 250,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.foodchem.2015.06.089"
    },
    {
     "titulo": "Identification and roles of non-pathogenic microflora associated with honey bees1",
@@ -3624,47 +3418,6 @@
     "key": "doi:10.1371/journal.pone.0121157"
    },
    {
-    "titulo": "Stingless bees and mass flowering trees in the canopy of Atlantic Forest: a tight relationship",
-    "autores": [
-     "Mauro Ramalho"
-    ],
-    "revista": "Acta Botanica Brasilica",
-    "data": "2004-03-01",
-    "ano": 2004,
-    "resumo": "This study demonstrates that stingless bees (Apidae, Hymenoptera) amount to approximately 70% of all bees foraging on flowers in the Brazilian Tropical Atlantic Rainforest. They also are the unique bee group concentrated in the upper stratum. It is hypothesized that this vertical distribution is a result of an uneven distribution of preferred floral resources within the forest strata. In the upper stratum, most of the trees that are highly visited by stingless bees produce small, inconspicuous, generalized flowers, clustered in dense inflorescences (mass flowering). These trees represent only ",
-    "doi": "10.1590/s0102-33062004000100005",
-    "url": "https://doi.org/10.1590/s0102-33062004000100005",
-    "citacoes": 228,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1590/s0102-33062004000100005"
-   },
-   {
-    "titulo": "Global trends in the number and diversity of managed pollinator species",
-    "autores": [
-     "Julia Osterman",
-     "Marcelo A. Aizen",
-     "Jacobus Christiaan Biesmeijer",
-     "Jordi Bosch",
-     "Brad G. Howlett",
-     "David W. Inouye",
-     "Chuleui Jung",
-     "Dino J. Martins",
-     "Rodrigo G. Medel",
-     "Anton Pauw",
-     "Colleen Lynda Seymour",
-     "Robert J. Paxton"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "data": "2021-09-11",
-    "ano": 2021,
-    "resumo": "Cultivation of pollinator-dependent crops has expanded globally, increasing our reliance on insect pollination. This essential ecosystem service is provided by a wide range of managed and wild pollinators whose abundance and diversity are thought to be in decline, threatening sustainable food production. The Western honey bee (Apis mellifera) is amongst the best-monitored insects but the state of other managed pollinators is less well known. Here, we review the status and trends of all managed pollinators based on publicly accessible databases and the published literature. We found that, on a ",
-    "doi": "10.1016/j.agee.2021.107653",
-    "url": "https://doi.org/10.1016/j.agee.2021.107653",
-    "citacoes": 227,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.agee.2021.107653"
-   },
-   {
     "titulo": "The Antiquity and Evolutionary History of Social Behavior in Bees",
     "autores": [
      "Sophie Cardinal",
@@ -3681,81 +3434,6 @@
     "key": "doi:10.1371/journal.pone.0021086"
    },
    {
-    "titulo": "Stingless Bee Honey, the Natural Wound Healer: A Review",
-    "autores": [
-     "Mohd Azri Abd Jalil",
-     "Abdul Razak Kasmuri",
-     "Hazrina Ab. Hadi"
-    ],
-    "revista": "Skin Pharmacology and Physiology",
-    "data": "2017-01-01",
-    "ano": 2017,
-    "resumo": "BACKGROUND: The stingless bee is a natural type of bee that exists in almost every continent. The honey produced by this bee has been widely used across time and space. The distinctive feature of this honey is that it is stored naturally in the pot (cerumen), thus contributing to its beneficial properties, especially in the wound healing process. METHODS: In this article, several studies on stingless bee honey that pointed out the numerous therapeutic profiles of this honey in terms of its antioxidant, antimicrobial, anti-inflammatory, as well as moisturizing properties are reviewed. All of th",
-    "doi": "10.1159/000458416",
-    "url": "https://doi.org/10.1159/000458416",
-    "citacoes": 223,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1159/000458416"
-   },
-   {
-    "titulo": "Bee diversity along a disturbance gradient in tropical lowland forests of south‐east Asia",
-    "autores": [
-     "Lee Hsiang Liow",
-     "Navjot S. Sodhi",
-     "Thomas Elmqvist"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2001-02-01",
-    "ano": 2001,
-    "resumo": "Summary Bees are believed to be dominant pollen vectors in tropical forests, yet studies specific to bees in south‐east Asia are rare. Regeneration and restoration of the rapidly disappearing lowland forests of this region are reliant on bees, thus there is an urgent need for forest bee data at the community level. Bee communities of eight forested sites in Johor (Malaysia) and Singapore were surveyed three times each from February to August 1999 at the below‐canopy level. These sites ranged from relatively undisturbed primary lowland dipterocarp forests to late secondary forests and exotic fo",
-    "doi": "10.1046/j.1365-2664.2001.00582.x",
-    "url": "https://doi.org/10.1046/j.1365-2664.2001.00582.x",
-    "citacoes": 221,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1365-2664.2001.00582.x"
-   },
-   {
-    "titulo": "Phenolic profile, antioxidant activity and palynological analysis of stingless bee honey from Amazonas, Northern Brazil",
-    "autores": [
-     "Isnandia Andréa Almeida da Silva",
-     "Tânia Maria Sarmento Silva",
-     "Celso A. Câmara",
-     "Neide Queiroz",
-     "Marciane Magnani",
-     "Jaílson Santos de Novaıs",
-     "L. E. B. Soledade",
-     "Edeltrudes de Oliveira Lima",
-     "Antonia Lucia de Souza",
-     "Antonio Gouveia De Souza"
-    ],
-    "revista": "Food Chemistry",
-    "data": "2013-06-25",
-    "ano": 2013,
-    "resumo": "",
-    "doi": "10.1016/j.foodchem.2013.06.072",
-    "url": "https://doi.org/10.1016/j.foodchem.2013.06.072",
-    "citacoes": 218,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.foodchem.2013.06.072"
-   },
-   {
-    "titulo": "Effects of urbanization on Neotropical wasp and bee assemblages in a Brazilian metropolis",
-    "autores": [
-     "Lorenzo R. S. Zanette",
-     "Rogério Parentoni Martins",
-     "Sérvio Pontes Ribeiro"
-    ],
-    "revista": "Landscape and Urban Planning",
-    "data": "2004-04-28",
-    "ano": 2004,
-    "resumo": "",
-    "doi": "10.1016/j.landurbplan.2004.02.003",
-    "url": "https://doi.org/10.1016/j.landurbplan.2004.02.003",
-    "citacoes": 210,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.landurbplan.2004.02.003"
-   },
-   {
     "titulo": "Nectar selection by Melipona and Apis mellifera (Hymenoptera: Apidae) and the ecology of nectar intake by bee colonies in a tropical forest",
     "autores": [
      "David Ward Roubik",
@@ -3770,25 +3448,6 @@
     "citacoes": 209,
     "fonte": "OpenAlex",
     "key": "doi:10.1007/bf00379082"
-   },
-   {
-    "titulo": "Physicochemical properties of stingless bee honey from around the globe: A comprehensive review",
-    "autores": [
-     "Abid Nordin",
-     "Nur Qisya Afifah Veronica Sainik",
-     "Shiplu Roy Chowdhury",
-     "Aminuddin Bin Saim",
-     "Ruszymah Bt Hj Idrus"
-    ],
-    "revista": "Journal of Food Composition and Analysis",
-    "data": "2018-06-01",
-    "ano": 2018,
-    "resumo": "",
-    "doi": "10.1016/j.jfca.2018.06.002",
-    "url": "https://doi.org/10.1016/j.jfca.2018.06.002",
-    "citacoes": 206,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.jfca.2018.06.002"
    },
    {
     "titulo": "Quality standards for medicinal uses of Meliponinae honey in Guatemala, Mexico and Venezuela",
@@ -3808,33 +3467,6 @@
     "key": "doi:10.1080/0005772x.2004.11099603"
    },
    {
-    "titulo": "COMPOSITION OF STINGLESS BEE HONEY: SETTING QUALITY STANDARDS",
-    "autores": [
-     "Bruno de Almeida Souza",
-     "David Ward Roubik",
-     "Ortrud Monika Barth",
-     "Tim A. Heard",
-     "Eunice Enríquez",
-     "Carlos Alfredo Lopes de Carvalho",
-     "Jerônimo Villas-Bôas",
-     "Luís Carlos Marchini",
-     "Jean Locatelli",
-     "Livia Persano-Oddo",
-     "Ligia Bicudo de Almeida‐Muradian",
-     "Stefan Bogdanov",
-     "Patricia Vit"
-    ],
-    "revista": "Americanae (AECID Library)",
-    "data": "2006-01-01",
-    "ano": 2006,
-    "resumo": "Compositional data from 152 stingless bee (Meliponini) honey samples were compiled from studies since 1964, and evaluated to propose a quality standard for this product. Since stingless bee honey has a different composition than Apis mellifera honey, some physicochemical parameters are presented according to stingless bee species. The entomological origin of the honey was known for 17 species of Meliponini from Brazil, one from Costa Rica, six from Mexico, 27 from Panama, one from Surinam, two from Trinidad & Tobago, and seven from Venezuela, most from the genus Melipona. The results varied as",
-    "doi": "",
-    "url": "https://openalex.org/W2146976068",
-    "citacoes": 201,
-    "fonte": "OpenAlex",
-    "key": "t:composition of stingless bee honey setting quality standards"
-   },
-   {
     "titulo": "Kin conflict over caste determination in social Hymenoptera",
     "autores": [
      "Andrew F. G. Bourke",
@@ -3851,25 +3483,6 @@
     "key": "doi:10.1007/s002650050622"
    },
    {
-    "titulo": "Phytochemical evidence for the botanical origin of tropical propolis from Venezuela",
-    "autores": [
-     "Francisco Abraham Tomás-Barberán",
-     "Cristina García‐Viguera",
-     "Patrícia Vit",
-     "Federico Ferreres",
-     "Francisco Tomás-Lorente"
-    ],
-    "revista": "Phytochemistry",
-    "data": "1993-08-01",
-    "ano": 1993,
-    "resumo": "",
-    "doi": "10.1016/s0031-9422(00)90804-5",
-    "url": "https://doi.org/10.1016/s0031-9422(00)90804-5",
-    "citacoes": 198,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/s0031-9422(00)90804-5"
-   },
-   {
     "titulo": "Competitive Interactions Between Neotropical Pollinators and Africanized Honey Bees",
     "autores": [
      "David Ward Roubik"
@@ -3883,86 +3496,6 @@
     "citacoes": 192,
     "fonte": "OpenAlex",
     "key": "doi:10.1126/science.201.4360.1030"
-   },
-   {
-    "titulo": "Investigation of phenolic compounds, antioxidant and anti-inflammatory activities in stingless bee honey (Meliponinae)",
-    "autores": [
-     "Fabíola Carina Biluca",
-     "Bibiana Silva",
-     "Thiago Caon",
-     "Eduarda Talita Bramorski Mohr",
-     "Guilherme Nicácio Vieira",
-     "Luciano Valdemiro Gonzaga",
-     "Luciano Vitali",
-     "Gustavo Amadeu Micke",
-     "Roseane Fett",
-     "Eduardo Monguilhott Dalmarco",
-     "Ana Carolina Oliveira Costa"
-    ],
-    "revista": "Food Research International",
-    "data": "2019-11-27",
-    "ano": 2019,
-    "resumo": "",
-    "doi": "10.1016/j.foodres.2019.108756",
-    "url": "https://doi.org/10.1016/j.foodres.2019.108756",
-    "citacoes": 190,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.foodres.2019.108756"
-   },
-   {
-    "titulo": "Stingless bee honey: Quality parameters, bioactive compounds, health-promotion properties and modification detection strategies",
-    "autores": [
-     "Suélen Ávila",
-     "Márcia Regina Beux",
-     "Rosemary Hoffmann Ribani",
-     "Rui Carlos Zambiazi"
-    ],
-    "revista": "Trends in Food Science & Technology",
-    "data": "2018-09-05",
-    "ano": 2018,
-    "resumo": "",
-    "doi": "10.1016/j.tifs.2018.09.002",
-    "url": "https://doi.org/10.1016/j.tifs.2018.09.002",
-    "citacoes": 188,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.tifs.2018.09.002"
-   },
-   {
-    "titulo": "Pollination services at risk: Bee habitats will decrease owing to climate change in Brazil",
-    "autores": [
-     "Tereza Cristina Giannini",
-     "André Luís Acosta",
-     "Carlos Alberto Garófalo",
-     "António Mauro Saraiva",
-     "Isabel Alves‐dos‐Santos",
-     "Vera Lúcia Imperatriz-Fonseca"
-    ],
-    "revista": "Ecological Modelling",
-    "data": "2012-07-27",
-    "ano": 2012,
-    "resumo": "",
-    "doi": "10.1016/j.ecolmodel.2012.06.035",
-    "url": "https://doi.org/10.1016/j.ecolmodel.2012.06.035",
-    "citacoes": 185,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.ecolmodel.2012.06.035"
-   },
-   {
-    "titulo": "Resource Partitioning between Highly Eusocial Bees and Possible Impact of the Introduced Africanized Honey Bee on Native Stingless Bees in the Brazilian Atlantic Rainforest",
-    "autores": [
-     "Wolfgang Wilms",
-     "Vera Lúcia Imperatriz-Fonseca",
-     "Wolf Engels"
-    ],
-    "revista": "Studies on Neotropical Fauna and Environment",
-    "data": "1996-12-01",
-    "ano": 1996,
-    "resumo": "The highly eusocial bee community of the neotropical Atlantic Rainforest was studied at Boracéia Biological Station in the state of São Paulo, Brazil. In this reserve, 17 species of stingless bees and the introduced Africanized honey bee were found, the latter being the most abundant flower visitor. Of all flowering plants, Asteraceae and Myrtaceae were particularly important as resources for bees. Trophic niche overlap between the various species of stingless bees is evident, and it was generally larger within the tribes Meliponini and Trigonini than between members of different tribes. Never",
-    "doi": "10.1076/snfe.31.3.137.13336",
-    "url": "https://doi.org/10.1076/snfe.31.3.137.13336",
-    "citacoes": 183,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1076/snfe.31.3.137.13336"
    },
    {
     "titulo": "Honeybee colonies achieve fitness through dancing",
@@ -3981,175 +3514,684 @@
     "key": "doi:10.1038/nature01127"
    },
    {
-    "titulo": "Competition and Nest Spacing in a Tropical Stingless Bee Community",
+    "titulo": "A morphologically specialized soldier caste improves colony defense in a neotropical eusocial bee",
     "autores": [
-     "Stephen P. Hubbell",
-     "Leslie K. Johnson"
+     "Christoph Grüter",
+     "Cristiano Menezes",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Francis L. W. Ratnieks"
     ],
-    "revista": "Ecology",
-    "data": "1977-09-01",
-    "ano": 1977,
-    "resumo": "The density and dispersion patterns of nests of 5 stingless bee species are described for a tract of Costa Rican tropical dry forest. Features of suitable nest sites are analyzed, but it does not appear that nest site availability limits colony density or determines colony dispersion. Rather, food limitation is suggested by a linear relationship between the logarithm of colony biomass and the logarithm of foraging \"home range.\" Colonies were uniformly dispersed intraspecifically in 4 species. The pattern in a 5th species could not be distinguished from a random dispersion. Partial nest counts ",
-    "doi": "10.2307/1936917",
-    "url": "https://doi.org/10.2307/1936917",
-    "citacoes": 178,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1936917"
-   },
-   {
-    "titulo": "Phenolic compounds, melissopalynological, physicochemical analysis and antioxidant activity of jandaíra (Melipona subnitida) honey",
-    "autores": [
-     "Tânia Maria Sarmento Silva",
-     "Francyana Pereira dos Santos",
-     "Adriana Evangelista-Rodrigues",
-     "Eva Mônica Sarmento da Silva",
-     "Gerlania Sarmento da Silva",
-     "Jaílson Santos de Novaıs",
-     "Francisco de Assis Ribeiro dos Santos",
-     "Celso A. Câmara"
-    ],
-    "revista": "Journal of Food Composition and Analysis",
-    "data": "2012-10-23",
+    "revista": "Proceedings of the National Academy of Sciences",
+    "data": "2012-01-09",
     "ano": 2012,
+    "resumo": "Division of labor among workers is common in insect societies and is thought to be important in their ecological success. In most species, division of labor is based on age (temporal castes), but workers in some ants and termites show morphological specialization for particular tasks (physical castes). Large-headed soldier ants and termites are well-known examples of this specialization. However, until now there has been no equivalent example of physical worker subcastes in social bees or wasps. Here we provide evidence for a physical soldier subcaste in a bee. In the neotropical stingless bee",
+    "doi": "10.1073/pnas.1113398109",
+    "url": "https://doi.org/10.1073/pnas.1113398109",
+    "citacoes": 164,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1073/pnas.1113398109"
+   },
+   {
+    "titulo": "Stingless Bee Larvae Require Fungal Steroid to Pupate",
+    "autores": [
+     "Camila Raquel Paludo",
+     "Cristiano Menezes",
+     "Eduardo Afonso da Silva-Junior",
+     "Ayrton Vollet-Neto",
+     "Andrés Andrade-Domínguez",
+     "Gleb Pishchany",
+     "Lily Khadempour",
+     "Fábio Santos do Nascimento",
+     "Cameron R. Currie",
+     "Roberto Kolter",
+     "Jon Clardy",
+     "Mônica Tallarico Pupo"
+    ],
+    "revista": "Scientific Reports",
+    "data": "2018-01-12",
+    "ano": 2018,
+    "resumo": "The larval stage of the stingless bee Scaptotrigona depilis must consume a specific brood cell fungus in order to continue development. Here we show that this fungus is a member of the genus Zygosaccharomyces and provides essential steroid precursors to the developing bee. Insect pupation requires ecdysteroid hormones, and as insects cannot synthesize sterols de novo, they must obtain steroids in their diet. Larval in vitro culturing assays demonstrated that consuming ergosterol recapitulates the developmental effects on S. depilis as ingestion of Zygosaccharomyces sp. cells. Thus, we determin",
+    "doi": "10.1038/s41598-018-19583-9",
+    "url": "https://doi.org/10.1038/s41598-018-19583-9",
+    "citacoes": 156,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/s41598-018-19583-9"
+   },
+   {
+    "titulo": "Imidacloprid-Induced Impairment of Mushroom Bodies and Behavior of the Native Stingless Bee Melipona quadrifasciata anthidioides",
+    "autores": [
+     "Hudson V. V. Tomé",
+     "Gustavo Ferreira Martins",
+     "Maria Augusta Pereira Lima",
+     "Lúcio Antônio Oliveira Campos",
+     "R. N. C. Guedes"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2012-06-04",
+    "ano": 2012,
+    "resumo": "Declines in pollinator colonies represent a worldwide concern. The widespread use of agricultural pesticides is recognized as a potential cause of these declines. Previous studies have examined the effects of neonicotinoid insecticides such as imidacloprid on pollinator colonies, but these investigations have mainly focused on adult honey bees. Native stingless bees (Hymenoptera: Apidae: Meliponinae) are key pollinators in neotropical areas and are threatened with extinction due to deforestation and pesticide use. Few studies have directly investigated the effects of pesticides on these pollin",
+    "doi": "10.1371/journal.pone.0038406",
+    "url": "https://doi.org/10.1371/journal.pone.0038406",
+    "citacoes": 148,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0038406"
+   },
+   {
+    "titulo": "Aggressive foraging of social bees as a mechanism of floral resource partitioning in an Asian tropical rainforest",
+    "autores": [
+     "Teruyoshi Nagamitsu",
+     "Tamiji Inoue"
+    ],
+    "revista": "Oecologia",
+    "data": "1997-04-18",
+    "ano": 1997,
     "resumo": "",
-    "doi": "10.1016/j.jfca.2012.08.010",
-    "url": "https://doi.org/10.1016/j.jfca.2012.08.010",
-    "citacoes": 177,
+    "doi": "10.1007/s004420050178",
+    "url": "https://doi.org/10.1007/s004420050178",
+    "citacoes": 142,
     "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.jfca.2012.08.010"
+    "key": "doi:10.1007/s004420050178"
    },
    {
-    "titulo": "BEE COMMUNITY SHIFTS WITH LANDSCAPE CONTEXT IN A TROPICAL COUNTRYSIDE",
+    "titulo": "Stingless bee honey, a novel source of trehalulose: a biologically active disaccharide with health benefits",
     "autores": [
-     "Berry J. Brosi",
-     "Gretchen C. Daily",
-     "Paul R. Ehrlich"
+     "Mary T. Fletcher",
+     "Natasha L. Hungerford",
+     "Dennis C. Webber",
+     "Matheus Carpinelli de Jesus",
+     "Jiali Zhang",
+     "Isobella S. J. Stone",
+     "Joanne T. Blanchfield",
+     "Norhasnida Zawawi"
     ],
-    "revista": "Ecological Applications",
-    "data": "2007-03-01",
-    "ano": 2007,
-    "resumo": "The ongoing scientific controversy over a putative \"global pollination crisis\" underscores the lack of understanding of the response of bees (the most important taxon of pollinators) to ongoing global land-use changes. We studied the effects of distance to forest, tree management, and floral resources on bee communities in pastures (the dominant land-use type) in southern Costa Rica. Over two years, we sampled bees and floral resources in 21 pastures at three distance classes from a large (approximately 230-ha) forest patch and of three common types: open pasture; pasture with remnant trees; a",
-    "doi": "10.1890/06-0029",
-    "url": "https://doi.org/10.1890/06-0029",
-    "citacoes": 176,
+    "revista": "Scientific Reports",
+    "data": "2020-07-22",
+    "ano": 2020,
+    "resumo": "Stingless bee (Meliponini) honey has long been considered a high-value functional food, but the perceived therapeutic value has lacked attribution to specific bioactive components. Examination of honey from five different stingless bee species across Neotropical and Indo-Australian regions has enabled for the first time the identification of the unusual disaccharide trehalulose as a major component representing between 13 and 44 g per 100 g of each of these honeys. Trehalulose is an isomer of sucrose with an unusual α-(1 → 1) glucose-fructose glycosidic linkage and known acariogenic and low gl",
+    "doi": "10.1038/s41598-020-68940-0",
+    "url": "https://doi.org/10.1038/s41598-020-68940-0",
+    "citacoes": 130,
     "fonte": "OpenAlex",
-    "key": "doi:10.1890/06-0029"
+    "key": "doi:10.1038/s41598-020-68940-0"
    },
    {
-    "titulo": "Classification of entomological origin of honey based on its physicochemical and antioxidant properties",
+    "titulo": "Social bees are fitter in more biodiverse environments",
     "autores": [
-     "Siok Peng Kek",
-     "Nyuk Ling Chin",
-     "Yus Aniza Yusof",
-     "Sheau Wei Tan",
-     "Lee Suan Chua"
-    ],
-    "revista": "International Journal of Food Properties",
-    "data": "2017-10-23",
-    "ano": 2017,
-    "resumo": "Physicochemical and antioxidant properties of raw honeys from Malaysia were used as markers for determining its entomological source of bee species of Apis dorsata, Apis mellifera, Apis cerana, or Heterotrigona itama. Physicochemical properties of moisture content, water activity, specific gravity, viscosity, pH, free acidity, electrical conductivity, colour (L*, a* and b*), colour intensity, and antioxidant properties including the DPPH free radical scavenging activity power (1/IC50), ascorbic acid equivalent antioxidant content (AEAC), ferric ion reducing antioxidant power (FRAP), and total ",
-    "doi": "10.1080/10942912.2017.1359185",
-    "url": "https://doi.org/10.1080/10942912.2017.1359185",
-    "citacoes": 173,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1080/10942912.2017.1359185"
-   },
-   {
-    "titulo": "Food Exploitation By Social Insects : Ecological, Behavioral, and Theoretical Approaches",
-    "autores": [
-     "Stefan Jarau",
-     "Michael Hrncir"
-    ],
-    "revista": "",
-    "data": "2009-05-21",
-    "ano": 2009,
-    "resumo": "Measuring the Adaptiveness of Social Insect Foraging Strategies: An Empirical Approach, N.E. Raine and L. Chittka Social Cues and Adaptive Foraging Strategies in Ants, C. Detrain and J.-L. Deneubourg Individual and Social Foraging in Social Wasps, R.L. Jeanne and B.J. Taylor Season-Dependent Foraging Patterns: Case Study of a Neotropical Forest-Dwelling Ant (Pachycondyla striata Ponerinae), F.N.S. Medeiros and P.S. Oliveira Foraging Range and the Spatial Distribution of Worker Bumble Bees, D. Goulson and J.L. Osborne How to Tell Your Mates: Costs and Benefits of Different Recruitment Mechanism",
-    "doi": "",
-    "url": "https://openalex.org/W1575399897",
-    "citacoes": 171,
-    "fonte": "OpenAlex",
-    "key": "t:food exploitation by social insects ecological behavioral and theoretical approaches"
-   },
-   {
-    "titulo": "Landscape structure influences bee community and coffee pollination at different spatial scales",
-    "autores": [
-     "Fernanda Teixeira Saturni",
-     "Rodolfo Jaffé",
-     "Jean Paul Metzger"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "data": "2016-10-14",
-    "ano": 2016,
-    "resumo": "Although several studies have shown that the presence of bees results in increased crop yields, the mechanisms that determine pollination service across different spatial scales are still largely unknown. Here, we evaluated the influence of landscape structure over bee community composition and coffee (Coffea arabica) pollination. Our study was undertaken in one of the most important coffee-producing regions of Brazil, and comprised nine landscapes of sun coffee plantations surrounded by different amounts of Atlantic Forest remnants. Using floral exclusion experiments we evaluated fruit set in",
-    "doi": "10.1016/j.agee.2016.10.008",
-    "url": "https://doi.org/10.1016/j.agee.2016.10.008",
-    "citacoes": 170,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.agee.2016.10.008"
-   },
-   {
-    "titulo": "Influence of origins and bee species on physicochemical, antioxidant properties and botanical discrimination of stingless bee honey",
-    "autores": [
-     "Sharina Shamsudin",
-     "Jinap Selamat",
-     "Maimunah Sanny",
-     "Shamsul Bahri Abd Razak",
-     "Nuzul Noorahya Jambari",
-     "Zakbah Mian",
-     "Alfi Khatib"
-    ],
-    "revista": "International Journal of Food Properties",
-    "data": "2019-01-01",
-    "ano": 2019,
-    "resumo": "The physicochemical characteristics, antioxidant properties and botanical discrimination according to the organic acid content in Malaysian stingless bee honey were investigated. The results showed that the botanical origin and bee species significantly influenced the physicochemical characteristics and antioxidant properties of stingless bee honey. Principle component analysis (PCA) revealed that stingless bee honey was differentiable from Apis mellifera honey by acetic, citric, D-malic and tartaric. Starfruit could be distinguished from gelam and acacia honeys by lactic. Whereas the gluconic",
-    "doi": "10.1080/10942912.2019.1576730",
-    "url": "https://doi.org/10.1080/10942912.2019.1576730",
-    "citacoes": 168,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1080/10942912.2019.1576730"
-   },
-   {
-    "titulo": "Apis mellifera vs Melipona beecheii Cuban polifloral honeys: A comparison based on their physicochemical parameters, chemical composition and biological properties",
-    "autores": [
-     "José M. Álvarez-Suárez",
-     "Francesca Giampieri",
-     "Andrea Brenciani",
-     "Luca Mazzoni",
-     "Massimiliano Gasparrini",
-     "Ana  María González- Paramás",
-     "Celestino Santos‐Buelga",
-     "Gianluca Morroni",
-     "Serena Simoni",
-     "Tamara Yuliett Forbes-Hernández",
-     "Sadia Afrin",
-     "Eleonora Giovanetti",
-     "Maurizio Antonio Battino"
-    ],
-    "revista": "LWT",
-    "data": "2017-09-04",
-    "ano": 2017,
-    "resumo": "",
-    "doi": "10.1016/j.lwt.2017.08.079",
-    "url": "https://doi.org/10.1016/j.lwt.2017.08.079",
-    "citacoes": 167,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.lwt.2017.08.079"
-   },
-   {
-    "titulo": "Beyond flowers: including non-floral resources in bee conservation schemes",
-    "autores": [
-     "Fabrice Réquier",
+     "Benjamin F. Kaluza",
+     "Helen Margaret Wallace",
+     "Tim A. Heard",
+     "Vanessa Minden",
+     "Alexandra‐Maria Klein",
      "Sara D. Leonhardt"
     ],
-    "revista": "Journal of Insect Conservation",
-    "data": "2020-01-02",
-    "ano": 2020,
-    "resumo": "",
-    "doi": "10.1007/s10841-019-00206-1",
-    "url": "https://doi.org/10.1007/s10841-019-00206-1",
-    "citacoes": 166,
+    "revista": "Scientific Reports",
+    "data": "2018-08-13",
+    "ano": 2018,
+    "resumo": "Bee population declines are often linked to human impacts, especially habitat and biodiversity loss, but empirical evidence is lacking. To clarify the link between biodiversity loss and bee decline, we examined how floral diversity affects (reproductive) fitness and population growth of a social stingless bee. For the first time, we related available resource diversity and abundance to resource (quality and quantity) intake and colony reproduction, over more than two years. Our results reveal plant diversity as key driver of bee fitness. Social bee colonies were fitter and their populations gr",
+    "doi": "10.1038/s41598-018-30126-0",
+    "url": "https://doi.org/10.1038/s41598-018-30126-0",
+    "citacoes": 130,
     "fonte": "OpenAlex",
-    "key": "doi:10.1007/s10841-019-00206-1"
+    "key": "doi:10.1038/s41598-018-30126-0"
+   },
+   {
+    "titulo": "Native and Non-Native Supergeneralist Bee Species Have Different Effects on Plant-Bee Networks",
+    "autores": [
+     "Tereza Cristina Giannini",
+     "Lucas A. Garibaldi",
+     "André Luís Acosta",
+     "Juliana Saragiotto Silva",
+     "Kate P. Maia",
+     "António Mauro Saraiva",
+     "Paulo R. Guimarães",
+     "Astrid de Matos Peixoto Kleinert"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2015-09-10",
+    "ano": 2015,
+    "resumo": "Supergeneralists, defined as species that interact with multiple groups of species in ecological networks, can act as important connectors of otherwise disconnected species subsets. In Brazil, there are two supergeneralist bees: the honeybee Apis mellifera, a non-native species, and Trigona spinipes, a native stingless bee. We compared the role of both species and the effect of geographic and local factors on networks by addressing three questions: 1) Do both species have similar abundance and interaction patterns (degree and strength) in plant-bee networks? 2) Are both species equally influen",
+    "doi": "10.1371/journal.pone.0137198",
+    "url": "https://doi.org/10.1371/journal.pone.0137198",
+    "citacoes": 129,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0137198"
+   },
+   {
+    "titulo": "Resin Use by Stingless Bees: A Review",
+    "autores": [
+     "Maggie Shanahan",
+     "Marla S. Spivak"
+    ],
+    "revista": "Insects",
+    "data": "2021-08-11",
+    "ano": 2021,
+    "resumo": "Stingless bees (Meliponini) are highly social bees that are native to tropical and sub-tropical ecosystems. Resin use is vital to many aspects of stingless bee colony function. Stingless bees use resin to build essential nest structures, repel predators, and kill would-be invaders. Furthermore, resin-derived compounds have been found to enrich the cuticular chemical profiles of many stingless bee species, and resin may play an important role in shaping the microbial communities associated with stingless bees and their nests. Despite its importance for colony function, previous reviews of resin",
+    "doi": "10.3390/insects12080719",
+    "url": "https://doi.org/10.3390/insects12080719",
+    "citacoes": 126,
+    "fonte": "OpenAlex",
+    "key": "doi:10.3390/insects12080719"
+   },
+   {
+    "titulo": "Repeated evolution of soldier sub-castes suggests parasitism drives social complexity in stingless bees",
+    "autores": [
+     "Christoph Grüter",
+     "Francisca H. I. D. Segers",
+     "Cristiano Menezes",
+     "Ayrton Vollet-Neto",
+     "Tiago Falcón",
+     "Lucas von Zuben",
+     "Márcia Maria Gentile Bitondi",
+     "Fábio Santos do Nascimento",
+     "Eduardo A. B. Almeida"
+    ],
+    "revista": "Nature Communications",
+    "data": "2017-02-09",
+    "ano": 2017,
+    "resumo": "The differentiation of workers into morphological castes represents an important evolutionary innovation that is thought to improve division of labor in insect societies. Given the potential benefits of task-related worker differentiation, it is puzzling that physical worker castes, such as soldiers, are extremely rare in social bees and absent in wasps. Following the recent discovery of soldiers in a stingless bee, we studied the occurrence of worker differentiation in 28 stingless bee species from Brazil and found that several species have specialized soldiers for colony defence. Our results",
+    "doi": "10.1038/s41467-016-0012-y",
+    "url": "https://doi.org/10.1038/s41467-016-0012-y",
+    "citacoes": 123,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/s41467-016-0012-y"
+   },
+   {
+    "titulo": "Physiological and genetic mechanisms underlying caste development, reproduction and division of labor in stingless bees",
+    "autores": [
+     "Klaus Hartfelder",
+     "Gustavo R. Makert",
+     "Carla C. Judice",
+     "Gonçalo Amarante Guimarães Pereira",
+     "Weyder Cristiano Santana",
+     "Rodrigo Pires Dallacqua",
+     "Márcia Maria Gentile Bitondi"
+    ],
+    "revista": "Apidologie",
+    "data": "2006-03-01",
+    "ano": 2006,
+    "resumo": "",
+    "doi": "10.1051/apido:2006013",
+    "url": "https://doi.org/10.1051/apido:2006013",
+    "citacoes": 123,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:2006013"
+   },
+   {
+    "titulo": "Agrochemical-induced stress in stingless bees: peculiarities, underlying basis, and challenges",
+    "autores": [
+     "Maria Augusta Pereira Lima",
+     "Gustavo Ferreira Martins",
+     "Eugenio Eduardo de Oliveira",
+     "R. N. C. Guedes"
+    ],
+    "revista": "Journal of Comparative Physiology A",
+    "data": "2016-07-11",
+    "ano": 2016,
+    "resumo": "",
+    "doi": "10.1007/s00359-016-1110-3",
+    "url": "https://doi.org/10.1007/s00359-016-1110-3",
+    "citacoes": 121,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00359-016-1110-3"
+   },
+   {
+    "titulo": "Information flow and organization of stingless bee foraging",
+    "autores": [
+     "Jacobus Christiaan Biesmeijer",
+     "Ester Judith Slaa"
+    ],
+    "revista": "Apidologie",
+    "data": "2004-03-01",
+    "ano": 2004,
+    "resumo": "",
+    "doi": "10.1051/apido:2004003",
+    "url": "https://doi.org/10.1051/apido:2004003",
+    "citacoes": 121,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:2004003"
+   },
+   {
+    "titulo": "Floral resource partitioning between native Melipona bees and the introduced Africanized honey bee in the Brazilian Atlantic rain forest",
+    "autores": [
+     "Wolfgang Wilms",
+     "Barbara Wiechers"
+    ],
+    "revista": "Apidologie",
+    "data": "1997-01-01",
+    "ano": 1997,
+    "resumo": "",
+    "doi": "10.1051/apido:19970602",
+    "url": "https://doi.org/10.1051/apido:19970602",
+    "citacoes": 120,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19970602"
+   },
+   {
+    "titulo": "Correlation between total phenolic and flavonoid contents with antioxidant activity of Malaysian stingless bee propolis extract",
+    "autores": [
+     "Nornaimah Asem",
+     "Nur Adilah Abdul Gapar",
+     "Nor Hussaini Abd Hapit",
+     "Eshaifol Azam Omar"
+    ],
+    "revista": "Journal of Apicultural Research",
+    "data": "2019-11-12",
+    "ano": 2019,
+    "resumo": "Propolis is considered to contain a variety of polyphenols (flavonoids, phenolic acids and their esters), waxes, steroids and terpenoids and its contents may be influenced by the vegetation at the site of collection as well as the species of stingless bees. The purpose of this study is to investigate the total phenolic and flavonoid content and the correlation that may exist between the mentioned class of compounds and the antioxidant properties. The ethanolic extract of propolis samples were prepared from three different stingless bee species namely Tetrigona apicalis, Heterotrigona itama and",
+    "doi": "10.1080/00218839.2019.1684050",
+    "url": "https://doi.org/10.1080/00218839.2019.1684050",
+    "citacoes": 119,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1080/00218839.2019.1684050"
+   },
+   {
+    "titulo": "Meliponiculture in Mexico: problems and perspective for development",
+    "autores": [
+     "José Javier G. Quezada‐Euán",
+     "William de Jesús May-Itzá",
+     "J A González-Acereto"
+    ],
+    "revista": "Bee World",
+    "data": "2001-01-01",
+    "ano": 2001,
+    "resumo": "Beekeeping with stingless bees (meliponiculture) in Mexico is an ancient tradition which today is in the process of disappearing as a consequence of changes in cultural, economic and ecological factors. This article reviews the historical background of meliponiculture as well as its potential uses in Mexico. Meliponiculture could be revived, providing an important source of income for peasant farmers in areas where the use of Africanized honey bees is restricted, provided technical and marketing problems are solved. We outline the current weaknesses and the changes needed to exploit these bees",
+    "doi": "10.1080/0005772x.2001.11099523",
+    "url": "https://doi.org/10.1080/0005772x.2001.11099523",
+    "citacoes": 118,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1080/0005772x.2001.11099523"
+   },
+   {
+    "titulo": "On optimal nectar foraging by some tropical bees (Hymenoptera: Apidae)",
+    "autores": [
+     "David Ward Roubik",
+     "Douglas Yanega",
+     "[A[A[A[A[A[A[A[A[A M. Aluja",
+     "Stephen L. Buchmann",
+     "David W. Inouye"
+    ],
+    "revista": "Apidologie",
+    "data": "1995-01-01",
+    "ano": 1995,
+    "resumo": "",
+    "doi": "10.1051/apido:19950303",
+    "url": "https://doi.org/10.1051/apido:19950303",
+    "citacoes": 118,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19950303"
+   },
+   {
+    "titulo": "Pesticide Exposure Assessment Paradigm for Stingless Bees",
+    "autores": [
+     "Karina Cham",
+     "Roberta Cornélio Ferreira Nocelli",
+     "Leandro O Borges",
+     "Flávia Elizabeth C Viana-Silva",
+     "Carlos Augusto M Tonelli",
+     "Osmar Malaspina",
+     "Cristiano Menezes",
+     "Annelise de Souza Rosa",
+     "Betina Blochtein",
+     "Breno Magalhães Freitas",
+     "Carmen S. S. Pires",
+     "Favízia Freitas de Oliveira",
+     "Felipe Andrés León Contrera",
+     "Karoline R. S. Torezani",
+     "M. de F. Ribeiro",
+     "Maria Augusta Lima Siqueira",
+     "Maria Cecília L S A Rocha"
+    ],
+    "revista": "Environmental Entomology",
+    "data": "2018-08-31",
+    "ano": 2018,
+    "resumo": "Although the importance of bees as the pollinators responsible for maintaining gene flow for many native and cultivated plants in ecosystems around the world is recognized, much of their biodiversity and behavior remains to be discovered. Stingless bees are considered key pollinators for several plant species in tropical and subtropical ecosystems and they also provide pollination services for economically important agricultural crops. Many countries are using the honey bee (Apis mellifera Linnaeus, 1758, Hymenoptera: Apidae) as a surrogate to evaluate the risk of pesticides to all species of ",
+    "doi": "10.1093/ee/nvy137",
+    "url": "https://doi.org/10.1093/ee/nvy137",
+    "citacoes": 115,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/ee/nvy137"
+   },
+   {
+    "titulo": "Extinction ofMelipona beecheiiand traditional beekeeping in the Yucatán peninsula",
+    "autores": [
+     "Rogel Villanueva-G",
+     "David Ward Roubik",
+     "Wilberto Colli-Ucán"
+    ],
+    "revista": "Bee World",
+    "data": "2005-01-01",
+    "ano": 2005,
+    "resumo": "Rearing of the ‘xunan-kab’ bee (Melipona beecheii) had been practised widely by the Mayans of the Yucatán peninsula long before arrival of the Spanish in the New World, and had been a culturally and economically important activity in that region. Melipona beecheii is kept almost exclusively in traditional log hives. Beekeepers using this bee, from the Mayan zone in Quintana Roo state, Mexico, testify to a 93% decrease in hives during the past one-quarter century. Despite concern that stingless bee keeping is going extinct, there were scant data to examine direct impact of competition from fera",
+    "doi": "10.1080/0005772x.2005.11099651",
+    "url": "https://doi.org/10.1080/0005772x.2005.11099651",
+    "citacoes": 115,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1080/0005772x.2005.11099651"
+   },
+   {
+    "titulo": "A COMPARATIVE STUDY OF FORAGING BEHAVIOR AND POLLEN RESOURCES OF VARIOUS STINGLESS BEES (HYM., MELIPONINAE) AND HONEYBEES (HYM., APINAE) IN TRINIDAD, WEST-INDIES",
+    "autores": [
+     "Marinus Jan Sommeijer",
+     "G. A. DE ROOY",
+     "W. Punt",
+     "L.L.M. de Bruijn"
+    ],
+    "revista": "Apidologie",
+    "data": "1983-01-01",
+    "ano": 1983,
+    "resumo": "",
+    "doi": "10.1051/apido:19830306",
+    "url": "https://doi.org/10.1051/apido:19830306",
+    "citacoes": 114,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19830306"
+   },
+   {
+    "titulo": "Bee colony losses in Brazil: a 5-year online survey",
+    "autores": [
+     "Dayson Castilhos",
+     "Genevile Carife Bergamo",
+     "Kátia Peres Gramacho",
+     "Lionel Segui Gonçalves"
+    ],
+    "revista": "Apidologie",
+    "data": "2019-05-15",
+    "ano": 2019,
+    "resumo": "",
+    "doi": "10.1007/s13592-019-00642-7",
+    "url": "https://doi.org/10.1007/s13592-019-00642-7",
+    "citacoes": 108,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s13592-019-00642-7"
+   },
+   {
+    "titulo": "The effects of human disturbance on a stingless bee community in a tropical rainforest",
+    "autores": [
+     "Hiromitsu Samejima",
+     "Marfaizal Marzuki",
+     "Teruyoshi Nagamitsu",
+     "Tohru Nakasizuka"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2004-05-31",
+    "ano": 2004,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2004.03.030",
+    "url": "https://doi.org/10.1016/j.biocon.2004.03.030",
+    "citacoes": 108,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2004.03.030"
+   },
+   {
+    "titulo": "The stingless bees (Hymenoptera: Apidae: Meliponini): a review of the current threats to their survival",
+    "autores": [
+     "Erubiel Toledo-Hernández",
+     "Guadalupe Peña-Chora",
+     "Víctor Manuel Hernández-Velázquez",
+     "Caleb C. Lormendez",
+     "Jeiry Toribio-Jiménez",
+     "Yanet Romero‐Ramírez",
+     "Renato León‐Rodríguez"
+    ],
+    "revista": "Apidologie",
+    "data": "2022-03-01",
+    "ano": 2022,
+    "resumo": "Abstract Pollination by insects is an essential service for the conservation of plant biodiversity, since it increases the rate of fertilization of flowers and therefore increases the quality and quantity of seeds and fruits. In tropical regions, native plants depend heavily on stingless bees as pollinators since before the introduction of the European honey bee Apis mellifera . However, like for many other insect species worldwide, anthropogenic actions represent a true threat to stingless bee populations. In this article, we review the works that evaluated the potential negative impacts of h",
+    "doi": "10.1007/s13592-022-00913-w",
+    "url": "https://doi.org/10.1007/s13592-022-00913-w",
+    "citacoes": 106,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s13592-022-00913-w"
+   },
+   {
+    "titulo": "Does intraspecific size variation in bumblebees allow colonies to efficiently exploit different flowers?",
+    "autores": [
+     "James Peat",
+     "J. Tucker",
+     "Dave Goulson"
+    ],
+    "revista": "Ecological Entomology",
+    "data": "2005-04-01",
+    "ano": 2005,
+    "resumo": "Abstract. 1. It has long been known that foraging bumblebee workers vary greatly in size, within species, and within single nests. This phenomenon has not been adequately explained. Workers of their relatives within the Apidae exhibit much less size variation. 2. For the bumblebee Bombus terrestris size, as measured by thorax width, was found to correspond closely with tongue length, so that larger bees are equipped to feed from deeper flowers. 3. The mean size of worker bees attracted to flowers was found to differ between plant species, and larger bees with longer tongues tended to visit dee",
+    "doi": "10.1111/j.0307-6946.2005.00676.x",
+    "url": "https://doi.org/10.1111/j.0307-6946.2005.00676.x",
+    "citacoes": 104,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1111/j.0307-6946.2005.00676.x"
+   },
+   {
+    "titulo": "Unveiling the contribution of bee pollinators to Brazilian crops with implications for bee management",
+    "autores": [
+     "Tereza Cristina Giannini",
+     "Denise A. Alves",
+     "Ronnie Cley de Oliveira Alves",
+     "Guaraci Duran Cordeiro",
+     "Alistair John Campbell",
+     "Marcelo Awade",
+     "José Maurício S. Bento",
+     "António Mauro Saraiva",
+     "Vera Lúcia Imperatriz-Fonseca"
+    ],
+    "revista": "Apidologie",
+    "data": "2020-01-22",
+    "ano": 2020,
+    "resumo": "The need for basic information on tropical crop pollinators remains a key priority. Here, we used a dataset on Brazilian bee-crop interactions to determine important bee species for crop pollination and discuss their management in Brazilian croplands. We developed an analytical approach to select key bee species and genera from datasets based on different criteria, selecting only interactions reported as effective pollination events. Data on pollination included 261 records of unique crop-pollinator interaction, 144 bee species, and 23 crops. Despite the importance of social species, solitary ",
+    "doi": "10.1007/s13592-019-00727-3",
+    "url": "https://doi.org/10.1007/s13592-019-00727-3",
+    "citacoes": 101,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s13592-019-00727-3"
+   },
+   {
+    "titulo": "The economic and cultural values of stingless bees (Hymenoptera: Meliponini) among ethnic groups of tropical America",
+    "autores": [
+     "José Javier G. Quezada‐Euán",
+     "Guiomar Nates Parra",
+     "M. M. Maués",
+     "David Ward Roubik",
+     "Vera Lúcia Imperatriz-Fonseca"
+    ],
+    "revista": "Sociobiology",
+    "data": "2018-10-11",
+    "ano": 2018,
+    "resumo": "Stingless honey bees— commonly known as stingless bees— have long provided food and materials to the inhabitants of tropical America. We conducted a literature search to codify available information, including non-peer reviewed ‘grey literature’, on the purported value of stingless bees to indigenous people. Among >400 species of Neotropical stingless bees several are widely used in beekeeping. Varied cultural and economic values are associated with their use, and in some cases husbandry, as a consequence of ongoing contact between people and these social insects. Adapting new species to husba",
+    "doi": "10.13102/sociobiology.v65i4.3447",
+    "url": "https://doi.org/10.13102/sociobiology.v65i4.3447",
+    "citacoes": 100,
+    "fonte": "OpenAlex",
+    "key": "doi:10.13102/sociobiology.v65i4.3447"
+   },
+   {
+    "titulo": "Multiple origins of advanced eusociality in bees inferred from mitochondrial DNA sequences.",
+    "autores": [
+     "S. A. Cameron"
+    ],
+    "revista": "Proceedings of the National Academy of Sciences",
+    "data": "1993-09-15",
+    "ano": 1993,
+    "resumo": "The remarkably high level of colony organization found in the honey bees and stingless bees (family Apidae) is extremely rare among animals. Yet there is controversy over whether these two groups independently evolved advanced eusocial behavior or inherited it from a common ancestor. Phylogenetic analyses of DNA sequence information from the mitochondrial genome (large-subunit ribosomal RNA gene) of representative apid bees suggest that advanced eusocial behavior evolved twice independently within this assemblage. These results depart from previous hypotheses of apid relationships by indicatin",
+    "doi": "10.1073/pnas.90.18.8687",
+    "url": "https://doi.org/10.1073/pnas.90.18.8687",
+    "citacoes": 100,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1073/pnas.90.18.8687"
+   },
+   {
+    "titulo": "EXPLOITATION OF FLORAL RESOURCES BY PLEBEIA REMOTA HOLMBERG (APIDAE, MELIPONINAE)",
+    "autores": [
+     "Mauro Ramalho",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "A. KLEINEKT-GIOVANNINI",
+     "M. CORTOPASSl-LAURINO"
+    ],
+    "revista": "Apidologie",
+    "data": "1985-01-01",
+    "ano": 1985,
+    "resumo": "",
+    "doi": "10.1051/apido:19850306",
+    "url": "https://doi.org/10.1051/apido:19850306",
+    "citacoes": 100,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19850306"
+   },
+   {
+    "titulo": "Antibacterial synergic effect of honey from two stingless bees: Scaptotrigona bipunctata Lepeletier, 1836, and S. postica Latreille, 1807",
+    "autores": [
+     "Erick Kenji Nishio",
+     "Jhonatan Macedo Ribeiro",
+     "Admilton Gonçalves de Oliveira",
+     "Célia G.T.J. Andrade",
+     "Edson Aparecido Proní",
+     "Renata Katsuko Takayama Kobayashi",
+     "Gerson Nakazato"
+    ],
+    "revista": "Scientific Reports",
+    "data": "2016-02-12",
+    "ano": 2016,
+    "resumo": "Several studies have tested antimicrobial activity of combinations of honey and various substances. In this study, we tested a combination of two stingless bee honeys against various bacterial strains. In particular: the antibacterial activity of honeys produced by Scaptotrigona bipunctata (SB) and Scaptotrigona postica (SP) was evaluated against Gram-positive and Gram-negative bacterial strains by agar well diffusion assays, minimum inhibitory concentration (MIC) assessment, construction of growth and viability curves and scanning electron microscopy (SEM). The interaction of the two honeys w",
+    "doi": "10.1038/srep21641",
+    "url": "https://doi.org/10.1038/srep21641",
+    "citacoes": 99,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/srep21641"
+   },
+   {
+    "titulo": "Evaluation of the Neotropical Stingless Bee Melipona quadrifasciata (Hymenoptera: Apidae) as Pollinator of Greenhouse Tomatoes",
+    "autores": [
+     "Mário César Laboissiérè Del Sarto",
+     "Rui Carlos Peruquetti",
+     "L. A. O. Campos"
+    ],
+    "revista": "Journal of Economic Entomology",
+    "data": "2005-04-01",
+    "ano": 2005,
+    "resumo": "The Neotropical stingless bee Melipona quadrifasciata Lepeletier was evaluated for pollinating tomatoes (variety Rodas; long-life hybrid) in greenhouses under plastic and with a hydroponic system and “organic concepts” in Minas Gerais State, Brazil. Flowers not pollinated did not set any fruit. Pollination by bees plus manual pollination did not differ from either bee or manual pollination. Maximum fruit diameter, fruit height, and roundness (quotient between maximum fruit diameter and fruit height) were not significantly different between treatments, but fruit visited by M. quadrifasciata had",
+    "doi": "10.1093/jee/98.2.260",
+    "url": "https://doi.org/10.1093/jee/98.2.260",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/jee/98.2.260"
+   },
+   {
+    "titulo": "Virgin queens in stingless bee (Apidae, Meliponinae) colonies: a review",
+    "autores": [
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Ronaldo Zucchi"
+    ],
+    "revista": "Apidologie",
+    "data": "1995-01-01",
+    "ano": 1995,
+    "resumo": "",
+    "doi": "10.1051/apido:19950305",
+    "url": "https://doi.org/10.1051/apido:19950305",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19950305"
+   },
+   {
+    "titulo": "Within-colony size variation of foragers and pollen load capacity in the stingless bee Melipona quadrifasciata anthidioides Lepeletier (Apidae, Hymenoptera)",
+    "autores": [
+     "Mauro Ramalho",
+     "Vera Lúcia Imperatriz-Fonseca",
+     "Tereza Cristina Giannini"
+    ],
+    "revista": "Apidologie",
+    "data": "1998-01-01",
+    "ano": 1998,
+    "resumo": "",
+    "doi": "10.1051/apido:19980302",
+    "url": "https://doi.org/10.1051/apido:19980302",
+    "citacoes": 96,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19980302"
+   },
+   {
+    "titulo": "Microorganisms associated with pollen, honey, and brood provisions in the nest of a stingless bee, Melipona fasciata",
+    "autores": [
+     "M. Gilliam",
+     "David Ward Roubik",
+     "Brenda J. Lorenz"
+    ],
+    "revista": "Apidologie",
+    "data": "1990-01-01",
+    "ano": 1990,
+    "resumo": "",
+    "doi": "10.1051/apido:19900201",
+    "url": "https://doi.org/10.1051/apido:19900201",
+    "citacoes": 94,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19900201"
+   },
+   {
+    "titulo": "Ambient Temperature Influences Australian Native Stingless Bee (Trigona carbonaria) Preference for Warm Nectar",
+    "autores": [
+     "Melanie Norgate",
+     "Skye Boyd‐Gerny",
+     "Vera Simonov",
+     "Marcello G. P. Rosa",
+     "Tim A. Heard",
+     "Adrian G. Dyer"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2010-08-09",
+    "ano": 2010,
+    "resumo": "The interaction between flowers and insect pollinators is an important aspect of the reproductive mechanisms of many plant species. Several laboratory and field studies indicate that raising flower temperature above ambient can be an advantage in attracting pollinators. Here we demonstrate that this preference for warmer flowers is, in fact, context-dependent. Using an Australian native bee as a model, we demonstrate for the first time a significant shift in behaviour when the ambient temperature reaches 34 degrees C, at which point bees prefer ambient temperature nectar over warmer nectar. We",
+    "doi": "10.1371/journal.pone.0012000",
+    "url": "https://doi.org/10.1371/journal.pone.0012000",
+    "citacoes": 90,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0012000"
+   },
+   {
+    "titulo": "The Production of Males in Queenright Colonies ofTrigona (Scaptotrigona) Postica",
+    "autores": [
+     "Darvin Beig"
+    ],
+    "revista": "Journal of Apicultural Research",
+    "data": "1972-01-01",
+    "ano": 1972,
+    "resumo": "SummaryWorkers and males of stingless bees (Meliponini) emerge from morphologically similar cells. Normally only one bee is reared in each brood cell, but in four Trigona postica colonies examined between September and February, 689 out of 2544 brood cells contained more than one egg. In these months the number of males is at a maximum.Nurse bees (workers) even in queenright colonies had developed ovaries and laid two distinct types of eggs: male-producing eggs (1.305 ± 0.33 mm long), and spherical eggs which served as food for the queen. The male eggs were laid in cells in which the queen had",
+    "doi": "10.1080/00218839.1972.11099697",
+    "url": "https://doi.org/10.1080/00218839.1972.11099697",
+    "citacoes": 89,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1080/00218839.1972.11099697"
+   },
+   {
+    "titulo": "Antibacterial Compounds from Propolis of Tetragonula laeviceps and Tetrigona melanoleuca (Hymenoptera: Apidae) from Thailand",
+    "autores": [
+     "Sirikarn Sanpa",
+     "Milena Popova",
+     "Vassya Stefanova Bankova",
+     "Tawee Tunkasiri",
+     "Sukum Eitssayeam",
+     "Panuwan Chantawannakul"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2015-05-18",
+    "ano": 2015,
+    "resumo": "This study investigated the chemical composition and antimicrobial activity of propolis collected from two stingless bee species Tetragonula laeviceps and Tetrigona melanoleuca (Hymenoptera: Apidae). Six xanthones, one triterpene and one lignane were isolated from Tetragonula laeviceps propolis. Triterpenes were the main constituents in T. melanoleuca propolis. The ethanol extract and isolated compounds from T. laeviceps propolis showed a higher antibacterial activity than those of T. melanoleuca propolis as the constituent α-mangostin exhibited the strongest activity. Xanthones were found in ",
+    "doi": "10.1371/journal.pone.0126886",
+    "url": "https://doi.org/10.1371/journal.pone.0126886",
+    "citacoes": 88,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0126886"
+   },
+   {
+    "titulo": "The evolution of polyandry by queens in social Hymenoptera: the significance of the timing of removal of diploid males",
+    "autores": [
+     "Francis L. W. Ratnieks"
+    ],
+    "revista": "Behavioral Ecology and Sociobiology",
+    "data": "1990-05-01",
+    "ano": 1990,
+    "resumo": "",
+    "doi": "10.1007/bf00171100",
+    "url": "https://doi.org/10.1007/bf00171100",
+    "citacoes": 88,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/bf00171100"
    }
   ],
   "Abelhas solitárias e ninhos-isca em ambiente urbano": [
@@ -4249,36 +4291,6 @@
     "key": "doi:10.1016/j.biocon.2009.12.003"
    },
    {
-    "titulo": "MEASURING BEE DIVERSITY IN DIFFERENT EUROPEAN HABITATS AND BIOGEOGRAPHICAL REGIONS",
-    "autores": [
-     "Catrin Westphal",
-     "Riccardo Bommarco",
-     "Gabriel Carré",
-     "Ellen Lamborn",
-     "Nicolas Morison",
-     "Theodora Petanidou",
-     "Simon Geoffrey Potts",
-     "Stuart P. M. Roberts",
-     "Hajnalka Szentgyörgyi",
-     "Thomas Tscheulin",
-     "Bernard E Vaissiere",
-     "Michał Woyciechowski",
-     "Jacobus Christiaan Biesmeijer",
-     "William E. Kunin",
-     "Josef Settele",
-     "Ingolf Steffan‐Dewenter"
-    ],
-    "revista": "Ecological Monographs",
-    "data": "2008-10-23",
-    "ano": 2008,
-    "resumo": "Bee pollinators are currently recorded with many different sampling methods. However, the relative performances of these methods have not been systematically evaluated and compared. In response to the strong need to record ongoing shifts in pollinator diversity and abundance, global and regional pollinator initiatives must adopt standardized sampling protocols when developing large‐scale and long‐term monitoring schemes. We systematically evaluated the performance of six sampling methods (observation plots, pan traps, standardized and variable transect walks, trap nests with reed internodes or",
-    "doi": "10.1890/07-1292.1",
-    "url": "https://doi.org/10.1890/07-1292.1",
-    "citacoes": 804,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/07-1292.1"
-   },
-   {
     "titulo": "Ecological and life-history traits predict bee species responses to environmental disturbances",
     "autores": [
      "Neal M. Williams",
@@ -4322,109 +4334,6 @@
     "key": "doi:10.1038/nature14414"
    },
    {
-    "titulo": "Bioindication using trap‐nesting bees and wasps and their natural enemies: community structure and interactions",
-    "autores": [
-     "Teja Tscharntke",
-     "Achim Gathmann",
-     "Ingolf Steffan‐Dewenter"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "1998-10-01",
-    "ano": 1998,
-    "resumo": "1. Results from four field studies show that communities of trap‐nesting bees and wasps and their natural enemies are promising bioindicators for ecological change or habitat quality. These small and easy‐to‐handle communities can be analysed with respect to (i) species richness and related parameters, and (ii) ecological functions or interactions. The communities comprise Hymenoptera (Apidae, Sphecidae, Eumenidae, Pompilidae) and natural enemies belonging to many insect taxa. Traps consisted of 150–200, 15–20‐cm long, reed internodes, put into tins or plastic tubes of 13–15 cm diameter; woode",
-    "doi": "10.1046/j.1365-2664.1998.355343.x",
-    "url": "https://doi.org/10.1046/j.1365-2664.1998.355343.x",
-    "citacoes": 438,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1365-2664.1998.355343.x"
-   },
-   {
-    "titulo": "Grazing Intensity and the Diversity of Grasshoppers, Butterflies, and Trap‐Nesting Bees and Wasps",
-    "autores": [
-     "Andreas Kruess",
-     "Teja Tscharntke"
-    ],
-    "revista": "Conservation Biology",
-    "data": "2002-12-01",
-    "ano": 2002,
-    "resumo": "Abstract: The maintenance of grasslands as distinct habitats depends on regular management, usually through grazing or mowing, but their species diversity is known to decline with increasing management intensity. The reduction of management intensity can be a useful tool for the long‐term conservation of the biological diversity of grasslands. We analyzed floral and faunal diversity on intensively and extensively (unintensively) grazed pastures and on 5‐ to 10‐year‐old ungrazed grasslands in northern Germany. Each of the three grassland habitats differing in grazing intensity was replicated si",
-    "doi": "10.1046/j.1523-1739.2002.01334.x",
-    "url": "https://doi.org/10.1046/j.1523-1739.2002.01334.x",
-    "citacoes": 423,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1523-1739.2002.01334.x"
-   },
-   {
-    "titulo": "RESOURCE DISTRIBUTIONS AMONG HABITATS DETERMINE SOLITARY BEE OFFSPRING PRODUCTION IN A MOSAIC LANDSCAPE",
-    "autores": [
-     "Neal M. Williams",
-     "Claire Kremen"
-    ],
-    "revista": "Ecological Applications",
-    "data": "2007-04-01",
-    "ano": 2007,
-    "resumo": "Within mosaic landscapes, many organisms depend on attributes of the environment that operate over scales ranging from a single habitat patch to the entire landscape. One such attribute is resource distribution. Organisms' reliance on resources from within a local patch vs. those found among habitats throughout the landscape will depend on local habitat quality, patch quality, and landscape composition. The ability of individuals to move among complementary habitat types to obtain various resources may be a critical mechanism underlying the dynamics of animal populations and ultimately the lev",
-    "doi": "10.1890/06-0269",
-    "url": "https://doi.org/10.1890/06-0269",
-    "citacoes": 389,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/06-0269"
-   },
-   {
-    "titulo": "Complex Responses Within A Desert Bee Guild (Hymenoptera: Apiformes) To Urban Habitat Fragmentation",
-    "autores": [
-     "James H. Cane",
-     "Robert L. Minckley",
-     "Linda J. Kervin",
-     "T’ai H. Roulston",
-     "Neal M. Williams"
-    ],
-    "revista": "Ecological Applications",
-    "data": "2006-04-01",
-    "ano": 2006,
-    "resumo": "Urbanization within the Tucson Basin of Arizona during the past 50+ years has fragmented the original desert scrub into patches of different sizes and ages. These remnant patches and the surrounding desert are dominated by Larrea tridentata (creosote bush), a long-lived shrub whose flowers are visited by > 120 native bee species across its range. Twenty-one of these bee species restrict their pollen foraging to L. tridentata. To evaluate the response of this bee fauna to fragmentation, we compared species incidence and abundance patterns for the bee guild visiting L. tridentata at 59 habitat f",
-    "doi": "10.1890/1051-0761(2006)016[0632:crwadb]2.0.co;2",
-    "url": "https://doi.org/10.1890/1051-0761(2006)016[0632:crwadb]2.0.co;2",
-    "citacoes": 388,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/1051-0761(2006)016[0632:crwadb]2.0.co;2"
-   },
-   {
-    "titulo": "Pollination of Coffea canephora in relation to local and regional agroforestry management",
-    "autores": [
-     "Alexandra‐Maria Klein",
-     "Ingolf Steffan‐Dewenter",
-     "Teja Tscharntke"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2003-09-26",
-    "ano": 2003,
-    "resumo": "Summary Pollination of crops depends on local agricultural management and the quality of adjacent habitats. Lowland coffee Coffea canephora, is an important tropical cash crop. Fruit set depends on cross‐pollination by bees, so inadequate pollination leads to reduced yield. In this study we analyse the relationship between bee pollinators, fruit set in coffee, and the local and regional agroforestry systems to identify the optimal conditions for pollinators. We analysed the abundance and species composition of coffee flower‐visiting bees in 15 agroforestry systems differing in distance to fore",
-    "doi": "10.1046/j.1365-2664.2003.00847.x",
-    "url": "https://doi.org/10.1046/j.1365-2664.2003.00847.x",
-    "citacoes": 370,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1365-2664.2003.00847.x"
-   },
-   {
-    "titulo": "Urban domestic gardens (II): experimental tests of methods for increasing biodiversity",
-    "autores": [
-     "Kevin J. Gaston",
-     "Richard M. Smith",
-     "Ken A. Thompson",
-     "Philip H. Warren"
-    ],
-    "revista": "Biodiversity and Conservation",
-    "data": "2005-02-01",
-    "ano": 2005,
-    "resumo": "",
-    "doi": "10.1007/s10531-004-6066-x",
-    "url": "https://doi.org/10.1007/s10531-004-6066-x",
-    "citacoes": 332,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1007/s10531-004-6066-x"
-   },
-   {
     "titulo": "Diverse pollinator communities enhance plant reproductive success",
     "autores": [
      "Matthias Albrecht",
@@ -4441,23 +4350,6 @@
     "citacoes": 330,
     "fonte": "OpenAlex",
     "key": "doi:10.1098/rspb.2012.1621"
-   },
-   {
-    "titulo": "Agricultural landscapes with organic crops support higher pollinator diversity",
-    "autores": [
-     "Andrea Holzschuh",
-     "Ingolf Steffan‐Dewenter",
-     "Teja Tscharntke"
-    ],
-    "revista": "Oikos",
-    "data": "2007-12-14",
-    "ano": 2007,
-    "resumo": "Pollinators are traditionally thought to perceive non‐flowering crop fields as hostile landscape matrix. In this study, we show that landscapes composed of higher proportions of organic crop fields support more bee species at greater abundances in fallow strips. An increase in organic cropping in the surrounding landscape from 5% to 20% enhanced bee species richness in fallow strips by 50%, density of solitary bees by 60% and bumble bee density by 150%. Bee species richness and bumble bee density responded strongest to organic cropping in landscape sectors with 500 m radius, solitary bee densi",
-    "doi": "10.1111/j.2007.0030-1299.16303.x",
-    "url": "https://doi.org/10.1111/j.2007.0030-1299.16303.x",
-    "citacoes": 330,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.2007.0030-1299.16303.x"
    },
    {
     "titulo": "How do landscape composition and configuration, organic farming and fallow strips affect the diversity of bees, wasps and their parasitoids?",
@@ -4477,58 +4369,6 @@
     "key": "doi:10.1111/j.1365-2656.2009.01642.x"
    },
    {
-    "titulo": "Effects of Land‐Use Intensity in Tropical Agroforestry Systems on Coffee Flower‐Visiting and Trap‐Nesting Bees and Wasps",
-    "autores": [
-     "Alexandra‐Maria Klein",
-     "Ingolf Steffan‐Dewenter",
-     "Damayanti Buchori",
-     "Teja Tscharntke"
-    ],
-    "revista": "Conservation Biology",
-    "data": "2002-08-01",
-    "ano": 2002,
-    "resumo": "Abstract: Tropical landscapes are dominated by agroecosystems, and most species that survive in forest remnants interact with these agroecosystems. The potential value of agroecosystems for aiding species survival is often ignored. Essential ecosystem services may suffer when functional groups such as pollinators and predators are affected by land use. We used agroforestry systems differing in land‐use intensity to examine flower‐visiting bees on coffee plants and the community structure of trap‐nesting bees and wasps and their natural enemies. The number and abundance of all species of coffee",
-    "doi": "10.1046/j.1523-1739.2002.00499.x",
-    "url": "https://doi.org/10.1046/j.1523-1739.2002.00499.x",
-    "citacoes": 320,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1046/j.1523-1739.2002.00499.x"
-   },
-   {
-    "titulo": "Floral Resource Utilization by Solitary Bees (Hymenoptera: Apoidea) and Exploitation of Their Stored Foods by Natural Enemies",
-    "autores": [
-     "William T. Wcislo",
-     "James H. Cane"
-    ],
-    "revista": "Annual Review of Entomology",
-    "data": "1996-01-01",
-    "ano": 1996,
-    "resumo": "Bees are phytophagous insects that exhibit recurrent ecological specializations related to factors generally different from those discussed for other phytophagous insects. Pollen specialists have undergone extensive radiations, and specialization is not always a derived state. Floral host associations are conserved in some bee lineages. In others, various species specialize on different host plants that are phenotypically similar in presenting predictably abundant floral resources. The nesting of solitary bees in localized areas influences the intensity of interactions with enemies and competi",
-    "doi": "10.1146/annurev.en.41.010196.001353",
-    "url": "https://doi.org/10.1146/annurev.en.41.010196.001353",
-    "citacoes": 319,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1146/annurev.en.41.010196.001353"
-   },
-   {
-    "titulo": "Food production vs. biodiversity: comparing organic and conventional agriculture",
-    "autores": [
-     "Doreen Gabriel",
-     "Steven M. Sait",
-     "William E. Kunin",
-     "Tim G. Benton"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2013-01-17",
-    "ano": 2013,
-    "resumo": "Summary A substantial proportion of the global land surface is used for agricultural production. Agricultural land serves multiple societal purposes; it provides food, fuel and fibre and also acts as habitat for organisms and supports the services they provide. Biodiversity conservation and food production need to be balanced: production needs to be sustainable, while conservation cannot be totally at the expense of crop yield. To identify the benefits (in terms of biodiversity conservation) and costs (in terms of reduction in yields) of agricultural management, we examined the relationship be",
-    "doi": "10.1111/1365-2664.12035",
-    "url": "https://doi.org/10.1111/1365-2664.12035",
-    "citacoes": 296,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/1365-2664.12035"
-   },
-   {
     "titulo": "Ecological impacts of invasive alien species on bees",
     "autores": [
      "Jane C. Stout",
@@ -4543,74 +4383,6 @@
     "citacoes": 289,
     "fonte": "OpenAlex",
     "key": "doi:10.1051/apido/2009023"
-   },
-   {
-    "titulo": "An examination of synchrony between insect emergence and flowering in Rocky Mountain meadows",
-    "autores": [
-     "Jessica R. K. Forrest",
-     "James D. Thomson"
-    ],
-    "revista": "Ecological Monographs",
-    "data": "2011-02-23",
-    "ano": 2011,
-    "resumo": "One possible effect of climate change is the generation of a mismatch in the seasonal timing of interacting organisms, owing to species-specific shifts in phenology. Despite concerns that plants and pollinators might be at risk of such decoupling, there have been few attempts to test this hypothesis using detailed phenological data on insect emergence and flowering at the same localities. In particular, there are few data sets on pollinator flight seasons that are independent of flowering phenology, because pollinators are typically collected at flowers. To address this problem, we established",
-    "doi": "10.1890/10-1885.1",
-    "url": "https://doi.org/10.1890/10-1885.1",
-    "citacoes": 288,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/10-1885.1"
-   },
-   {
-    "titulo": "EDITOR'S CHOICE: Enhancing gardens as habitats for flower‐visiting aerial insects (pollinators): should we plant native or exotic species?",
-    "autores": [
-     "Andrew Salisbury",
-     "James Armitage",
-     "Helen Bostock",
-     "JOE N. PERRY",
-     "Mark Tatchell",
-     "Ken A. Thompson"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2015-08-11",
-    "ano": 2015,
-    "resumo": "Summary Domestic gardens typically consist of a mixture of native and non‐native plants which support biodiversity and provide valuable ecosystem services, particularly in urban environments. Many gardeners wish to encourage biodiversity by choosing appropriate plant taxa. The value of native and non‐native plants in supporting animal biodiversity is, however, largely unknown. The relative value of native and non‐native garden plants to invertebrates was investigated in a replicated field experiment. Plots (deliberately akin to garden borders) were planted with one of three treatments, represe",
-    "doi": "10.1111/1365-2664.12499",
-    "url": "https://doi.org/10.1111/1365-2664.12499",
-    "citacoes": 283,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/1365-2664.12499"
-   },
-   {
-    "titulo": "Hymenoptera and biodiversity.",
-    "autores": [
-     "John La Salle",
-     "I. D. Gauld"
-    ],
-    "revista": "",
-    "data": "1993-01-01",
-    "ano": 1993,
-    "resumo": "Hymenoptera: their diversity, and their impact on the diversity of other organisms intraspecific biodiversity in Hymenoptera: implications for conservation and biological control threats to the diversity of solitary bees in a neotropical dry forest in Central America effects of increasing land utilization on species representation and diversity of aculeate wasps and bees in the semi-arid areas of southern Africa comparison of the arboreal ant mosaic in Ghana, Brazil, Papua New Guinea and Australia - its structure and influence on arthropod diversity bees, pollination systems, and plant diversi",
-    "doi": "",
-    "url": "https://openalex.org/W1559768901",
-    "citacoes": 271,
-    "fonte": "OpenAlex",
-    "key": "t:hymenoptera and biodiversity"
-   },
-   {
-    "titulo": "Native plants are the bee’s knees: local and landscape predictors of bee richness and abundance in backyard gardens",
-    "autores": [
-     "Gabriella L. Pardee",
-     "Stacy M. Philpott"
-    ],
-    "revista": "Urban Ecosystems",
-    "data": "2014-01-21",
-    "ano": 2014,
-    "resumo": "",
-    "doi": "10.1007/s11252-014-0349-0",
-    "url": "https://doi.org/10.1007/s11252-014-0349-0",
-    "citacoes": 265,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1007/s11252-014-0349-0"
    },
    {
     "titulo": "Plant Pollinator Networks along a Gradient of Urbanisation",
@@ -4629,25 +4401,6 @@
     "citacoes": 256,
     "fonte": "OpenAlex",
     "key": "doi:10.1371/journal.pone.0063421"
-   },
-   {
-    "titulo": "The Swiss agri‐environment scheme enhances pollinator diversity and plant reproductive success in nearby intensively managed farmland",
-    "autores": [
-     "Matthias Albrecht",
-     "Peter Duelli",
-     "CHRISTINE B. MÜLLER",
-     "David Kleijn",
-     "Bernhard Schmid"
-    ],
-    "revista": "Journal of Applied Ecology",
-    "data": "2007-04-19",
-    "ano": 2007,
-    "resumo": "Summary Agri‐environment schemes attempt to counteract the loss of biodiversity and associated ecosystem services such as pollination and natural pest control in agro‐ecosystems. However, only a few studies have evaluated whether these attempts are successful. We studied the effects of managing meadows according to the prescriptions of ecological compensation areas (ECA), the most widely adopted agri‐environment scheme in Switzerland, on both pollinator species richness and abundance, and the reproductive success of plants in nearby intensively managed meadows (IM). We established arrays of fo",
-    "doi": "10.1111/j.1365-2664.2007.01306.x",
-    "url": "https://doi.org/10.1111/j.1365-2664.2007.01306.x",
-    "citacoes": 255,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1111/j.1365-2664.2007.01306.x"
    },
    {
     "titulo": "Resource overlap and possible competition between honey bees and wild bees in central Europe",
@@ -4684,38 +4437,6 @@
     "key": "doi:10.1007/s00442-012-2515-5"
    },
    {
-    "titulo": "DO RESOURCES OR NATURAL ENEMIES DRIVE BEE POPULATION DYNAMICS IN FRAGMENTED HABITATS",
-    "autores": [
-     "Ingolf Steffan‐Dewenter",
-     "Susanne Schiele"
-    ],
-    "revista": "Ecology",
-    "data": "2008-05-01",
-    "ano": 2008,
-    "resumo": "The relative importance of bottom-up or top-down forces has been mainly studied for herbivores but rarely for pollinators. Habitat fragmentation might change driving forces of population dynamics by reducing the area of resource-providing habitats, disrupting habitat connectivity, and affecting natural enemies more than their host species. We studied spatial and temporal population dynamics of the solitary bee Osmia rufa (Hymenoptera: Megachilidae) in 30 fragmented orchard meadows ranging in size from 0.08 to 5.8 ha in an agricultural landscape in central Germany. From 1998 to 2003, we monitor",
-    "doi": "10.1890/06-1323.1",
-    "url": "https://doi.org/10.1890/06-1323.1",
-    "citacoes": 238,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/06-1323.1"
-   },
-   {
-    "titulo": "Phylogenetic relationships of honey bees (Hymenoptera:Apinae:Apini) inferred from nuclear and mitochondrial DNA sequence data",
-    "autores": [
-     "Maria Cristina Arias",
-     "Walter S. Sheppard"
-    ],
-    "revista": "Molecular Phylogenetics and Evolution",
-    "data": "2005-04-20",
-    "ano": 2005,
-    "resumo": "",
-    "doi": "10.1016/j.ympev.2005.02.017",
-    "url": "https://doi.org/10.1016/j.ympev.2005.02.017",
-    "citacoes": 235,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.ympev.2005.02.017"
-   },
-   {
     "titulo": "Long foraging distances impose high costs on offspring production in solitary bees",
     "autores": [
      "Antonia Zurbuchen",
@@ -4734,32 +4455,6 @@
     "citacoes": 231,
     "fonte": "OpenAlex",
     "key": "doi:10.1111/j.1365-2656.2010.01675.x"
-   },
-   {
-    "titulo": "Global trends in the number and diversity of managed pollinator species",
-    "autores": [
-     "Julia Osterman",
-     "Marcelo A. Aizen",
-     "Jacobus Christiaan Biesmeijer",
-     "Jordi Bosch",
-     "Brad G. Howlett",
-     "David W. Inouye",
-     "Chuleui Jung",
-     "Dino J. Martins",
-     "Rodrigo G. Medel",
-     "Anton Pauw",
-     "Colleen Lynda Seymour",
-     "Robert J. Paxton"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "data": "2021-09-11",
-    "ano": 2021,
-    "resumo": "Cultivation of pollinator-dependent crops has expanded globally, increasing our reliance on insect pollination. This essential ecosystem service is provided by a wide range of managed and wild pollinators whose abundance and diversity are thought to be in decline, threatening sustainable food production. The Western honey bee (Apis mellifera) is amongst the best-monitored insects but the state of other managed pollinators is less well known. Here, we review the status and trends of all managed pollinators based on publicly accessible databases and the published literature. We found that, on a ",
-    "doi": "10.1016/j.agee.2021.107653",
-    "url": "https://doi.org/10.1016/j.agee.2021.107653",
-    "citacoes": 227,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.agee.2021.107653"
    },
    {
     "titulo": "Pesticide Exposure Assessment Paradigm for Solitary Bees",
@@ -4784,74 +4479,6 @@
     "citacoes": 225,
     "fonte": "OpenAlex",
     "key": "doi:10.1093/ee/nvy105"
-   },
-   {
-    "titulo": "Soils of ground-nesting bees (Hymenoptera: Apoidea): texture, moisture, cell depth and climate",
-    "autores": [
-     "James H. Cane"
-    ],
-    "revista": "Digital Commons - USU (Utah State University)",
-    "data": "1991-10-01",
-    "ano": 1991,
-    "resumo": "Nesting soils of 32 species of fossorial bees were sampled from diverse habitats across the continental United States. These soils classified texturally as sands or loams. Broadly diverse values for bee size, cell depth, soil moisture and texture, and average annual precipitation and temperature were represented in the sample, but each varied independently from the others, and was not predictable from a bee species' familial or tribal affiliation. species secreting markedly different Dufour's gland lipids, which are used to waterproof the walls of their subterranean nest cells, could be found ",
-    "doi": "",
-    "url": "https://openalex.org/W438512627",
-    "citacoes": 209,
-    "fonte": "OpenAlex",
-    "key": "t:soils of ground nesting bees hymenoptera apoidea texture moisture cell depth and climate"
-   },
-   {
-    "titulo": "The relative performance of sampling methods for native bees: an empirical test and review of the literature",
-    "autores": [
-     "Kit Stasia Prendergast",
-     "Myles H. M. Menz",
-     "Kingsley Wayne Dixon",
-     "Philip W. Bateman"
-    ],
-    "revista": "Ecosphere",
-    "data": "2020-05-01",
-    "ano": 2020,
-    "resumo": "Abstract Many bee species are declining globally, but to detect trends and monitor bee assemblages, robust sampling methods are required. Numerous sampling methods are used, but a critical review of their relative effectiveness is lacking. Moreover, evidence suggests the relative effectiveness of sampling methods depends on habitat, yet efficacy in urban areas has yet to be evaluated. This study compared the bee community documented using observational records, targeted netting, mobile gardens, pan traps (blue and yellow), vane traps (blue and yellow), and trap‐nests. The comparative surveys o",
-    "doi": "10.1002/ecs2.3076",
-    "url": "https://doi.org/10.1002/ecs2.3076",
-    "citacoes": 208,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1002/ecs2.3076"
-   },
-   {
-    "titulo": "ADVANCES IN POLLINATION ECOLOGY FROM TROPICAL PLANTATION CROPS",
-    "autores": [
-     "Alexandra‐Maria Klein",
-     "Saul Alan Cunningham",
-     "Merijn M. Bos",
-     "Ingolf Steffan‐Dewenter"
-    ],
-    "revista": "Ecology",
-    "data": "2008-04-01",
-    "ano": 2008,
-    "resumo": "Although ecologists traditionally focus on natural ecosystems, there is growing awareness that mixed landscapes of managed and unmanaged systems provide a research environment for understanding basic ecological relationships on a large scale. Here, we show how tropical agroforestry systems can be used to develop ideas about the mechanisms that influence species diversity and subsequent biotic interactions at different spatial scales. Our focus is on tropical plantation crops, mainly coffee and cacao, and their pollinators, which are of basic ecological interest as partners in an important mutu",
-    "doi": "10.1890/07-0088.1",
-    "url": "https://doi.org/10.1890/07-0088.1",
-    "citacoes": 197,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/07-0088.1"
-   },
-   {
-    "titulo": "DIVERSITY, ECOSYSTEM FUNCTION, AND STABILITY OF PARASITOID–HOST INTERACTIONS ACROSS A TROPICAL HABITAT GRADIENT",
-    "autores": [
-     "Jason M. Tylianakis",
-     "Teja Tscharntke",
-     "Alexandra‐Maria Klein"
-    ],
-    "revista": "Ecology",
-    "data": "2006-12-01",
-    "ano": 2006,
-    "resumo": "Global biodiversity decline has prompted great interest in the effects of habitat modification and diversity on the functioning and stability of ecosystem processes. However, the applicability of previous modeled or mesocosm community studies to real diverse communities in different habitats remains ambiguous. We exposed standardized nesting resources for naturally occurring communities of cavity-nesting bees and wasps and their parasitoids in coastal Ecuador, to test the effects of host and parasitoid diversity on an ecosystem function (parasitism rates) and temporal variability in this funct",
-    "doi": "10.1890/0012-9658(2006)87[3047:defaso]2.0.co;2",
-    "url": "https://doi.org/10.1890/0012-9658(2006)87[3047:defaso]2.0.co;2",
-    "citacoes": 189,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1890/0012-9658(2006)87[3047:defaso]2.0.co;2"
    },
    {
     "titulo": "Landscape context affects trap‐nesting bees, wasps, and their natural enemies",
@@ -4885,40 +4512,6 @@
     "key": "doi:10.1371/journal.pone.0122126"
    },
    {
-    "titulo": "Behavior and Phenology of a Specialist Bee (Dieunomia) and Sunflower (Helianthus) Pollen Availability",
-    "autores": [
-     "Robert L. Minckley",
-     "William T. Wcislo",
-     "Douglas Yanega",
-     "Stephen L. Buchmann"
-    ],
-    "revista": "Ecology",
-    "data": "1994-07-01",
-    "ano": 1994,
-    "resumo": "The phenological relationships between nesting behavior of a specialist, solitary bee, Dieunomia triangulifera, and the flowering of its primary pollen source, Helianthus annuus, were studied for 3 yr at a site in northeastern Kansas, which contained between 50 000 and >150 000 nests. Activity patterns of D. triangulifera are closely synchronized with pollen availability on nearby sunflower plants in three ways: (1) each year, D. triangulifera became active within days of the beginning of the local sunflower bloom, and the emergence schedule of the entire population at the nest site was timed ",
-    "doi": "10.2307/1937464",
-    "url": "https://doi.org/10.2307/1937464",
-    "citacoes": 180,
-    "fonte": "OpenAlex",
-    "key": "doi:10.2307/1937464"
-   },
-   {
-    "titulo": "Beyond flowers: including non-floral resources in bee conservation schemes",
-    "autores": [
-     "Fabrice Réquier",
-     "Sara D. Leonhardt"
-    ],
-    "revista": "Journal of Insect Conservation",
-    "data": "2020-01-02",
-    "ano": 2020,
-    "resumo": "",
-    "doi": "10.1007/s10841-019-00206-1",
-    "url": "https://doi.org/10.1007/s10841-019-00206-1",
-    "citacoes": 166,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1007/s10841-019-00206-1"
-   },
-   {
     "titulo": "Rain forest promotes trophic interactions and diversity of trap‐nesting Hymenoptera in adjacent agroforestry",
     "autores": [
      "Alexandra‐Maria Klein",
@@ -4934,28 +4527,6 @@
     "citacoes": 166,
     "fonte": "OpenAlex",
     "key": "doi:10.1111/j.1365-2656.2006.01042.x"
-   },
-   {
-    "titulo": "Crop flower visitation by honeybees, bumblebees and solitary bees: Behavioural differences and diversity responses to landscape",
-    "autores": [
-     "Ben Alex Woodcock",
-     "Mike Edwards",
-     "John W. Redhead",
-     "William R. Meek",
-     "Peter M. Nuttall",
-     "Steven J. Falk",
-     "M. Nowakowski",
-     "Richard F. Pywell"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "data": "2013-04-18",
-    "ano": 2013,
-    "resumo": "",
-    "doi": "10.1016/j.agee.2013.03.005",
-    "url": "https://doi.org/10.1016/j.agee.2013.03.005",
-    "citacoes": 164,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.agee.2013.03.005"
    },
    {
     "titulo": "The potential conservation value of unmowed powerline strips for native bees",
@@ -4991,28 +4562,6 @@
     "key": "doi:10.1016/j.biocon.2011.07.019"
    },
    {
-    "titulo": "Spill-over of pest control and pollination services into arable crops",
-    "autores": [
-     "Ben Alex Woodcock",
-     "James M. Bullock",
-     "Morag E. McCracken",
-     "Roselle E. Chapman",
-     "S.L Ball",
-     "Mike Edwards",
-     "M. Nowakowski",
-     "Richard F. Pywell"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "data": "2016-06-29",
-    "ano": 2016,
-    "resumo": "",
-    "doi": "10.1016/j.agee.2016.06.023",
-    "url": "https://doi.org/10.1016/j.agee.2016.06.023",
-    "citacoes": 161,
-    "fonte": "OpenAlex",
-    "key": "doi:10.1016/j.agee.2016.06.023"
-   },
-   {
     "titulo": "The effects of urbanization on bee communities depends on floral resource availability and bee functional traits",
     "autores": [
      "Caleb J. Wilson",
@@ -5045,20 +4594,482 @@
     "key": "doi:10.1007/s00265-005-0134-4"
    },
    {
-    "titulo": "The Solitary Bees: Biology, Evolution, Conservation",
+    "titulo": "Wild pollinator activity negatively related to honey bee colony densities in urban context",
     "autores": [
-     "Elsa Youngsteadt"
+     "Lise Ropars",
+     "Isabelle Dajoz",
+     "Colin Fontaine",
+     "Audrey Muratet",
+     "Benoît Geslin"
     ],
-    "revista": "American Entomologist",
-    "data": "2020-01-01",
-    "ano": 2020,
-    "resumo": "As a graduate student working on mutualisms involving ants, I made it a project to read The Ants, the massive, definitive synthesis of formicid biology by Bert Hölldobler and Edward O. Wilson. I read a couple of pages every day at breakfast, and encountered hundreds of remarkable ideas and details I never would have known to search for. I heartily recommend a similar approach to The Solitary Bees. With 58 pages of references dated from 1745 to 2019, this book is an exhaustive and well-indexed manual of solitary bee biology, prepared by authors who are respected experts in the field. Its readab",
-    "doi": "10.1093/ae/tmaa014",
-    "url": "https://doi.org/10.1093/ae/tmaa014",
-    "citacoes": 155,
+    "revista": "PLoS ONE",
+    "data": "2019-09-12",
+    "ano": 2019,
+    "resumo": "As pollinator decline is increasingly reported in natural and agricultural environments, cities are perceived as shelters for pollinators because of low pesticide exposure and high floral diversity throughout the year. This has led to the development of environmental policies supporting pollinators in urban areas. However, policies are often restricted to the promotion of honey bee colony installations, which resulted in a strong increase in apiary numbers in cities. Recently, competition for floral resources between wild pollinators and honey bees has been highlighted in semi-natural contexts",
+    "doi": "10.1371/journal.pone.0222316",
+    "url": "https://doi.org/10.1371/journal.pone.0222316",
+    "citacoes": 149,
     "fonte": "OpenAlex",
-    "key": "doi:10.1093/ae/tmaa014"
+    "key": "doi:10.1371/journal.pone.0222316"
+   },
+   {
+    "titulo": "Landscape elements as potential barriers and corridors for bees, wasps and parasitoids",
+    "autores": [
+     "Kristin M. Krewenka",
+     "Andrea Holzschuh",
+     "Teja Tscharntke",
+     "Carsten F. Dormann"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2011-04-18",
+    "ano": 2011,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2011.03.014",
+    "url": "https://doi.org/10.1016/j.biocon.2011.03.014",
+    "citacoes": 149,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2011.03.014"
+   },
+   {
+    "titulo": "Landscape composition and configuration differently affect trap-nesting bees, wasps and their antagonists",
+    "autores": [
+     "Juliane Steckel",
+     "Catrin Westphal",
+     "Marcell Karl Peters",
+     "Michaela Bellach",
+     "Christoph Rothenwoehrer",
+     "Stefan Erasmi",
+     "Christoph Scherber",
+     "Teja Tscharntke",
+     "Ingolf Steffan‐Dewenter"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2014-03-09",
+    "ano": 2014,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2014.02.015",
+    "url": "https://doi.org/10.1016/j.biocon.2014.02.015",
+    "citacoes": 145,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2014.02.015"
+   },
+   {
+    "titulo": "Landscape and Local Correlates of Bee Abundance and Species Richness in Urban Gardens",
+    "autores": [
+     "Robyn D. Quistberg",
+     "Peter Bichier",
+     "Stacy M. Philpott"
+    ],
+    "revista": "Environmental Entomology",
+    "data": "2016-03-31",
+    "ano": 2016,
+    "resumo": "Urban gardens may preserve biodiversity as urban population densities increase, but this strongly depends on the characteristics of the gardens and the landscapes in which they are embedded. We investigated whether local and landscape characteristics are important correlates of bee (Hymenoptera: Apiformes) abundance and species richness in urban community gardens. We worked in 19 gardens in the California central coast and sampled bees with aerial nets and pan traps. We measured local characteristics (i.e., vegetation and ground cover) and used the USGS National Land Cover Database to classify",
+    "doi": "10.1093/ee/nvw025",
+    "url": "https://doi.org/10.1093/ee/nvw025",
+    "citacoes": 143,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/ee/nvw025"
+   },
+   {
+    "titulo": "Sown flower strips in southern Sweden increase abundances of wild bees and hoverflies in the wider landscape",
+    "autores": [
+     "Annelie M. Jönsson",
+     "Johan Ekroos",
+     "Juliana Dänhardt",
+     "Georg K.S. Andersson",
+     "Ola Olsson",
+     "Henrik G. Smith"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2015-01-24",
+    "ano": 2015,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2014.12.027",
+    "url": "https://doi.org/10.1016/j.biocon.2014.12.027",
+    "citacoes": 135,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2014.12.027"
+   },
+   {
+    "titulo": "Impacts of coffee agroforestry management on tropical bee communities",
+    "autores": [
+     "Shalene Jha",
+     "John H. Vandermeer"
+    ],
+    "revista": "Biological Conservation",
+    "data": "2010-04-12",
+    "ano": 2010,
+    "resumo": "",
+    "doi": "10.1016/j.biocon.2010.03.017",
+    "url": "https://doi.org/10.1016/j.biocon.2010.03.017",
+    "citacoes": 132,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.biocon.2010.03.017"
+   },
+   {
+    "titulo": "Food availability affects Osmia pumila (Hymenoptera: Megachilidae) foraging, reproduction, and brood parasitism",
+    "autores": [
+     "Karen Goodell"
+    ],
+    "revista": "Oecologia",
+    "data": "2003-03-01",
+    "ano": 2003,
+    "resumo": "",
+    "doi": "10.1007/s00442-002-1159-2",
+    "url": "https://doi.org/10.1007/s00442-002-1159-2",
+    "citacoes": 126,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00442-002-1159-2"
+   },
+   {
+    "titulo": "Cavity-nest boxes for solitary bees: a century of design and research",
+    "autores": [
+     "James Scott MacIvor"
+    ],
+    "revista": "Apidologie",
+    "data": "2016-10-31",
+    "ano": 2016,
+    "resumo": "",
+    "doi": "10.1007/s13592-016-0477-z",
+    "url": "https://doi.org/10.1007/s13592-016-0477-z",
+    "citacoes": 121,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s13592-016-0477-z"
+   },
+   {
+    "titulo": "Multitrophic effects of experimental changes in plant diversity on cavity-nesting bees, wasps, and their parasitoids",
+    "autores": [
+     "Anne Ebeling",
+     "Alexandra‐Maria Klein",
+     "Wolfgang W. Weisser",
+     "Teja Tscharntke"
+    ],
+    "revista": "Oecologia",
+    "data": "2011-11-25",
+    "ano": 2011,
+    "resumo": "",
+    "doi": "10.1007/s00442-011-2205-8",
+    "url": "https://doi.org/10.1007/s00442-011-2205-8",
+    "citacoes": 119,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00442-011-2205-8"
+   },
+   {
+    "titulo": "Assessment of risk to hoary squash bees (Peponapis pruinosa) and other ground-nesting bees from systemic insecticides in agricultural soil",
+    "autores": [
+     "D. Susan Willis Chan",
+     "Ryan S. Prosser",
+     "José Luis Rodríguez‐Gil",
+     "Nigel E. Raıne"
+    ],
+    "revista": "Scientific Reports",
+    "data": "2019-08-14",
+    "ano": 2019,
+    "resumo": "Abstract Using the hoary squash bee ( Peponapis pruinosa ) as a model, we provide the first probabilistic risk assessment of exposure to systemic insecticides in soil for ground-nesting bees. To assess risk in acute and chronic exposure scenarios in Cucurbita and field crops, concentrations of clothianidin, thiamethoxam and imidacloprid (neonicotinoids) and chlorantraniliprole (anthranilic diamide) in cropped soil were plotted to produce an environmental exposure distribution for each insecticide. The probability of exceedance of several exposure endpoints (LC 50 s) was compared to an acceptab",
+    "doi": "10.1038/s41598-019-47805-1",
+    "url": "https://doi.org/10.1038/s41598-019-47805-1",
+    "citacoes": 117,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/s41598-019-47805-1"
+   },
+   {
+    "titulo": "Population decline in a ground-nesting solitary squash bee (Eucera pruinosa) following exposure to a neonicotinoid insecticide treated crop (Cucurbita pepo)",
+    "autores": [
+     "D. Susan Willis Chan",
+     "Nigel E. Raıne"
+    ],
+    "revista": "Scientific Reports",
+    "data": "2021-02-19",
+    "ano": 2021,
+    "resumo": "Insect pollinators are threatened by multiple environmental stressors, including pesticide exposure. Despite being important pollinators, solitary ground-nesting bees are inadequately represented by pesticide risk assessments reliant almost exclusively on honeybee ecotoxicology. Here we evaluate the effects of realistic exposure via squash crops treated with systemic insecticides (Admire-imidacloprid soil application, FarMore FI400-thiamethoxam seed-coating, or Coragen-chlorantraniliprole foliar spray) for a ground-nesting bee species (Hoary squash bee, Eucera pruinosa) in a 3-year semi-field ",
+    "doi": "10.1038/s41598-021-83341-7",
+    "url": "https://doi.org/10.1038/s41598-021-83341-7",
+    "citacoes": 115,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/s41598-021-83341-7"
+   },
+   {
+    "titulo": "Foraging distances in six species of solitary bees with body lengths of 6 to 15 mm, inferred from individual tagging, suggest 150 m-rule-of-thumb for flower strip distances",
+    "autores": [
+     "Michaela M. Hofmann",
+     "Andreas Fleischmann",
+     "Susanne S. Renner"
+    ],
+    "revista": "Journal of Hymenoptera Research",
+    "data": "2020-06-29",
+    "ano": 2020,
+    "resumo": "Bees require suitably close foraging and nesting sites to minimize travel time and energy expenditure for brood provisioning. Knowing foraging distances in persistent (‘healthy’) populations is therefore crucial for assessing harmful levels of habitat fragmentation. For small bees, such distances are poorly known because of the difficulty of individual tagging and problems with mark-recapture approaches. Using apiarist’s number tags and colour codes, we marked 2689 males and females of four oligolectic and two polylectic species of Osmiini bees (Megachilidae, genera Chelostoma, Heriades, Hopli",
+    "doi": "10.3897/jhr.77.51182",
+    "url": "https://doi.org/10.3897/jhr.77.51182",
+    "citacoes": 114,
+    "fonte": "OpenAlex",
+    "key": "doi:10.3897/jhr.77.51182"
+   },
+   {
+    "titulo": "Effects of Fungicide and Adjuvant Sprays on Nesting Behavior in Two Managed Solitary Bees, Osmia lignaria and Megachile rotundata",
+    "autores": [
+     "Derek R. Artz",
+     "Theresa L. Pitts‐Singer"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2015-08-14",
+    "ano": 2015,
+    "resumo": "There is a growing body of empirical evidence showing that wild and managed bees are negatively impacted by various pesticides that are applied in agroecosystems around the world. The lethal and sublethal effects of two widely used fungicides and one adjuvant were assessed in cage studies in California on blue orchard bees, Osmia lignaria, and in cage studies in Utah on alfalfa leafcutting bees, Megachile rotundata. The fungicides tested were Rovral 4F (iprodione) and Pristine (mixture of pyraclostrobin + boscalid), and the adjuvant tested was N-90, a non-ionic wetting agent (90% polyethoxylat",
+    "doi": "10.1371/journal.pone.0135688",
+    "url": "https://doi.org/10.1371/journal.pone.0135688",
+    "citacoes": 109,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0135688"
+   },
+   {
+    "titulo": "Foraging trip duration and density of megachilid bees, eumenid wasps and pompilid wasps in tropical agroforestry systems",
+    "autores": [
+     "Alexandra‐Maria Klein",
+     "Ingolf Steffan‐Dewenter",
+     "Teja Tscharntke"
+    ],
+    "revista": "Journal of Animal Ecology",
+    "data": "2004-04-16",
+    "ano": 2004,
+    "resumo": "Summary Most animals have to bridge some distances in space and time to provide all resources necessary for survival. Little is known about how the local and regional management of tropical agroforestry systems, differing in the availability of food resources and suitable nesting sites, determine foraging trip duration and density of bees and wasps (Hymenoptera Aculeata). In this study, foraging trip duration and brood‐cell density (in trap nests exposed for a 15‐month period) were analysed for three species, which represent three guilds in 24 agroforestry systems in Central Sulawesi (Indonesi",
+    "doi": "10.1111/j.0021-8790.2004.00826.x",
+    "url": "https://doi.org/10.1111/j.0021-8790.2004.00826.x",
+    "citacoes": 107,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1111/j.0021-8790.2004.00826.x"
+   },
+   {
+    "titulo": "Activity patterns of females of the solitary bee Anthophora plumipes in relation to temperature, nectar supplies and body size",
+    "autores": [
+     "Graham N. Stone"
+    ],
+    "revista": "Ecological Entomology",
+    "data": "1994-05-01",
+    "ano": 1994,
+    "resumo": "Abstract. Patterns of activity at a large nesting aggregation and at foraging sites are described for females of the solitary bee Anthophora plumipes (Pallas). Changes in the quality and quantity of the resource collected by females provisioning cells are related to variation in female body mass and microclimate. Activity at the nest site demonstrated relationships with aspects of the thermal environment experienced by A.plumipes. Measures of temperature showing significant relationships differed for females in different stages in the nesting cycle exhibiting characteristically different behav",
+    "doi": "10.1111/j.1365-2311.1994.tb00408.x",
+    "url": "https://doi.org/10.1111/j.1365-2311.1994.tb00408.x",
+    "citacoes": 106,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1111/j.1365-2311.1994.tb00408.x"
+   },
+   {
+    "titulo": "Combined exposure to sublethal concentrations of an insecticide and a fungicide affect feeding, ovary development and longevity in a solitary bee",
+    "autores": [
+     "Fabio Sgolastra",
+     "Xavier Arnán",
+     "Riccardo Cabbri",
+     "Gloria Isani",
+     "Piotr Mędrzycki",
+     "Dariusz Teper",
+     "Jordi Bosch"
+    ],
+    "revista": "Proceedings of the Royal Society B Biological Sciences",
+    "data": "2018-08-22",
+    "ano": 2018,
+    "resumo": "Pollinators in agroecosystems are often exposed to pesticide mixtures. Even at low concentrations, the effects of these mixtures on bee populations are difficult to predict due to potential synergistic interactions. In this paper, we orally exposed newly emerged females of the solitary bee Osmia bicornis to environmentally realistic levels of clothianidin (neonicotinoid insecticide) and propiconazole (fungicide), singly and in combination. The amount of feeding solution consumed was highest in bees exposed to the neonicotinoid, and lowest in bees exposed to the pesticide mixture. Ovary maturat",
+    "doi": "10.1098/rspb.2018.0887",
+    "url": "https://doi.org/10.1098/rspb.2018.0887",
+    "citacoes": 104,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1098/rspb.2018.0887"
+   },
+   {
+    "titulo": "Chronic contact with realistic soil concentrations of imidacloprid affects the mass, immature development speed, and adult longevity of solitary bees",
+    "autores": [
+     "Nicholas L. Anderson",
+     "Alexandra Harmon‐Threatt"
+    ],
+    "revista": "Scientific Reports",
+    "data": "2019-03-06",
+    "ano": 2019,
+    "resumo": "The non-target effects of pesticides are an area of growing concern, particularly for ecologically and economically important organisms such as bees. Much of the previous research on the effects of neonicotinoids, a class of insecticide that has gained attention for non-target effects, on bees focused on the consumption of contaminated food resources by a limited number of eusocial species. However, neonicotinoids are known to accumulate and persist in soils at concentrations 2 to 60 times greater than in food resources, and may represent an important route of exposure for diverse and ecologic",
+    "doi": "10.1038/s41598-019-40031-9",
+    "url": "https://doi.org/10.1038/s41598-019-40031-9",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1038/s41598-019-40031-9"
+   },
+   {
+    "titulo": "Routes of Pesticide Exposure in Solitary, Cavity-Nesting Bees",
+    "autores": [
+     "Andi M Kopit",
+     "Theresa L. Pitts‐Singer"
+    ],
+    "revista": "Environmental Entomology",
+    "data": "2018-03-30",
+    "ano": 2018,
+    "resumo": "Declines of pollinator health and their populations continue to be commercial and ecological concerns. Agricultural practices, such as the use of agrochemicals, are among factors attributed to honey bee (Apis mellifera L. (Hymenoptera: Apidae)) population losses and are also known to have negative effects on populations of managed non-Apis pollinators. Although pesticide registration routinely requires evaluation of impacts on honey bees, studies of this social species may not reveal important pesticide exposure routes where managed, solitary bees are commonly used. Studies of solitary bees of",
+    "doi": "10.1093/ee/nvy034",
+    "url": "https://doi.org/10.1093/ee/nvy034",
+    "citacoes": 97,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/ee/nvy034"
+   },
+   {
+    "titulo": "Provisioning behavior and the estimation of investment ratios in a solitary bee, Calliopsis (Hypomacrotera) persimilis (Cockerell) (Hymenoptera: Andrenidae)",
+    "autores": [
+     "Bryan N. Danforth"
+    ],
+    "revista": "Behavioral Ecology and Sociobiology",
+    "data": "1990-09-01",
+    "ano": 1990,
+    "resumo": "",
+    "doi": "10.1007/bf00180299",
+    "url": "https://doi.org/10.1007/bf00180299",
+    "citacoes": 89,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/bf00180299"
+   },
+   {
+    "titulo": "The importance of landscape and spatial structure for hymenopteran‐based food webs in an agro‐ecosystem",
+    "autores": [
+     "Yvonne Fabian",
+     "Nadine Sandau",
+     "Odile T. Bruggisser",
+     "Alex Aebi",
+     "Patrik Kehrli",
+     "Rudolf P. Rohr",
+     "Russell E. Naisbit",
+     "Louis‐Félix Bersier"
+    ],
+    "revista": "Journal of Animal Ecology",
+    "data": "2013-07-17",
+    "ano": 2013,
+    "resumo": "1. Understanding the environmental factors that structure biodiversity and food webs among communities is central to assess and mitigate the impact of landscape changes. 2. Wildflower strips are ecological compensation areas established in farmland to increase pollination services and biological control of crop pests and to conserve insect diversity. They are arranged in networks in order to favour high species richness and abundance of the fauna. 3. We describe results from experimental wildflower strips in a fragmented agricultural landscape, comparing the importance of landscape, of spatial",
+    "doi": "10.1111/1365-2656.12103",
+    "url": "https://doi.org/10.1111/1365-2656.12103",
+    "citacoes": 88,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1111/1365-2656.12103"
+   },
+   {
+    "titulo": "Nest site preference and success in a gregarious, ground‐nesting bee Dieunomia triangulifera",
+    "autores": [
+     "Clare T. Wuellner"
+    ],
+    "revista": "Ecological Entomology",
+    "data": "1999-11-01",
+    "ano": 1999,
+    "resumo": "Summary 1. The characteristics of preferred nest sites of the solitary bee Dieunomia triangulifera , which nests gregariously in alluvial soil, were investigated. Nest presence was used as an indication of preference. In those cases where nests were more than a few days old, therefore, this study also investigated nest success. 2. Independent variables tested were soil surface moisture, presence of nesting conspecifics, smooth vs. irregular soil surface, distance to visual landmarks, percentage of vegetation cover, soil compaction, vehicular traffic, soil surface temperature, and light intensi",
+    "doi": "10.1046/j.1365-2311.1999.00215.x",
+    "url": "https://doi.org/10.1046/j.1365-2311.1999.00215.x",
+    "citacoes": 88,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1046/j.1365-2311.1999.00215.x"
+   },
+   {
+    "titulo": "Production of undersized offspring in a solitary bee",
+    "autores": [
+     "Jordi Bosch"
+    ],
+    "revista": "Animal Behaviour",
+    "data": "2007-10-24",
+    "ano": 2007,
+    "resumo": "",
+    "doi": "10.1016/j.anbehav.2007.06.018",
+    "url": "https://doi.org/10.1016/j.anbehav.2007.06.018",
+    "citacoes": 87,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1016/j.anbehav.2007.06.018"
+   },
+   {
+    "titulo": "Conditional sex allocation in the Red Mason bee, Osmia rufa",
+    "autores": [
+     "Karsten Seidelmann",
+     "Karin Ulbrich",
+     "N. Mielenz"
+    ],
+    "revista": "Behavioral Ecology and Sociobiology",
+    "data": "2009-09-17",
+    "ano": 2009,
+    "resumo": "",
+    "doi": "10.1007/s00265-009-0850-2",
+    "url": "https://doi.org/10.1007/s00265-009-0850-2",
+    "citacoes": 85,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s00265-009-0850-2"
+   },
+   {
+    "titulo": "Post-mating odor in females of the solitary bee, Andrena nigroaenea (Apoidea, Andrenidae), inhibits male mating behavior",
+    "autores": [
+     "Florian P. Schiestl",
+     "Manfred Ayasse"
+    ],
+    "revista": "Behavioral Ecology and Sociobiology",
+    "data": "2000-09-12",
+    "ano": 2000,
+    "resumo": "",
+    "doi": "10.1007/s002650000241",
+    "url": "https://doi.org/10.1007/s002650000241",
+    "citacoes": 85,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1007/s002650000241"
+   },
+   {
+    "titulo": "Social plasticity and early-diapausing females in a primitively social bee",
+    "autores": [
+     "Douglas Yanega"
+    ],
+    "revista": "Proceedings of the National Academy of Sciences",
+    "data": "1988-06-01",
+    "ano": 1988,
+    "resumo": "Many of the females of the first summer brood of the sweat bee Halictus rubicundus mate, soon vanish from the nesting site, undergo diapause, and return unworn the following spring to found their own nests without ever functioning as workers. Roughly half a season's foundresses may originate in this way. This finding contradicts previous assumptions regarding timing of reproductive production in sweat bees and offers a remarkable example of intraspecific social diversity; some females in the population behave as solitary bees while others are social. Such behavior may be widespread in bees and",
+    "doi": "10.1073/pnas.85.12.4374",
+    "url": "https://doi.org/10.1073/pnas.85.12.4374",
+    "citacoes": 82,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1073/pnas.85.12.4374"
+   },
+   {
+    "titulo": "Field Margins, Foraging Distances and Their Impacts on Nesting Pollinator Success",
+    "autores": [
+     "Sean A. Rands",
+     "Heather M. Whitney"
+    ],
+    "revista": "PLoS ONE",
+    "data": "2011-10-03",
+    "ano": 2011,
+    "resumo": "The areas of wild land around the edges of agricultural fields are a vital resource for many species. These include insect pollinators, to whom field margins provide both nest sites and important resources (especially when adjacent crops are not in flower). Nesting pollinators travel relatively short distances from the nest to forage: most species of bee are known to travel less than two kilometres away. In order to ensure that these pollinators have sufficient areas of wild land within reach of their nests, agricultural landscapes need to be designed to accommodate the limited travelling dist",
+    "doi": "10.1371/journal.pone.0025971",
+    "url": "https://doi.org/10.1371/journal.pone.0025971",
+    "citacoes": 79,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1371/journal.pone.0025971"
+   },
+   {
+    "titulo": "Bee Population Returns and Cherry Yields in an Orchard Pollinated with Osmia lignaria (Hymenoptera: Megachilidae)",
+    "autores": [
+     "Jordi Bosch",
+     "William P. Kemp",
+     "Glen E. Trostle"
+    ],
+    "revista": "Journal of Economic Entomology",
+    "data": "2006-04-01",
+    "ano": 2006,
+    "resumo": "During 1998–2003, we used populations of the solitary bee Osmia lignaria Say to pollinate a commercial sweet cherry orchard in northern Utah. Bee densities released each year ranged from 1290 to 1857 females/ha, with approximately twice as many males. Female progeny produced each year were greater than parental populations released, except in 2003, when nesting was poor due to bird predation. Despite poor weather during bloom, and in contrast to most other local producers, the study orchard produced harvestable crops in 1999 (2,964 kg/ha) and 2001 (3,154 kg/ha). In 1998 and 2000, record yields",
+    "doi": "10.1093/jee/99.2.408",
+    "url": "https://doi.org/10.1093/jee/99.2.408",
+    "citacoes": 79,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1093/jee/99.2.408"
+   },
+   {
+    "titulo": "Improvement of field management of Osmia cornuta (Latreille) (Hymenoptera, Megachilidae) to pollinate almond",
+    "autores": [
+     "Jordi Bosch"
+    ],
+    "revista": "Apidologie",
+    "data": "1994-01-01",
+    "ano": 1994,
+    "resumo": "",
+    "doi": "10.1051/apido:19940108",
+    "url": "https://doi.org/10.1051/apido:19940108",
+    "citacoes": 79,
+    "fonte": "OpenAlex",
+    "key": "doi:10.1051/apido:19940108"
    }
   ]
- }
+ },
+ "classicos_hash": "[{\"ativo\": true, \"bloqueadas\": [], \"permitidas\": [\"Apidologie\", \"Insectes Sociaux\", \"Journal of Apicultural Research\", \"Bee World\", \"Sociobiology\", \"Journal of Hymenoptera Research\", \"Journal of Insect Behavior\", \"Behavioral Ecology\", \"Animal Behaviour\", \"Journal of Chemical Ecology\", \"Ecological Entomology\", \"Journal of Animal Ecology\", \"Oecologia\", \"Biological Conservation\", \"Journal of Comparative Physiology\", \"Journal of Experimental Biology\", \"Neotropical Entomology\", \"Revista Brasileira de Entomologia\", \"Pap\\u00e9is Avulsos de Zoologia\", \"Apis\", \"=Science\", \"=Nature\", \"Nature Communications\", \"Nature Ecology\", \"Proceedings of the Royal Society B\", \"Current Biology\", \"Biology Letters\", \"Proceedings of the National Academy of Sciences\", \"Scientific Reports\", \"PLoS ONE\", \"Insects\", \"Journal of Economic Entomology\", \"Environmental Entomology\"]}, {\"ate_ano\": null, \"por_topico\": 50}]"
 }
