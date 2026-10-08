@@ -55,22 +55,22 @@ excluir:
 #  - O nome da revista precisa conter o texto. "=Science" exige nome igual.
 # ------------------------------------------------------------
 filtro_revistas:
-  ativo: false
+  ativo: true
   permitidas:
-    - Apidologie
-    - Insectes Sociaux
-    - Journal of Insect Behavior
-    - Behavioral Ecology
-    - Animal Behaviour
-    - Journal of Chemical Ecology
-    - Ecological Entomology
-    - Neotropical Entomology
-    - Sociobiology
-    - Biological Conservation
+    - =Apidologie
+    - =Insectes Sociaux
+    - =Journal of Insect Behavior
+    - =Behavioral Ecology
+    - =Animal Behaviour
+    - =Journal of Chemical Ecology
+    - =Ecological Entomology
+    - =Neotropical Entomology
+    - =Sociobiology
+    - =Biological Conservation
     - =Science
     - =Nature
-    - Proceedings of the Royal Society B
-    - Current Biology
+    - =Proceedings of the Royal Society B
+    - =Current Biology
   bloqueadas: []
 
 # ------------------------------------------------------------
