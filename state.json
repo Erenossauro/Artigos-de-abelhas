@@ -40,6 +40,7 @@
   "doi:10.1002/tox.70186",
   "doi:10.1002/tox.70187",
   "doi:10.1002/yea.70048",
+  "doi:10.1007/s00034-026-03781-2",
   "doi:10.1007/s00040-026-01127-4",
   "doi:10.1007/s00040-026-01137-2",
   "doi:10.1007/s00040-026-01139-0",
@@ -147,6 +148,7 @@
   "doi:10.1007/s13592-026-01313-0",
   "doi:10.1007/s13592-026-01314-z",
   "doi:10.1007/s13592-026-01315-y",
+  "doi:10.1007/s13592-026-01316-x",
   "doi:10.1007/s13744-026-01421-7",
   "doi:10.1007/s13744-026-01431-5",
   "doi:10.1007/s40009-026-02400-7",
@@ -266,6 +268,7 @@
   "doi:10.1016/j.foodcont.2026.112679",
   "doi:10.1016/j.foodres.2026.119981",
   "doi:10.1016/j.foodres.2026.120508",
+  "doi:10.1016/j.foodres.2026.120976",
   "doi:10.1016/j.foohum.2026.101525",
   "doi:10.1016/j.foreco.2026.124171",
   "doi:10.1016/j.foreco.2026.124226",
@@ -287,6 +290,7 @@
   "doi:10.1016/j.jclepro.2026.149397",
   "doi:10.1016/j.jddst.2026.108751",
   "doi:10.1016/j.jep.2026.122300",
+  "doi:10.1016/j.jfca.2026.109572",
   "doi:10.1016/j.jff.2026.107432",
   "doi:10.1016/j.jfp.2026.100886",
   "doi:10.1016/j.jia.2026.10.002",
@@ -317,6 +321,7 @@
   "doi:10.1016/j.phytochem.2026.115047",
   "doi:10.1016/j.pmpp.2026.103385",
   "doi:10.1016/j.psep.2026.109644",
+  "doi:10.1016/j.pt.2026.09.006",
   "doi:10.1016/j.ress.2026.113345",
   "doi:10.1016/j.ress.2026.113432",
   "doi:10.1016/j.rico.2026.100811",
@@ -384,6 +389,7 @@
   "doi:10.1038/s41598-026-71796-5",
   "doi:10.1038/s41598-026-72043-7",
   "doi:10.1038/s41598-026-72833-z",
+  "doi:10.1038/s41598-026-73031-7",
   "doi:10.1038/s41598-026-74028-y",
   "doi:10.1038/s41598-026-74202-2",
   "doi:10.1038/s41598-026-74979-2",
@@ -760,6 +766,7 @@
   "doi:10.3390/life16091473",
   "doi:10.3390/ma19163489",
   "doi:10.3390/ma19184016",
+  "doi:10.3390/magnetochemistry12100113",
   "doi:10.3390/math14142506",
   "doi:10.3390/math14162877",
   "doi:10.3390/math14183347",
@@ -938,6 +945,7 @@
   "t:an efficient device deployment strategy for obstacle constrained industrial internet of things",
   "t:an engineered bacterial symbiont maps micron scale sugar gradients in the honeybee gut",
   "t:an enhanced artificial bee colony algorithm for flexible job shop scheduling with multiple assembly precedence constraints",
+  "t:an enhanced color image watermarking algorithm using qdct qsvd and multi objective artificial bee colony optimization",
   "t:an explainable patch based deep learning framework for marker specific computational assessment of ovarian autophagy in digital histopathology",
   "t:an integrated large language model assisted heuristic approach for sustainable design of a pesticide packaging waste collection system",
   "t:an intelligent disassembly sequence optimisation framework for end of life ev batteries using adaptive operator selection",
@@ -1177,6 +1185,7 @@
   "t:efficacy and persistence of entomopathogenic nematodes for biological control of small hive beetle under glasshouse conditions",
   "t:efficacy and safety of braun enteroenterostomy in patients undergoing pancreatoduodenectomy a systematic review and meta analysis",
   "t:efficacy of australian entomopathogenic nematodes against the pupal stage of the small hive beetle aethina tumida under semi field conditions",
+  "t:efficacy of control methods for small hive beetle aethina tumida a meta analysis",
   "t:electrophysiological responses of bumble bee pollinators to floral scents of oil pumpkin",
   "t:energy aware hybrid artificial bee colony and reinforcement learning for multi objective task scheduling in green cloud fog industrial iot systems",
   "t:enhancing the gastrointestinal resilience of the candidate probiotic yeast lachancea thermotolerans disva322 using a symbiotic bee pollen alginate formulation",
@@ -1363,6 +1372,7 @@
   "t:maintaining genetic integrity in forage grass breeding causes of hybridization and countermeasures for high quality seed production",
   "t:malaysian stingless bee honey reduces cytopathic effect in vero e6 cells infected with wild type and omicron sars cov 2 variants",
   "t:male dimorphism in a new species of cockroach nocticola glenniei sp nov blattodea nocticolidae commensal within burrows of macropanesthia rhinoceros saussure 1895 blattodea blaberidae",
+  "t:managing bees in a pathogenic world research priorities to protect biodiversity",
   "t:mapping the eco holobiont tripartite interactions of small carpenter bee floral and soil microbiomes across an urbanization gradient",
   "t:mapping the global range of stingless bees insights into their ecological niches and environmental tolerances",
   "t:mapping wild bee diversity and flower use for an effective conservation of the do ana biodiversity hotspot",
@@ -1441,6 +1451,7 @@
   "t:novel dsrna designs increase the stability and bioefficacy of rnai based pesticides for varroa destructor",
   "t:novel highly potent and environmentally benign molluscicides for pomacea canaliculata control discovery mechanism and field validation",
   "t:novel isoxazoline amide derivatives with diaryl sulfide fragment as potential insecticides",
+  "t:nutritional mineral composition volatile evaluation and bioactive potential of pollen from the amazonian bees melipona flavolineata and scaptotrigona postica",
   "t:nutritional status physical properties and bioactive components of stingless bees bee pollen from various regions in indonesia",
   "t:occurrence of amesia nigricolor causing leaf blight of mulberry and its association with mold development in stingless bee hives in punjab india",
   "t:occurrence of pantoea anthophila causing rhizome rot disease of banana in china",
@@ -1457,6 +1468,7 @@
   "t:optimizing quadratic satisfiability with special symbolic logic in a discrete hopfield neural network using swarm intelligence",
   "t:optimizing separation conditions for melittin purification from bee venom using molecular dynamics simulations",
   "t:optimizing tree selection for sustainable logging in amazonian areas with species restrictions using bio inspired algorithms",
+  "t:options for mitigating multi stressor interactions on managed bees in european agricultural landscapes",
   "t:organic farming may not be alleviating biodiversity loss a field test of wild pollinator visitation rates in apple orchards",
   "t:organic management enhances wild bee richness but does not consistently improve crop pollination in apple orchards",
   "t:overcoming the linnean and wallacean shortfalls in the northeast of atlantic forest the community of bees hymenoptera apidae in a potentially threatened area",
@@ -1609,6 +1621,7 @@
   "t:taxonomic review of the bee genus caenaugochlora michener 1954 hymenoptera halictidae augochlorini from mexico",
   "t:technical efficiency of cluster beekeeping participation among smallholder honey producers in ethiopia",
   "t:technical skill needs of senior secondary school graduates for employment in apiculture industry in rural area of ebonyi state nigeria",
+  "t:temperature frequency dependent magnetic core loss prediction under triangular wave excitation based on igse and dfdb tlsabc",
   "t:termite dung beetle brood balls and attaichnus kuenzelii traces at the jwalapuram locality of the jurreru valley south india implications for palaeoclimate and palaeoenvironment conditions",
   "t:territories of the hive rhythm care and interspecies art in jan karp ek s practice",
   "t:testing the acceptance thresholds for egg shape rejection in the european bee eater with poor nest sanitation",
@@ -1643,6 +1656,7 @@
   "t:the unthinkable end of growth family time in paul murray s the bee sting",
   "t:therapeutic effects of propolis supplementation on the inflammatory state oxidative stress and uremic toxins in dialysis patients a systematic review",
   "t:thermal processing alters elemental bioavailability from mealworm flour",
+  "t:thorough chemical characterization of bee pollen and propolis by liquid chromatography coupled to trapped ion mobility spectrometry and high resolution mass spectrometry a validated workflow integrating target and suspect screening",
   "t:time and skill dependent vehicle routing problem in application of facility maintenance",
   "t:timing of oxalic acid extender pads is critical for varroa mite control",
   "t:tissue specific transcriptomic changes associated with mating status in overwintering bombus terrestris queens",
@@ -12374,40 +12388,6 @@
    ],
    "temas": [
     "Outros temas de abelhas"
-   ]
-  },
-  {
-   "key": "doi:10.1007/s11829-026-10263-4",
-   "titulo": "Diversity of arthropod pollinators, foraging parameters of major bee species and the role of entomophily in sunflower (Helianthus annus L.) pollination",
-   "autores": "Sabyasachi Ray, Pritam Maity, Soumita Bera, Amitava Banerjee, Srijani Maji, Arun Kumar Senapati",
-   "revista": "Arthropod-Plant Interactions",
-   "data": "2026-07-13",
-   "ano": 2026,
-   "resumo": "",
-   "url": "https://doi.org/10.1007/s11829-026-10263-4",
-   "citacoes": 0,
-   "fonte": "OpenAlex",
-   "topico": "Forrageamento e recursos florais",
-   "tipo": "novo",
-   "adicionado": "2026-10-08",
-   "facetas": {
-    "Abelha": [
-     "Sem grupo identificado"
-    ],
-    "Tipo de estudo": [
-     "Não identificado"
-    ],
-    "Região": [
-     "Região não citada"
-    ]
-   },
-   "issn": [
-    "1872-8847",
-    "1872-8855",
-    "1872-8847"
-   ],
-   "temas": [
-    "Forrageamento e recursos florais"
    ]
   },
   {
@@ -24114,75 +24094,6 @@
    ]
   },
   {
-   "key": "doi:10.1007/s11829-026-10261-6",
-   "titulo": "Aphid honeydew in ecosystems and the environment",
-   "autores": "Jarmo K. Holopainen, Reima Leinonen, James D. Blande, Jouni Sorvari",
-   "revista": "Arthropod-Plant Interactions",
-   "data": "2026-07-13",
-   "ano": 2026,
-   "resumo": "Honeydew is a sugar-rich sticky liquid excreted by aphids and other hemipterous insects, such as scale insects, whiteflies, and psyllids, that feed on plant phloem sap. Compared to flower nectar, aphid honeydew contains the same primary sugars (sucrose, glucose, and fructose) as nectar, but also additional oligosaccharides, such as melezitose and erlose, which are synthesised by aphids. Honeydew deposited on leaf surfaces, other surfaces, and in soil plays various roles in the ecosystem, serving as an essential food source for ants, bees, and bumblebees, as well as a supplementary food source…",
-   "url": "https://doi.org/10.1007/s11829-026-10261-6",
-   "citacoes": 0,
-   "fonte": "OpenAlex",
-   "topico": "Forrageamento e recursos florais",
-   "tipo": "novo",
-   "adicionado": "2026-10-08",
-   "facetas": {
-    "Abelha": [
-     "Mamangavas (Bombini)"
-    ],
-    "Tipo de estudo": [
-     "Não identificado"
-    ],
-    "Região": [
-     "Região não citada"
-    ]
-   },
-   "issn": [
-    "1872-8847",
-    "1872-8855",
-    "1872-8847"
-   ],
-   "temas": [
-    "Forrageamento e recursos florais",
-    "Ecologia urbana de abelhas"
-   ]
-  },
-  {
-   "key": "doi:10.1021/acs.jafc.5c15781",
-   "titulo": "Molecular Concatenation of 3,5-Dichloro-2,6-Difluoropyridin-4-amine with Heterocyclic Carboxylic Acids and Evaluation of their Antifungal Activity",
-   "autores": "Bo Sun, Hui Wang, Dandan Wang, M Y Li, C Y Wang, W B Wang et al.",
-   "revista": "Journal of Agricultural and Food Chemistry",
-   "data": "2026-07-13",
-   "ano": 2026,
-   "resumo": "Succinate dehydrogenase (SDH) inhibitors face cross-resistance issues due to similar structures. To address this problem, we designed heterocyclic carboxamide derivatives based on a 3,5-dichloro-2,6-difluoropyridin-4-amine scaffold. Compounds A1 and A2 showed excellent antifungal activity against Rhizoctonia solani (EC 50 = 1.08 and 1.18 mg/L), outperforming boscalid (EC 50 = 1.82 mg/L). They also exhibited broad-spectrum activity against four pathogenic fungi. In vivo rice leaf tests confirmed good protective effects ( A1 and A2 at 92.88% and 89.35%, respectively). Mechanistic studies…",
-   "url": "https://doi.org/10.1021/acs.jafc.5c15781",
-   "citacoes": 1,
-   "fonte": "OpenAlex",
-   "topico": "Outros temas de abelhas",
-   "tipo": "novo",
-   "adicionado": "2026-10-08",
-   "facetas": {
-    "Abelha": [
-     "Sem grupo identificado"
-    ],
-    "Tipo de estudo": [
-     "Não identificado"
-    ],
-    "Região": [
-     "Região não citada"
-    ]
-   },
-   "issn": [
-    "0021-8561",
-    "1520-5118",
-    "0021-8561"
-   ],
-   "temas": [
-    "Outros temas de abelhas"
-   ]
-  },
-  {
    "key": "doi:10.1007/s10586-026-06628-2",
    "titulo": "Structured migration shuffled frog leaping algorithm: capacity-constrained VM-to-PM load balancing via structured PM-Wise VM migration",
    "autores": "Dorsa Nouri Khajavi, Morteza Khakzar Bafruei, Morteza Rashidi Zeglojeh",
@@ -31118,6 +31029,259 @@
    ],
    "completa": false,
    "tardio": true
+  },
+  {
+   "key": "doi:10.1038/s41598-026-73031-7",
+   "titulo": "Options for mitigating multi-stressor interactions on managed bees in European agricultural landscapes",
+   "autores": "Bryony K. Willcox, Deepa Senapathi, Mark J. F. Brown, Michael P. D. Garratt, Tom D. Breeze, Anne Alix et al.",
+   "revista": "Scientific Reports",
+   "data": "2026-10-10",
+   "ano": 2026,
+   "resumo": "Abstract Managed bees provide valuable pollination services to a wide range of European crops yet they face multiple, interacting stressors including pesticides, pathogens and poor nutrition. Despite incomplete evidence, there is an urgent need to identify effective options to mitigate these stressors. Using a modified Delphi process, 21 experts ranked 29 response options across four case studies. They assessed (a) the response options ability to effectively mitigate pesticide exposure in combination with either poor nutrition or parasite load for either Apis mellifera , Bombus terrestris or…",
+   "url": "https://doi.org/10.1038/s41598-026-73031-7",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Polinização e agroecossistemas",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Mamangavas (Bombini)",
+     "Apis (Apini)",
+     "Solitárias"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Europa"
+    ]
+   },
+   "issn": [
+    "2045-2322",
+    "2045-2322"
+   ],
+   "temas": [
+    "Polinização e agroecossistemas"
+   ],
+   "completa": false,
+   "tardio": false
+  },
+  {
+   "key": "doi:10.1007/s00034-026-03781-2",
+   "titulo": "An Enhanced Color Image Watermarking Algorithm Using QDCT-QSVD and Multi-objective Artificial Bee Colony Optimization",
+   "autores": "Shiyue Tang, Hua Xia, Hua Xia, Zhigang Jia, Chengliang Li",
+   "revista": "Circuits Systems and Signal Processing",
+   "data": "2026-10-10",
+   "ano": 2026,
+   "resumo": "",
+   "url": "https://doi.org/10.1007/s00034-026-03781-2",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Outros temas de abelhas",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Sem grupo identificado"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "0278-081X",
+    "1531-5878",
+    "0278-081X"
+   ],
+   "temas": [
+    "Outros temas de abelhas"
+   ],
+   "completa": false,
+   "tardio": false
+  },
+  {
+   "key": "doi:10.1016/j.pt.2026.09.006",
+   "titulo": "Managing bees in a pathogenic world: research priorities to protect biodiversity",
+   "autores": "Anja Probst, Daniel Schläppi, Kaitlin R. Deutsch, Jana Dobelmann, Vincent Doublet, Giovanni Cilia et al.",
+   "revista": "Trends in Parasitology",
+   "data": "2026-10-01",
+   "ano": 2026,
+   "resumo": "",
+   "url": "https://doi.org/10.1016/j.pt.2026.09.006",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Diversidade, amostragem e conservação",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Sem grupo identificado"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "1471-4922",
+    "1471-5007",
+    "1471-4922"
+   ],
+   "temas": [
+    "Diversidade, amostragem e conservação",
+    "Polinização e agroecossistemas"
+   ],
+   "completa": false,
+   "tardio": true
+  },
+  {
+   "key": "doi:10.1016/j.foodres.2026.120976",
+   "titulo": "Nutritional, mineral composition, volatile evaluation and bioactive potential of pollen from the amazonian bees Melipona flavolineata and Scaptotrigona postica",
+   "autores": "Fernanda Wariss Figueiredo Bezerra, Ingryd Rodrigues Martins, Emanuelle S. Prudente, Daniel Santiago Pereira, Emília do Socorro Conceição de Lima Nunes, Cristine Bastos do Amarante et al.",
+   "revista": "Food Research International",
+   "data": "2026-10-01",
+   "ano": 2026,
+   "resumo": "",
+   "url": "https://doi.org/10.1016/j.foodres.2026.120976",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Outros temas de abelhas",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Sem ferrão (Meliponini)"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "0963-9969",
+    "1873-7145",
+    "0963-9969"
+   ],
+   "temas": [
+    "Outros temas de abelhas"
+   ],
+   "completa": false,
+   "tardio": true
+  },
+  {
+   "key": "doi:10.1016/j.jfca.2026.109572",
+   "titulo": "Thorough Chemical Characterization of Bee Pollen and Propolis by Liquid Chromatography Coupled to Trapped Ion Mobility Spectrometry and High-Resolution Mass Spectrometry: A Validated Workflow Integrating Target and Suspect Screening",
+   "autores": "Eleni S. Nastou, Panagiotis-Loukas P. Gialouris, Dafni A. Preza-Mayo-Kataki, Reza Aalizadeh, Νikolaos S. Τhomaidis",
+   "revista": "Journal of Food Composition and Analysis",
+   "data": "2026-10-01",
+   "ano": 2026,
+   "resumo": "",
+   "url": "https://doi.org/10.1016/j.jfca.2026.109572",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Polinização e agroecossistemas",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Sem grupo identificado"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "0889-1575",
+    "1096-0481",
+    "0889-1575"
+   ],
+   "temas": [
+    "Polinização e agroecossistemas"
+   ],
+   "completa": false,
+   "tardio": true
+  },
+  {
+   "key": "doi:10.3390/magnetochemistry12100113",
+   "titulo": "Temperature-Frequency-Dependent Magnetic Core Loss Prediction Under Triangular-Wave Excitation Based on iGSE and dFDB-TLSABC",
+   "autores": "Jiyong Zhang, Junchi Lu, Zhendong Yin, Hongxia Ouyang",
+   "revista": "Magnetochemistry",
+   "data": "2026-10-10",
+   "ano": 2026,
+   "resumo": "Accurate magnetic core loss prediction is important for efficiency evaluation and thermal design in high-frequency power electronic converters. Under varying temperature and frequency conditions, core loss exhibits strong nonlinear behavior, making conventional fixed-parameter Steinmetz-type models difficult to maintain stable accuracy. To address this problem, this work proposes a temperature–frequency-dependent core loss prediction method under triangular-wave excitation by combining the improved Generalized Steinmetz Equation (iGSE), dynamic Fitness–Distance Balance…",
+   "url": "https://doi.org/10.3390/magnetochemistry12100113",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Comunicação, cognição e comportamento",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Sem grupo identificado"
+    ],
+    "Tipo de estudo": [
+     "Não identificado"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "2312-7481",
+    "2312-7481"
+   ],
+   "temas": [
+    "Comunicação, cognição e comportamento"
+   ],
+   "completa": false,
+   "tardio": false
+  },
+  {
+   "key": "doi:10.1007/s13592-026-01316-x",
+   "titulo": "Efficacy of control methods for small hive beetle (Aethina tumida): a meta-analysis",
+   "autores": "Thea Larsen, Alexander Mikheyev",
+   "revista": "Apidologie",
+   "data": "2026-10-01",
+   "ano": 2026,
+   "resumo": "Abstract The small hive beetle ( Aethina tumida ) is a significant global pest of honey bees, causing colony losses and adversely affecting pollination services. Numerous control strategies have been developed, yet their relative effectiveness remains uncertain making it difficult for beekeepers to select among available options. We conducted a meta-analysis utilising only studies that reported quantitative paired treatment-control results with extractable means, measures of variance, and sample sizes. This resulted in the inclusion of 25 eligible studies, comprising 175 treatment trials.…",
+   "url": "https://doi.org/10.1007/s13592-026-01316-x",
+   "citacoes": 0,
+   "fonte": "OpenAlex",
+   "topico": "Polinização e agroecossistemas",
+   "tipo": "novo",
+   "adicionado": "2026-10-12",
+   "facetas": {
+    "Abelha": [
+     "Apis (Apini)"
+    ],
+    "Tipo de estudo": [
+     "Revisão ou síntese"
+    ],
+    "Região": [
+     "Região não citada"
+    ]
+   },
+   "issn": [
+    "0044-8435",
+    "1297-9678",
+    "0044-8435"
+   ],
+   "temas": [
+    "Polinização e agroecossistemas"
+   ],
+   "completa": true,
+   "tardio": true
   }
  ],
  "fila_classicos": {
@@ -32383,7 +32547,7 @@
      "Thomas Lecocq",
      "Alexander Harpke",
      "Stuart P. M. Roberts",
-     "Koos Biesmeijer",
+     "Jacobus Christiaan Biesmeijer",
      "Leopoldo Castro",
      "Björn Cederberg",
      "Libor Dvořák",
@@ -34157,7 +34321,7 @@
     "resumo": "Termites are instantly recognizable mound-builders and house-eaters: their complex social lifestyles have made them incredibly successful throughout the tropics. Although known as 'white ants', they are not ants and their relationships with other insects remain unclear. Our molecular phylogenetic analyses, the most comprehensive yet attempted, show that termites are social cockroaches, no longer meriting being classified as a separate order (Isoptera) from the cockroaches (Blattodea). Instead, we propose that they should be treated as a family (Termitidae) of cockroaches. It is surprising to f",
     "doi": "10.1098/rsbl.2007.0102",
     "url": "https://doi.org/10.1098/rsbl.2007.0102",
-    "citacoes": 535,
+    "citacoes": 536,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -34593,7 +34757,7 @@
     "resumo": "Insect guts present distinctive environments for microbial colonization, and bacteria in the gut potentially provide many beneficial services to their hosts. Insects display a wide range in degree of dependence on gut bacteria for basic functions. Most insect guts contain relatively few microbial species as compared to mammalian guts, but some insects harbor large gut communities of specialized bacteria. Others are colonized only opportunistically and sparsely by bacteria common in other environments. Insect digestive tracts vary extensively in morphology and physicochemical properties, factor",
     "doi": "10.1111/1574-6976.12025",
     "url": "https://doi.org/10.1111/1574-6976.12025",
-    "citacoes": 2612,
+    "citacoes": 2613,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -34990,7 +35154,7 @@
     "resumo": "The desire to understand how the brain generates and patterns behavior has driven rapid methodological innovation in tools to quantify natural animal behavior. While advances in deep learning and computer vision have enabled markerless pose estimation in individual animals, extending these to multiple animals presents unique challenges for studies of social behaviors or animals in their natural environments. Here we present Social LEAP Estimates Animal Poses (SLEAP), a machine learning system for multi-animal pose tracking. This system enables versatile workflows for data labeling, model train",
     "doi": "10.1038/s41592-022-01426-1",
     "url": "https://doi.org/10.1038/s41592-022-01426-1",
-    "citacoes": 895,
+    "citacoes": 896,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -38519,62 +38683,6 @@
     }
    },
    {
-    "titulo": "Urban domestic gardens (II): experimental tests of methods for increasing biodiversity",
-    "autores": [
-     "Kevin J. Gaston",
-     "Richard M. Smith",
-     "Ken A. Thompson",
-     "Philip H. Warren"
-    ],
-    "revista": "Biodiversity and Conservation",
-    "issn": [
-     "0960-3115",
-     "1572-9710",
-     "0960-3115"
-    ],
-    "data": "2005-02-01",
-    "ano": 2005,
-    "resumo": "",
-    "doi": "10.1007/s10531-004-6066-x",
-    "url": "https://doi.org/10.1007/s10531-004-6066-x",
-    "citacoes": 331,
-    "fonte": "OpenAlex",
-    "tipo": "article",
-    "palavras": [
-     "biodiversity enhancement",
-     "wildlife gardening",
-     "solitary bees",
-     "solitary wasps",
-     "artificial nest sites",
-     "bumblebees",
-     "small ponds",
-     "dead wood",
-     "saproxylic fungi",
-     "Urtica dioica",
-     "butterfly larvae",
-     "urban green space",
-     "garden management",
-     "Plant and animal studies",
-     "Urban Agriculture and Sustainability",
-     "Ecology and Vegetation Dynamics Studies"
-    ],
-    "oa": false,
-    "criado": "2025-10-10T00:00:00",
-    "fonte_id": "S5043789",
-    "key": "doi:10.1007/s10531-004-6066-x",
-    "facetas": {
-     "Abelha": [
-      "Sem grupo identificado"
-     ],
-     "Tipo de estudo": [
-      "Experimento ou campo"
-     ],
-     "Região": [
-      "Região não citada"
-     ]
-    }
-   },
-   {
     "titulo": "The nest of the honey bee (Apis mellifera L.)",
     "autores": [
      "Thomas Dyer Seeley",
@@ -39502,6 +39610,54 @@
       "Região não citada"
      ]
     }
+   },
+   {
+    "titulo": "Ants use the panoramic skyline as a visual cue during navigation",
+    "autores": [
+     "Paul Graham",
+     "Ken Cheng"
+    ],
+    "revista": "Current Biology",
+    "issn": [
+     "0960-9822",
+     "1879-0445",
+     "0960-9822"
+    ],
+    "data": "2009-11-01",
+    "ano": 2009,
+    "resumo": "",
+    "doi": "10.1016/j.cub.2009.08.015",
+    "url": "https://doi.org/10.1016/j.cub.2009.08.015",
+    "citacoes": 232,
+    "fonte": "OpenAlex",
+    "tipo": "article",
+    "palavras": [
+     "ants",
+     "ant navigation",
+     "skyline",
+     "visual landmarks",
+     "panoramic vision",
+     "foraging behavior",
+     "insect cognition",
+     "Insect and Arachnid Ecology and Behavior",
+     "Spatial Cognition and Navigation",
+     "Neurobiology and Insect Physiology Research"
+    ],
+    "oa": true,
+    "criado": "2025-10-10T00:00:00",
+    "fonte_id": "S128425624",
+    "key": "doi:10.1016/j.cub.2009.08.015",
+    "facetas": {
+     "Abelha": [
+      "Sem grupo identificado"
+     ],
+     "Tipo de estudo": [
+      "Não identificado"
+     ],
+     "Região": [
+      "Região não citada"
+     ]
+    }
    }
   ],
   "Filogenia, sistemática e biogeografia": [
@@ -39521,7 +39677,7 @@
     "resumo": "",
     "doi": "10.1016/0006-3207(92)91201-3",
     "url": "https://doi.org/10.1016/0006-3207(92)91201-3",
-    "citacoes": 5727,
+    "citacoes": 5728,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -40052,7 +40208,7 @@
     "resumo": "The desire to understand how the brain generates and patterns behavior has driven rapid methodological innovation in tools to quantify natural animal behavior. While advances in deep learning and computer vision have enabled markerless pose estimation in individual animals, extending these to multiple animals presents unique challenges for studies of social behaviors or animals in their natural environments. Here we present Social LEAP Estimates Animal Poses (SLEAP), a machine learning system for multi-animal pose tracking. This system enables versatile workflows for data labeling, model train",
     "doi": "10.1038/s41592-022-01426-1",
     "url": "https://doi.org/10.1038/s41592-022-01426-1",
-    "citacoes": 895,
+    "citacoes": 896,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -40366,7 +40522,7 @@
    {
     "titulo": "Functional group diversity of bee pollinators increases crop yield",
     "autores": [
-     "Patrick Hoehn",
+     "Patrick Höhn",
      "Teja Tscharntke",
      "Jason M. Tylianakis",
      "Ingolf Steffan‐Dewenter"
@@ -41085,7 +41241,7 @@
     "resumo": "Termites are instantly recognizable mound-builders and house-eaters: their complex social lifestyles have made them incredibly successful throughout the tropics. Although known as 'white ants', they are not ants and their relationships with other insects remain unclear. Our molecular phylogenetic analyses, the most comprehensive yet attempted, show that termites are social cockroaches, no longer meriting being classified as a separate order (Isoptera) from the cockroaches (Blattodea). Instead, we propose that they should be treated as a family (Termitidae) of cockroaches. It is surprising to f",
     "doi": "10.1098/rsbl.2007.0102",
     "url": "https://doi.org/10.1098/rsbl.2007.0102",
-    "citacoes": 535,
+    "citacoes": 536,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -42501,62 +42657,6 @@
     }
    },
    {
-    "titulo": "Urban domestic gardens (II): experimental tests of methods for increasing biodiversity",
-    "autores": [
-     "Kevin J. Gaston",
-     "Richard M. Smith",
-     "Ken A. Thompson",
-     "Philip H. Warren"
-    ],
-    "revista": "Biodiversity and Conservation",
-    "issn": [
-     "0960-3115",
-     "1572-9710",
-     "0960-3115"
-    ],
-    "data": "2005-02-01",
-    "ano": 2005,
-    "resumo": "",
-    "doi": "10.1007/s10531-004-6066-x",
-    "url": "https://doi.org/10.1007/s10531-004-6066-x",
-    "citacoes": 331,
-    "fonte": "OpenAlex",
-    "tipo": "article",
-    "palavras": [
-     "biodiversity enhancement",
-     "wildlife gardening",
-     "solitary bees",
-     "solitary wasps",
-     "artificial nest sites",
-     "bumblebees",
-     "small ponds",
-     "dead wood",
-     "saproxylic fungi",
-     "Urtica dioica",
-     "butterfly larvae",
-     "urban green space",
-     "garden management",
-     "Plant and animal studies",
-     "Urban Agriculture and Sustainability",
-     "Ecology and Vegetation Dynamics Studies"
-    ],
-    "oa": false,
-    "criado": "2025-10-10T00:00:00",
-    "fonte_id": "S5043789",
-    "key": "doi:10.1007/s10531-004-6066-x",
-    "facetas": {
-     "Abelha": [
-      "Sem grupo identificado"
-     ],
-     "Tipo de estudo": [
-      "Experimento ou campo"
-     ],
-     "Região": [
-      "Região não citada"
-     ]
-    }
-   },
-   {
     "titulo": "A Comparative Study of PSO-ANN, GA-ANN, ICA-ANN, and ABC-ANN in Estimating the Heating Load of Buildings’ Energy Efficiency for Smart City Planning",
     "autores": [
      "Lê Thị Lệ",
@@ -42934,6 +43034,66 @@
      ],
      "Tipo de estudo": [
       "Não identificado"
+     ],
+     "Região": [
+      "Região não citada"
+     ]
+    }
+   },
+   {
+    "titulo": "EDITOR'S CHOICE: Enhancing gardens as habitats for flower‐visiting aerial insects (pollinators): should we plant native or exotic species?",
+    "autores": [
+     "Andrew Salisbury",
+     "James Armitage",
+     "Helen Bostock",
+     "JOE N. PERRY",
+     "Mark Tatchell",
+     "Ken A. Thompson"
+    ],
+    "revista": "Journal of Applied Ecology",
+    "issn": [
+     "0021-8901",
+     "1365-2664",
+     "0021-8901"
+    ],
+    "data": "2015-08-11",
+    "ano": 2015,
+    "resumo": "Summary Domestic gardens typically consist of a mixture of native and non‐native plants which support biodiversity and provide valuable ecosystem services, particularly in urban environments. Many gardeners wish to encourage biodiversity by choosing appropriate plant taxa. The value of native and non‐native plants in supporting animal biodiversity is, however, largely unknown. The relative value of native and non‐native garden plants to invertebrates was investigated in a replicated field experiment. Plots (deliberately akin to garden borders) were planted with one of three treatments, represe",
+    "doi": "10.1111/1365-2664.12499",
+    "url": "https://doi.org/10.1111/1365-2664.12499",
+    "citacoes": 276,
+    "fonte": "OpenAlex",
+    "tipo": "article",
+    "palavras": [
+     "native plants",
+     "non-native plants",
+     "flower-visiting insects",
+     "pollinator habitat",
+     "urban biodiversity",
+     "floral resources",
+     "bumblebees",
+     "hoverflies",
+     "Apis mellifera",
+     "solitary bees",
+     "flowering season",
+     "plant origin",
+     "garden design",
+     "Plant and animal studies",
+     "Ecology and Vegetation Dynamics Studies",
+     "Insect and Arachnid Ecology and Behavior"
+    ],
+    "oa": true,
+    "criado": "2025-10-10T00:00:00",
+    "fonte_id": "S82098733",
+    "key": "doi:10.1111/1365-2664.12499",
+    "facetas": {
+     "Abelha": [
+      "Mamangavas (Bombini)",
+      "Apis (Apini)",
+      "Solitárias"
+     ],
+     "Tipo de estudo": [
+      "Experimento ou campo"
      ],
      "Região": [
       "Região não citada"
@@ -44625,55 +44785,51 @@
     }
    },
    {
-    "titulo": "Urban domestic gardens (II): experimental tests of methods for increasing biodiversity",
+    "titulo": "Agricultural landscapes with organic crops support higher pollinator diversity",
     "autores": [
-     "Kevin J. Gaston",
-     "Richard M. Smith",
-     "Ken A. Thompson",
-     "Philip H. Warren"
+     "Andrea Holzschuh",
+     "Ingolf Steffan‐Dewenter",
+     "Teja Tscharntke"
     ],
-    "revista": "Biodiversity and Conservation",
+    "revista": "Oikos",
     "issn": [
-     "0960-3115",
-     "1572-9710",
-     "0960-3115"
+     "0030-1299",
+     "1600-0706",
+     "0030-1299"
     ],
-    "data": "2005-02-01",
-    "ano": 2005,
-    "resumo": "",
-    "doi": "10.1007/s10531-004-6066-x",
-    "url": "https://doi.org/10.1007/s10531-004-6066-x",
-    "citacoes": 331,
+    "data": "2007-12-14",
+    "ano": 2007,
+    "resumo": "Pollinators are traditionally thought to perceive non‐flowering crop fields as hostile landscape matrix. In this study, we show that landscapes composed of higher proportions of organic crop fields support more bee species at greater abundances in fallow strips. An increase in organic cropping in the surrounding landscape from 5% to 20% enhanced bee species richness in fallow strips by 50%, density of solitary bees by 60% and bumble bee density by 150%. Bee species richness and bumble bee density responded strongest to organic cropping in landscape sectors with 500 m radius, solitary bee densi",
+    "doi": "10.1111/j.2007.0030-1299.16303.x",
+    "url": "https://doi.org/10.1111/j.2007.0030-1299.16303.x",
+    "citacoes": 328,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
-     "biodiversity enhancement",
-     "wildlife gardening",
+     "pollinator diversity",
+     "organic farming",
+     "agricultural landscapes",
      "solitary bees",
-     "solitary wasps",
-     "artificial nest sites",
      "bumblebees",
-     "small ponds",
-     "dead wood",
-     "saproxylic fungi",
-     "Urtica dioica",
-     "butterfly larvae",
-     "urban green space",
-     "garden management",
+     "bee species richness",
+     "landscape matrix",
+     "foraging",
+     "nesting sites",
      "Plant and animal studies",
-     "Urban Agriculture and Sustainability",
-     "Ecology and Vegetation Dynamics Studies"
+     "Ecology and Vegetation Dynamics Studies",
+     "Insect and Arachnid Ecology and Behavior"
     ],
-    "oa": false,
+    "oa": true,
     "criado": "2025-10-10T00:00:00",
-    "fonte_id": "S5043789",
-    "key": "doi:10.1007/s10531-004-6066-x",
+    "fonte_id": "S200794352",
+    "key": "doi:10.1111/j.2007.0030-1299.16303.x",
     "facetas": {
      "Abelha": [
-      "Sem grupo identificado"
+      "Mamangavas (Bombini)",
+      "Solitárias"
      ],
      "Tipo de estudo": [
-      "Experimento ou campo"
+      "Não identificado"
      ],
      "Região": [
       "Região não citada"
@@ -44758,7 +44914,7 @@
     "resumo": "The importance of intellectual talent to achievement in all professional domains is well established, but less is known about other individual differences that predict success. The authors tested the importance of 1 noncognitive trait: grit. Defined as perseverance and passion for long-term goals, grit accounted for an average of 4% of the variance in success outcomes, including educational attainment among 2 samples of adults (N=1,545 and N=690), grade point average among Ivy League undergraduates (N=138), retention in 2 classes of United States Military Academy, West Point, cadets (N=1,218 a",
     "doi": "10.1037/0022-3514.92.6.1087",
     "url": "https://doi.org/10.1037/0022-3514.92.6.1087",
-    "citacoes": 6929,
+    "citacoes": 6930,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -44808,7 +44964,7 @@
     "resumo": "",
     "doi": "10.1016/0006-3207(92)91201-3",
     "url": "https://doi.org/10.1016/0006-3207(92)91201-3",
-    "citacoes": 5727,
+    "citacoes": 5728,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -45275,7 +45431,7 @@
     "resumo": "BACKGROUND: Recent declines in honey bees for crop pollination threaten fruit, nut, vegetable and seed production in the United States. A broad survey of pesticide residues was conducted on samples from migratory and other beekeepers across 23 states, one Canadian province and several agricultural cropping systems during the 2007-08 growing seasons. METHODOLOGY/PRINCIPAL FINDINGS: We have used LC/MS-MS and GC/MS to analyze bees and hive matrices for pesticide residues utilizing a modified QuEChERS method. We have found 121 different pesticides and metabolites within 887 wax, pollen, bee and as",
     "doi": "10.1371/journal.pone.0009754",
     "url": "https://doi.org/10.1371/journal.pone.0009754",
-    "citacoes": 1510,
+    "citacoes": 1511,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -46838,7 +46994,7 @@
     "resumo": "BACKGROUND: Recent declines in honey bees for crop pollination threaten fruit, nut, vegetable and seed production in the United States. A broad survey of pesticide residues was conducted on samples from migratory and other beekeepers across 23 states, one Canadian province and several agricultural cropping systems during the 2007-08 growing seasons. METHODOLOGY/PRINCIPAL FINDINGS: We have used LC/MS-MS and GC/MS to analyze bees and hive matrices for pesticide residues utilizing a modified QuEChERS method. We have found 121 different pesticides and metabolites within 887 wax, pollen, bee and as",
     "doi": "10.1371/journal.pone.0009754",
     "url": "https://doi.org/10.1371/journal.pone.0009754",
-    "citacoes": 1510,
+    "citacoes": 1511,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -47032,7 +47188,7 @@
     "resumo": "BACKGROUND: Over the last two winters, there have been large-scale, unexplained losses of managed honey bee (Apis mellifera L.) colonies in the United States. In the absence of a known cause, this syndrome was named Colony Collapse Disorder (CCD) because the main trait was a rapid loss of adult worker bees. We initiated a descriptive epizootiological study in order to better characterize CCD and compare risk factor exposure between populations afflicted by and not afflicted by CCD. METHODS AND PRINCIPAL FINDINGS: Of 61 quantified variables (including adult bee physiology, pathogen loads, and p",
     "doi": "10.1371/journal.pone.0006481",
     "url": "https://doi.org/10.1371/journal.pone.0006481",
-    "citacoes": 1358,
+    "citacoes": 1359,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -47232,7 +47388,7 @@
     "resumo": "",
     "doi": "10.1016/j.jip.2009.06.011",
     "url": "https://doi.org/10.1016/j.jip.2009.06.011",
-    "citacoes": 1255,
+    "citacoes": 1256,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -47990,6 +48146,54 @@
     }
    },
    {
+    "titulo": "A century of advances in bumblebee domestication and the economic and environmental aspects of its commercialization for pollination",
+    "autores": [
+     "H. H. W. Velthuis",
+     "Adriaan van Doorn"
+    ],
+    "revista": "Apidologie",
+    "issn": [
+     "0044-8435",
+     "1297-9678",
+     "0044-8435"
+    ],
+    "data": "2006-06-23",
+    "ano": 2006,
+    "resumo": "",
+    "doi": "10.1051/apido:2006019",
+    "url": "https://doi.org/10.1051/apido:2006019",
+    "citacoes": 960,
+    "fonte": "OpenAlex",
+    "tipo": "article",
+    "palavras": [
+     "crop pollination",
+     "Bombus terrestris",
+     "Bombus impatiens",
+     "greenhouse tomato",
+     "invasive species establishment",
+     "ecological risk",
+     "agricultural pollinators",
+     "Plant and animal studies",
+     "Insect and Arachnid Ecology and Behavior",
+     "Insect and Pesticide Research"
+    ],
+    "oa": true,
+    "criado": "2025-10-10T00:00:00",
+    "fonte_id": "S126796143",
+    "key": "doi:10.1051/apido:2006019",
+    "facetas": {
+     "Abelha": [
+      "Mamangavas (Bombini)"
+     ],
+     "Tipo de estudo": [
+      "Não identificado"
+     ],
+     "Região": [
+      "Região não citada"
+     ]
+    }
+   },
+   {
     "titulo": "Effects of neonicotinoids and fipronil on non-target invertebrates",
     "autores": [
      "Lennard Pisa",
@@ -48056,54 +48260,6 @@
       "Mamangavas (Bombini)",
       "Apis (Apini)",
       "Solitárias"
-     ],
-     "Tipo de estudo": [
-      "Não identificado"
-     ],
-     "Região": [
-      "Região não citada"
-     ]
-    }
-   },
-   {
-    "titulo": "A century of advances in bumblebee domestication and the economic and environmental aspects of its commercialization for pollination",
-    "autores": [
-     "H. H. W. Velthuis",
-     "Adriaan van Doorn"
-    ],
-    "revista": "Apidologie",
-    "issn": [
-     "0044-8435",
-     "1297-9678",
-     "0044-8435"
-    ],
-    "data": "2006-06-23",
-    "ano": 2006,
-    "resumo": "",
-    "doi": "10.1051/apido:2006019",
-    "url": "https://doi.org/10.1051/apido:2006019",
-    "citacoes": 959,
-    "fonte": "OpenAlex",
-    "tipo": "article",
-    "palavras": [
-     "crop pollination",
-     "Bombus terrestris",
-     "Bombus impatiens",
-     "greenhouse tomato",
-     "invasive species establishment",
-     "ecological risk",
-     "agricultural pollinators",
-     "Plant and animal studies",
-     "Insect and Arachnid Ecology and Behavior",
-     "Insect and Pesticide Research"
-    ],
-    "oa": true,
-    "criado": "2025-10-10T00:00:00",
-    "fonte_id": "S126796143",
-    "key": "doi:10.1051/apido:2006019",
-    "facetas": {
-     "Abelha": [
-      "Mamangavas (Bombini)"
      ],
      "Tipo de estudo": [
       "Não identificado"
@@ -50716,6 +50872,72 @@
     }
    },
    {
+    "titulo": "Global trends in the number and diversity of managed pollinator species",
+    "autores": [
+     "Julia Osterman",
+     "Marcelo A. Aizen",
+     "Jacobus Christiaan Biesmeijer",
+     "Jordi Bosch",
+     "Brad G. Howlett",
+     "David W. Inouye",
+     "Chuleui Jung",
+     "Dino J. Martins",
+     "Rodrigo G. Medel",
+     "Anton Pauw",
+     "Colleen Lynda Seymour",
+     "Robert J. Paxton"
+    ],
+    "revista": "Agriculture Ecosystems & Environment",
+    "issn": [
+     "0167-8809",
+     "1873-2305",
+     "0167-8809"
+    ],
+    "data": "2021-09-11",
+    "ano": 2021,
+    "resumo": "Cultivation of pollinator-dependent crops has expanded globally, increasing our reliance on insect pollination. This essential ecosystem service is provided by a wide range of managed and wild pollinators whose abundance and diversity are thought to be in decline, threatening sustainable food production. The Western honey bee (Apis mellifera) is amongst the best-monitored insects but the state of other managed pollinators is less well known. Here, we review the status and trends of all managed pollinators based on publicly accessible databases and the published literature. We found that, on a ",
+    "doi": "10.1016/j.agee.2021.107653",
+    "url": "https://doi.org/10.1016/j.agee.2021.107653",
+    "citacoes": 222,
+    "fonte": "OpenAlex",
+    "tipo": "article",
+    "palavras": [
+     "managed pollinators",
+     "Apis mellifera",
+     "pollinator decline",
+     "pollination services",
+     "bumblebees",
+     "stingless bees",
+     "solitary bees",
+     "pollinator diversity",
+     "ecosystem services",
+     "agricultural landscapes",
+     "Plant and animal studies",
+     "Insect and Pesticide Research",
+     "Insect and Arachnid Ecology and Behavior"
+    ],
+    "oa": true,
+    "criado": "2025-10-10T00:00:00",
+    "fonte_id": "S185297315",
+    "key": "doi:10.1016/j.agee.2021.107653",
+    "facetas": {
+     "Abelha": [
+      "Sem ferrão (Meliponini)",
+      "Mamangavas (Bombini)",
+      "Apis (Apini)",
+      "Solitárias"
+     ],
+     "Tipo de estudo": [
+      "Não identificado"
+     ],
+     "Região": [
+      "América do Norte",
+      "Europa",
+      "Ásia e Oceania"
+     ]
+    }
+   },
+   {
     "titulo": "Bees for Development: Brazilian Survey Reveals How to Optimize Stingless Beekeeping",
     "autores": [
      "Rodolfo Jaffé",
@@ -50770,72 +50992,6 @@
      ],
      "Região": [
       "Brasil"
-     ]
-    }
-   },
-   {
-    "titulo": "Global trends in the number and diversity of managed pollinator species",
-    "autores": [
-     "Julia Osterman",
-     "Marcelo A. Aizen",
-     "Jacobus Christiaan Biesmeijer",
-     "Jordi Bosch",
-     "Brad G. Howlett",
-     "David W. Inouye",
-     "Chuleui Jung",
-     "Dino J. Martins",
-     "Rodrigo G. Medel",
-     "Anton Pauw",
-     "Colleen Lynda Seymour",
-     "Robert J. Paxton"
-    ],
-    "revista": "Agriculture Ecosystems & Environment",
-    "issn": [
-     "0167-8809",
-     "1873-2305",
-     "0167-8809"
-    ],
-    "data": "2021-09-11",
-    "ano": 2021,
-    "resumo": "Cultivation of pollinator-dependent crops has expanded globally, increasing our reliance on insect pollination. This essential ecosystem service is provided by a wide range of managed and wild pollinators whose abundance and diversity are thought to be in decline, threatening sustainable food production. The Western honey bee (Apis mellifera) is amongst the best-monitored insects but the state of other managed pollinators is less well known. Here, we review the status and trends of all managed pollinators based on publicly accessible databases and the published literature. We found that, on a ",
-    "doi": "10.1016/j.agee.2021.107653",
-    "url": "https://doi.org/10.1016/j.agee.2021.107653",
-    "citacoes": 220,
-    "fonte": "OpenAlex",
-    "tipo": "article",
-    "palavras": [
-     "managed pollinators",
-     "Apis mellifera",
-     "pollinator decline",
-     "pollination services",
-     "bumblebees",
-     "stingless bees",
-     "solitary bees",
-     "pollinator diversity",
-     "ecosystem services",
-     "agricultural landscapes",
-     "Plant and animal studies",
-     "Insect and Pesticide Research",
-     "Insect and Arachnid Ecology and Behavior"
-    ],
-    "oa": true,
-    "criado": "2025-10-10T00:00:00",
-    "fonte_id": "S185297315",
-    "key": "doi:10.1016/j.agee.2021.107653",
-    "facetas": {
-     "Abelha": [
-      "Sem ferrão (Meliponini)",
-      "Mamangavas (Bombini)",
-      "Apis (Apini)",
-      "Solitárias"
-     ],
-     "Tipo de estudo": [
-      "Não identificado"
-     ],
-     "Região": [
-      "América do Norte",
-      "Europa",
-      "Ásia e Oceania"
      ]
     }
    },
@@ -53358,7 +53514,7 @@
     "resumo": "",
     "doi": "10.1007/s10898-007-9149-x",
     "url": "https://doi.org/10.1007/s10898-007-9149-x",
-    "citacoes": 7673,
+    "citacoes": 7675,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -53465,7 +53621,7 @@
     "resumo": "The importance of intellectual talent to achievement in all professional domains is well established, but less is known about other individual differences that predict success. The authors tested the importance of 1 noncognitive trait: grit. Defined as perseverance and passion for long-term goals, grit accounted for an average of 4% of the variance in success outcomes, including educational attainment among 2 samples of adults (N=1,545 and N=690), grade point average among Ivy League undergraduates (N=138), retention in 2 classes of United States Military Academy, West Point, cadets (N=1,218 a",
     "doi": "10.1037/0022-3514.92.6.1087",
     "url": "https://doi.org/10.1037/0022-3514.92.6.1087",
-    "citacoes": 6929,
+    "citacoes": 6930,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -53515,7 +53671,7 @@
     "resumo": "",
     "doi": "10.1016/0006-3207(92)91201-3",
     "url": "https://doi.org/10.1016/0006-3207(92)91201-3",
-    "citacoes": 5727,
+    "citacoes": 5728,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -54000,7 +54156,7 @@
     "resumo": "Insect guts present distinctive environments for microbial colonization, and bacteria in the gut potentially provide many beneficial services to their hosts. Insects display a wide range in degree of dependence on gut bacteria for basic functions. Most insect guts contain relatively few microbial species as compared to mammalian guts, but some insects harbor large gut communities of specialized bacteria. Others are colonized only opportunistically and sparsely by bacteria common in other environments. Insect digestive tracts vary extensively in morphology and physicochemical properties, factor",
     "doi": "10.1111/1574-6976.12025",
     "url": "https://doi.org/10.1111/1574-6976.12025",
-    "citacoes": 2612,
+    "citacoes": 2613,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -54814,7 +54970,7 @@
     "resumo": "BACKGROUND: Recent declines in honey bees for crop pollination threaten fruit, nut, vegetable and seed production in the United States. A broad survey of pesticide residues was conducted on samples from migratory and other beekeepers across 23 states, one Canadian province and several agricultural cropping systems during the 2007-08 growing seasons. METHODOLOGY/PRINCIPAL FINDINGS: We have used LC/MS-MS and GC/MS to analyze bees and hive matrices for pesticide residues utilizing a modified QuEChERS method. We have found 121 different pesticides and metabolites within 887 wax, pollen, bee and as",
     "doi": "10.1371/journal.pone.0009754",
     "url": "https://doi.org/10.1371/journal.pone.0009754",
-    "citacoes": 1510,
+    "citacoes": 1511,
     "fonte": "OpenAlex",
     "tipo": "article",
     "palavras": [
@@ -55120,7 +55276,7 @@
    }
   ]
  },
- "classicos_hash": "[{\"ativo\": false, \"bloqueadas\": [], \"permitidas\": [\"Apidologie\", \"Insectes Sociaux\", \"Journal of Insect Behavior\", \"Behavioral Ecology\", \"Animal Behaviour\", \"Journal of Chemical Ecology\", \"Ecological Entomology\", \"Neotropical Entomology\", \"Sociobiology\", \"Biological Conservation\", \"=Science\", \"=Nature\", \"Proceedings of the Royal Society B\", \"Current Biology\"]}, {\"manter_se_no_titulo\": [\"stingless\", \"Meliponini\", \"meliponine\", \"meliponiculture\"], \"onde\": \"titulo\", \"termos\": []}, {\"ate_ano\": null, \"por_topico\": 30}, [{\"contexto\": [\"thermoregulation\", \"thermal tolerance\", \"thermal limit\", \"heat stress\", \"heat wave\", \"cold tolerance\", \"critical temperature\", \"nest temperature\", \"brood temperature\", \"nest cooling\", \"fanning\", \"diapause\", \"climate change\", \"global warming\", \"urban heat island\"], \"nome\": \"Termorregulação, tolerância térmica e clima\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"division of labor\", \"division of labour\", \"caste\", \"queen\", \"worker reproduction\", \"eusociality\", \"eusocial\", \"sex determination\", \"age polyethism\", \"task allocation\", \"reproductive conflict\", \"haplodiploidy\", \"social evolution\"], \"nome\": \"Comportamento social, castas e divisão de trabalho\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"communication\", \"pheromone\", \"chemical communication\", \"cuticular hydrocarbons\", \"recruitment\", \"learning\", \"cognition\", \"memory\", \"olfactory\", \"sensory\", \"ethology\", \"collective behavior\", \"collective behaviour\"], \"nome\": \"Comunicação, cognição e comportamento\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"foraging\", \"foraging range\", \"flight distance\", \"flight range\", \"pollen collection\", \"pollen load\", \"pollen analysis\", \"palynology\", \"nectar\", \"floral resources\", \"floral preference\", \"host plant\", \"plant-bee interactions\", \"pollen specialization\", \"oligolectic\"], \"nome\": \"Forrageamento e recursos florais\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"nest architecture\", \"nest entrance\", \"nest defense\", \"nest defence\", \"guard bees\", \"robber\", \"cleptoparasitism\", \"cleptobiosis\", \"nest site\", \"nesting biology\", \"nest structure\", \"brood cell\", \"soldier\"], \"nome\": \"Nidificação, defesa e parasitismo\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"phylogeny\", \"phylogenetic\", \"systematics\", \"taxonomy\", \"biogeography\", \"classification\", \"species delimitation\", \"historical biogeography\", \"divergence\", \"checklist\"], \"nome\": \"Filogenia, sistemática e biogeografia\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"urban\", \"urbanization\", \"urbanisation\", \"city\", \"cities\", \"green space\", \"urban agriculture\", \"urban planning\", \"habitat fragmentation\", \"landscape ecology\"], \"nome\": \"Ecologia urbana de abelhas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"trap nest\", \"trap-nest\", \"trap-nesting\", \"cavity-nesting\", \"cavity nest\", \"nest box\", \"bee hotel\", \"artificial nest\", \"nesting structure\", \"solitary bee\", \"ground-nesting\", \"mason bee\"], \"nome\": \"Ninhos-isca e abelhas solitárias\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\"]}, {\"contexto\": [\"biodiversity\", \"species richness\", \"bee diversity\", \"bee community\", \"sampling\", \"pan trap\", \"monitoring\", \"conservation\", \"wild bee\", \"native bee\", \"pollinator decline\", \"functional traits\", \"functional diversity\", \"species composition\", \"restoration\"], \"nome\": \"Diversidade, amostragem e conservação\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"pollination service\", \"crop pollination\", \"agroecosystem\", \"greenhouse\", \"orchard\", \"buzz pollination\", \"managed pollinator\", \"pesticide\", \"neonicotinoid\", \"agriculture\"], \"nome\": \"Polinização e agroecossistemas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"species distribution model\", \"ecological niche model\", \"niche overlap\", \"range shift\", \"habitat suitability\", \"climate suitability\", \"future climate\", \"MaxEnt\"], \"nome\": \"Modelagem de distribuição e mudanças no clima\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"pot-honey\", \"pot honey\", \"pot-pollen\", \"pot pollen\", \"bee bread\", \"honey\", \"propolis\", \"geopropolis\", \"fermentation\", \"microbiota\", \"microbial\", \"yeast\", \"lactic acid bacteria\", \"artificial diet\", \"colony management\", \"rearing\"], \"nome\": \"Meliponicultura, mel e pólen\", \"termos\": [\"stingless bee\", \"Meliponini\", \"meliponiculture\", \"stingless beekeeping\"]}, {\"contexto\": [\"Internet of Things\", \"IoT\", \"sensor\", \"sensors\", \"precision beekeeping\", \"precision bee farming\", \"hive monitoring\", \"colony monitoring\", \"remote monitoring\", \"bee counting\", \"automated monitoring\", \"activity recording\"], \"nome\": \"Monitoramento eletrônico de colmeias\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"max\": 60, \"min\": 1, \"nome\": \"Outros temas de abelhas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}], [{\"nome\": \"Abelha\", \"opcoes\": [{\"nome\": \"Sem ferrão (Meliponini)\", \"termos\": [\"stingless bee\", \"Meliponini\", \"Meliponinae\", \"meliponine\", \"meliponiculture\", \"Melipona\", \"Trigona\", \"Tetragonula\", \"Tetragonisca\", \"Scaptotrigona\", \"Plebeia\", \"Frieseomelitta\", \"Nannotrigona\", \"Partamona\", \"Geotrigona\", \"Lestrimelitta\", \"Heterotrigona\", \"Austroplebeia\", \"Leurotrigona\", \"Friesella\", \"Meliponula\", \"Axestotrigona\", \"Cephalotrigona\", \"Oxytrigona\", \"Paratrigona\", \"Schwarziana\", \"Scaptotrigona\", \"Trigonisca\", \"Plebeina\", \"Dactylurina\", \"Lisotrigona\", \"Tetrigona\", \"Geniotrigona\", \"Lepidotrigona\", \"Homotrigona\", \"Hypotrigona\"]}, {\"nome\": \"Mamangavas (Bombini)\", \"termos\": [\"Bombus\", \"bumble bee\", \"bumblebee\", \"Bombini\"]}, {\"nome\": \"Apis (Apini)\", \"termos\": [\"Apini\", \"Apis mellifera\", \"Apis cerana\", \"Apis dorsata\", \"Apis florea\", \"Apis laboriosa\", \"Apis andreniformis\", \"Apis koschevnikovi\", \"honey bee\", \"honeybee\"]}, {\"nome\": \"Solitárias\", \"termos\": [\"solitary bee\", \"trap nest\", \"trap-nest\", \"trap-nesting\", \"cavity-nesting\", \"cavity nesting\", \"ground-nesting\", \"mason bee\", \"leafcutter bee\", \"leaf-cutter bee\", \"carpenter bee\", \"mining bee\", \"bee hotel\", \"Osmia\", \"Megachile\", \"Xylocopa\", \"Andrena\", \"Anthophora\", \"Centris\"]}, {\"nome\": \"Abelhas das orquídeas (Euglossini)\", \"termos\": [\"orchid bee\", \"Euglossini\", \"Euglossa\", \"Eulaema\", \"Eufriesea\", \"Exaerete\"]}], \"rotulo_sem\": \"Sem grupo identificado\"}, {\"nome\": \"Tipo de estudo\", \"opcoes\": [{\"nome\": \"Revisão ou síntese\", \"termos\": [\"systematic review\", \"literature review\", \"meta-analysis\", \"metaanalysis\", \"meta-analytic\", \"bibliometric\", \"state of the art\"], \"termos_titulo\": [\"review\", \"overview\", \"synthesis\", \"primer\", \"perspective\"]}, {\"nome\": \"Experimento ou campo\", \"termos\": [\"field experiment\", \"field study\", \"field survey\", \"laboratory experiment\", \"experimental\", \"in situ\", \"field observations\", \"we measured\", \"we tested\"]}, {\"nome\": \"Modelagem ou simulação\", \"termos\": [\"species distribution model\", \"niche model\", \"mathematical model\", \"agent-based\", \"simulation\", \"modelling\", \"modeling\", \"MaxEnt\"]}, {\"nome\": \"Filogenia e taxonomia\", \"termos\": [\"phylogeny\", \"phylogenetic\", \"taxonomy\", \"systematics\", \"new species\", \"species delimitation\", \"molecular phylogeny\", \"biogeography\"]}, {\"nome\": \"Genética e molecular\", \"termos\": [\"genome\", \"genomic\", \"transcriptome\", \"transcriptomic\", \"RNA-seq\", \"microsatellite\", \"DNA barcoding\", \"metabarcoding\", \"proteomic\", \"epigenetic\", \"genetic\"]}, {\"nome\": \"Tecnologia e monitoramento\", \"termos\": [\"sensor\", \"Internet of Things\", \"IoT\", \"machine learning\", \"deep learning\", \"computer vision\", \"monitoring system\", \"RFID\"]}], \"rotulo_sem\": \"Não identificado\"}, {\"nome\": \"Região\", \"opcoes\": [{\"nome\": \"Brasil\", \"termos\": [\"Brazil\", \"Brazilian\", \"Brasil\", \"brasileira\", \"São Paulo\", \"Amazon\", \"Amazonia\", \"Atlantic Forest\", \"Mata Atlântica\", \"Cerrado\", \"Caatinga\", \"Pantanal\"]}, {\"nome\": \"Neotrópico (fora do Brasil)\", \"termos\": [\"Neotropical\", \"Neotropics\", \"Mexico\", \"Colombia\", \"Costa Rica\", \"Argentina\", \"Peru\", \"Ecuador\", \"Venezuela\", \"Central America\", \"South America\", \"Latin America\", \"Panama\", \"Bolivia\", \"Paraguay\", \"Chile\", \"Guatemala\", \"French Guiana\"]}, {\"nome\": \"América do Norte\", \"termos\": [\"North America\", \"United States\", \"Canada\", \"California\", \"Florida\", \"Texas\"]}, {\"nome\": \"Europa\", \"termos\": [\"Europe\", \"European\", \"Germany\", \"France\", \"Spain\", \"Italy\", \"United Kingdom\", \"Britain\", \"Netherlands\", \"Sweden\", \"Poland\", \"Switzerland\", \"Portugal\"]}, {\"nome\": \"Ásia e Oceania\", \"termos\": [\"Asia\", \"Asian\", \"China\", \"Japan\", \"India\", \"Malaysia\", \"Thailand\", \"Indonesia\", \"Australia\", \"New Zealand\", \"Vietnam\", \"Philippines\", \"Taiwan\", \"Korea\", \"Borneo\", \"Sri Lanka\"]}, {\"nome\": \"África\", \"termos\": [\"Africa\", \"African\", \"Kenya\", \"South Africa\", \"Tanzania\", \"Nigeria\", \"Ethiopia\", \"Uganda\", \"Ghana\", \"Cameroon\"]}], \"rotulo_sem\": \"Região não citada\"}], {\"arquivo\": \"scopus.csv\", \"ativo\": true, \"somente_ativas\": true, \"tipos\": [\"Journal\"]}, [1791713225.8203106, 3191406], \"amplo\", [\"Apidologie\", \"Insectes Sociaux\", \"Journal of Insect Behavior\", \"Sociobiology\", \"Journal of Apicultural Research\", \"Neotropical Entomology\", \"Behavioral Ecology\", \"Animal Behaviour\", \"Biological Conservation\", {\"nome\": \"Science\", \"so_abelhas\": true}, {\"nome\": \"Nature\", \"so_abelhas\": true}, {\"nome\": \"Current Biology\", \"so_abelhas\": true}, {\"nome\": \"Proceedings of the Royal Society B\", \"so_abelhas\": true}]]",
+ "classicos_hash": "[{\"ativo\": false, \"bloqueadas\": [], \"permitidas\": [\"Apidologie\", \"Insectes Sociaux\", \"Journal of Insect Behavior\", \"Behavioral Ecology\", \"Animal Behaviour\", \"Journal of Chemical Ecology\", \"Ecological Entomology\", \"Neotropical Entomology\", \"Sociobiology\", \"Biological Conservation\", \"=Science\", \"=Nature\", \"Proceedings of the Royal Society B\", \"Current Biology\"]}, {\"manter_se_no_titulo\": [\"stingless\", \"Meliponini\", \"meliponine\", \"meliponiculture\"], \"onde\": \"titulo\", \"termos\": []}, {\"ate_ano\": null, \"por_topico\": 30}, [{\"contexto\": [\"thermoregulation\", \"thermal tolerance\", \"thermal limit\", \"heat stress\", \"heat wave\", \"cold tolerance\", \"critical temperature\", \"nest temperature\", \"brood temperature\", \"nest cooling\", \"fanning\", \"diapause\", \"climate change\", \"global warming\", \"urban heat island\"], \"nome\": \"Termorregulação, tolerância térmica e clima\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"division of labor\", \"division of labour\", \"caste\", \"queen\", \"worker reproduction\", \"eusociality\", \"eusocial\", \"sex determination\", \"age polyethism\", \"task allocation\", \"reproductive conflict\", \"haplodiploidy\", \"social evolution\"], \"nome\": \"Comportamento social, castas e divisão de trabalho\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"communication\", \"pheromone\", \"chemical communication\", \"cuticular hydrocarbons\", \"recruitment\", \"learning\", \"cognition\", \"memory\", \"olfactory\", \"sensory\", \"ethology\", \"collective behavior\", \"collective behaviour\"], \"nome\": \"Comunicação, cognição e comportamento\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"foraging\", \"foraging range\", \"flight distance\", \"flight range\", \"pollen collection\", \"pollen load\", \"pollen analysis\", \"palynology\", \"nectar\", \"floral resources\", \"floral preference\", \"host plant\", \"plant-bee interactions\", \"pollen specialization\", \"oligolectic\"], \"nome\": \"Forrageamento e recursos florais\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"nest architecture\", \"nest entrance\", \"nest defense\", \"nest defence\", \"guard bees\", \"robber\", \"cleptoparasitism\", \"cleptobiosis\", \"nest site\", \"nesting biology\", \"nest structure\", \"brood cell\", \"soldier\"], \"nome\": \"Nidificação, defesa e parasitismo\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"phylogeny\", \"phylogenetic\", \"systematics\", \"taxonomy\", \"biogeography\", \"classification\", \"species delimitation\", \"historical biogeography\", \"divergence\", \"checklist\"], \"nome\": \"Filogenia, sistemática e biogeografia\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"urban\", \"urbanization\", \"urbanisation\", \"city\", \"cities\", \"green space\", \"urban agriculture\", \"urban planning\", \"habitat fragmentation\", \"landscape ecology\"], \"nome\": \"Ecologia urbana de abelhas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"trap nest\", \"trap-nest\", \"trap-nesting\", \"cavity-nesting\", \"cavity nest\", \"nest box\", \"bee hotel\", \"artificial nest\", \"nesting structure\", \"solitary bee\", \"ground-nesting\", \"mason bee\"], \"nome\": \"Ninhos-isca e abelhas solitárias\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\"]}, {\"contexto\": [\"biodiversity\", \"species richness\", \"bee diversity\", \"bee community\", \"sampling\", \"pan trap\", \"monitoring\", \"conservation\", \"wild bee\", \"native bee\", \"pollinator decline\", \"functional traits\", \"functional diversity\", \"species composition\", \"restoration\"], \"nome\": \"Diversidade, amostragem e conservação\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"pollination service\", \"crop pollination\", \"agroecosystem\", \"greenhouse\", \"orchard\", \"buzz pollination\", \"managed pollinator\", \"pesticide\", \"neonicotinoid\", \"agriculture\"], \"nome\": \"Polinização e agroecossistemas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"species distribution model\", \"ecological niche model\", \"niche overlap\", \"range shift\", \"habitat suitability\", \"climate suitability\", \"future climate\", \"MaxEnt\"], \"nome\": \"Modelagem de distribuição e mudanças no clima\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"contexto\": [\"pot-honey\", \"pot honey\", \"pot-pollen\", \"pot pollen\", \"bee bread\", \"honey\", \"propolis\", \"geopropolis\", \"fermentation\", \"microbiota\", \"microbial\", \"yeast\", \"lactic acid bacteria\", \"artificial diet\", \"colony management\", \"rearing\"], \"nome\": \"Meliponicultura, mel e pólen\", \"termos\": [\"stingless bee\", \"Meliponini\", \"meliponiculture\", \"stingless beekeeping\"]}, {\"contexto\": [\"Internet of Things\", \"IoT\", \"sensor\", \"sensors\", \"precision beekeeping\", \"precision bee farming\", \"hive monitoring\", \"colony monitoring\", \"remote monitoring\", \"bee counting\", \"automated monitoring\", \"activity recording\"], \"nome\": \"Monitoramento eletrônico de colmeias\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}, {\"max\": 60, \"min\": 1, \"nome\": \"Outros temas de abelhas\", \"termos\": [\"bee\", \"Anthophila\", \"Apoidea\", \"Meliponini\"]}], [{\"nome\": \"Abelha\", \"opcoes\": [{\"nome\": \"Sem ferrão (Meliponini)\", \"termos\": [\"stingless bee\", \"Meliponini\", \"Meliponinae\", \"meliponine\", \"meliponiculture\", \"Melipona\", \"Trigona\", \"Tetragonula\", \"Tetragonisca\", \"Scaptotrigona\", \"Plebeia\", \"Frieseomelitta\", \"Nannotrigona\", \"Partamona\", \"Geotrigona\", \"Lestrimelitta\", \"Heterotrigona\", \"Austroplebeia\", \"Leurotrigona\", \"Friesella\", \"Meliponula\", \"Axestotrigona\", \"Cephalotrigona\", \"Oxytrigona\", \"Paratrigona\", \"Schwarziana\", \"Scaptotrigona\", \"Trigonisca\", \"Plebeina\", \"Dactylurina\", \"Lisotrigona\", \"Tetrigona\", \"Geniotrigona\", \"Lepidotrigona\", \"Homotrigona\", \"Hypotrigona\"]}, {\"nome\": \"Mamangavas (Bombini)\", \"termos\": [\"Bombus\", \"bumble bee\", \"bumblebee\", \"Bombini\"]}, {\"nome\": \"Apis (Apini)\", \"termos\": [\"Apini\", \"Apis mellifera\", \"Apis cerana\", \"Apis dorsata\", \"Apis florea\", \"Apis laboriosa\", \"Apis andreniformis\", \"Apis koschevnikovi\", \"honey bee\", \"honeybee\"]}, {\"nome\": \"Solitárias\", \"termos\": [\"solitary bee\", \"trap nest\", \"trap-nest\", \"trap-nesting\", \"cavity-nesting\", \"cavity nesting\", \"ground-nesting\", \"mason bee\", \"leafcutter bee\", \"leaf-cutter bee\", \"carpenter bee\", \"mining bee\", \"bee hotel\", \"Osmia\", \"Megachile\", \"Xylocopa\", \"Andrena\", \"Anthophora\", \"Centris\"]}, {\"nome\": \"Abelhas das orquídeas (Euglossini)\", \"termos\": [\"orchid bee\", \"Euglossini\", \"Euglossa\", \"Eulaema\", \"Eufriesea\", \"Exaerete\"]}], \"rotulo_sem\": \"Sem grupo identificado\"}, {\"nome\": \"Tipo de estudo\", \"opcoes\": [{\"nome\": \"Revisão ou síntese\", \"termos\": [\"systematic review\", \"literature review\", \"meta-analysis\", \"metaanalysis\", \"meta-analytic\", \"bibliometric\", \"state of the art\"], \"termos_titulo\": [\"review\", \"overview\", \"synthesis\", \"primer\", \"perspective\"]}, {\"nome\": \"Experimento ou campo\", \"termos\": [\"field experiment\", \"field study\", \"field survey\", \"laboratory experiment\", \"experimental\", \"in situ\", \"field observations\", \"we measured\", \"we tested\"]}, {\"nome\": \"Modelagem ou simulação\", \"termos\": [\"species distribution model\", \"niche model\", \"mathematical model\", \"agent-based\", \"simulation\", \"modelling\", \"modeling\", \"MaxEnt\"]}, {\"nome\": \"Filogenia e taxonomia\", \"termos\": [\"phylogeny\", \"phylogenetic\", \"taxonomy\", \"systematics\", \"new species\", \"species delimitation\", \"molecular phylogeny\", \"biogeography\"]}, {\"nome\": \"Genética e molecular\", \"termos\": [\"genome\", \"genomic\", \"transcriptome\", \"transcriptomic\", \"RNA-seq\", \"microsatellite\", \"DNA barcoding\", \"metabarcoding\", \"proteomic\", \"epigenetic\", \"genetic\"]}, {\"nome\": \"Tecnologia e monitoramento\", \"termos\": [\"sensor\", \"Internet of Things\", \"IoT\", \"machine learning\", \"deep learning\", \"computer vision\", \"monitoring system\", \"RFID\"]}], \"rotulo_sem\": \"Não identificado\"}, {\"nome\": \"Região\", \"opcoes\": [{\"nome\": \"Brasil\", \"termos\": [\"Brazil\", \"Brazilian\", \"Brasil\", \"brasileira\", \"São Paulo\", \"Amazon\", \"Amazonia\", \"Atlantic Forest\", \"Mata Atlântica\", \"Cerrado\", \"Caatinga\", \"Pantanal\"]}, {\"nome\": \"Neotrópico (fora do Brasil)\", \"termos\": [\"Neotropical\", \"Neotropics\", \"Mexico\", \"Colombia\", \"Costa Rica\", \"Argentina\", \"Peru\", \"Ecuador\", \"Venezuela\", \"Central America\", \"South America\", \"Latin America\", \"Panama\", \"Bolivia\", \"Paraguay\", \"Chile\", \"Guatemala\", \"French Guiana\"]}, {\"nome\": \"América do Norte\", \"termos\": [\"North America\", \"United States\", \"Canada\", \"California\", \"Florida\", \"Texas\"]}, {\"nome\": \"Europa\", \"termos\": [\"Europe\", \"European\", \"Germany\", \"France\", \"Spain\", \"Italy\", \"United Kingdom\", \"Britain\", \"Netherlands\", \"Sweden\", \"Poland\", \"Switzerland\", \"Portugal\"]}, {\"nome\": \"Ásia e Oceania\", \"termos\": [\"Asia\", \"Asian\", \"China\", \"Japan\", \"India\", \"Malaysia\", \"Thailand\", \"Indonesia\", \"Australia\", \"New Zealand\", \"Vietnam\", \"Philippines\", \"Taiwan\", \"Korea\", \"Borneo\", \"Sri Lanka\"]}, {\"nome\": \"África\", \"termos\": [\"Africa\", \"African\", \"Kenya\", \"South Africa\", \"Tanzania\", \"Nigeria\", \"Ethiopia\", \"Uganda\", \"Ghana\", \"Cameroon\"]}], \"rotulo_sem\": \"Região não citada\"}], {\"arquivo\": \"scopus.csv\", \"ativo\": true, \"somente_ativas\": true, \"tipos\": [\"Journal\"]}, [1791799856.8596694, 3191406], \"amplo\", [\"Apidologie\", \"Insectes Sociaux\", \"Journal of Insect Behavior\", \"Sociobiology\", \"Journal of Apicultural Research\", \"Neotropical Entomology\", \"Behavioral Ecology\", \"Animal Behaviour\", \"Biological Conservation\", {\"nome\": \"Science\", \"so_abelhas\": true}, {\"nome\": \"Nature\", \"so_abelhas\": true}, {\"nome\": \"Current Biology\", \"so_abelhas\": true}, {\"nome\": \"Proceedings of the Royal Society B\", \"so_abelhas\": true}]]",
  "nomes_topicos": [
   "Comportamento social, castas e divisão de trabalho",
   "Comunicação, cognição e comportamento",
