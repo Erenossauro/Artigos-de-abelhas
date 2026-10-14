@@ -231,6 +231,7 @@
 <div class="layout" id="layout">
   <aside class="sidebar" id="sidebar">
     <div id="sec-temas"></div>
+    <div id="sec-conf"></div>
     <div id="sec-abelha"></div>
     <div class="sb-bloco">
       <div class="sb-titulo">Revista</div>
@@ -320,7 +321,7 @@ const valor = id => { const el = document.getElementById(id); return el ? (el.va
 const COLECAO_PADRAO = PADRAO.colecao || 'Radar de Abelhas';
 let CFG = lsGet(K_CFG, null);
 const PRIMEIRA_VEZ = !CFG;
-if (!CFG) CFG = { topicos: [], revistas: [], openalexKey: '', zotero: { user: '', key: '', colecao: COLECAO_PADRAO }, confianca_sempre: true };
+if (!CFG) CFG = { topicos: [], revistas: [], openalexKey: '', zotero: { user: '', key: '', colecao: COLECAO_PADRAO } };
 CFG.topicos = CFG.topicos || []; CFG.revistas = CFG.revistas || [];
 CFG.zotero = Object.assign({ user: '', key: '', colecao: COLECAO_PADRAO }, CFG.zotero || {});
 function salvarCfg() { lsSet(K_CFG, CFG); }
@@ -340,14 +341,14 @@ function casaTopico(d, tp) {
   const t = ((d.titulo || '') + ' ' + (d.resumo || '')).toLowerCase();
   return (tp.termos || []).some(x => x && reTermo(x).test(t));
 }
-function confiavel(d) {
-  if (!CFG.revistas.length) return false;
-  const n = norm(d.revista);
+function indicesConf(d) {   // em quais das suas revistas de confiança este artigo foi publicado
+  const out = [], n = norm(d.revista);
   const is = new Set((d.issn || []).map(x => String(x).replace('-', '').toUpperCase()));
-  return CFG.revistas.some(r => (n && norm(r.nome) === n) || (r.issns || []).some(i => is.has(String(i).replace('-', '').toUpperCase())));
+  CFG.revistas.forEach((r, i) => { if ((n && norm(r.nome) === n) || (r.issns || []).some(x => is.has(String(x).replace('-', '').toUpperCase()))) out.push(i); });
+  return out;
 }
 function recalcular() {
-  ITENS.forEach(d => { d._m = CFG.topicos.filter(tp => casaTopico(d, tp)).map(tp => tp.id); d._c = confiavel(d); });
+  ITENS.forEach(d => { d._m = CFG.topicos.filter(tp => casaTopico(d, tp)).map(tp => tp.id); d._cr = indicesConf(d); d._c = d._cr.length > 0; });
 }
 function montarItens() {
   const mapa = {};
@@ -653,7 +654,7 @@ function fmtSjr(v) { return (Math.round(v * 100) / 100).toFixed(2); }
 
 function cabecalhoCard(d, dataTxt) {
   const sjr = d.sjr != null ? '<span class="sjr" title="SCImago Journal Rank (SJR) da revista">SJR ' + fmtSjr(d.sjr) + (d.q ? ' · ' + esc(d.q) : '') + '</span>' : '';
-  const conf = d._c ? '<span class="conf" title="Revista de confiança: tudo o que ela publica aparece no seu feed">confiança</span>' : '';
+  const conf = d._c ? '<span class="conf" title="Uma das suas revistas de confiança">confiança</span>' : '';
   return '<div class="card-top"><div class="rv">' +
     (d.revista ? '<span class="rev">' + esc(d.revista) + '</span>' : '<span class="rev mut">Revista não informada</span>') + sjr + conf +
     '</div><span class="data">' + esc(dataTxt) + '</span></div>';
@@ -726,7 +727,7 @@ function render() {
 
   const base = ITENS.filter(d => d.tipo === aba);
   const ativos = CFG.topicos.filter(t => t.ativo);
-  const passaTema = d => !ativos.length || (CFG.confianca_sempre !== false && d._c) || ativos.some(t => (d._m || []).includes(t.id));
+  const passaTema = d => !ativos.length || ativos.some(t => (d._m || []).includes(t.id)) || (d._cr || []).some(i => CFG.revistas[i] && CFG.revistas[i].mostrar);
   const passaTudo = (d, ig) => {
     if (ig !== 'tema' && !passaTema(d)) return false;
     if (soConf && !d._c) return false;
@@ -754,10 +755,16 @@ function render() {
   document.getElementById('sec-temas').innerHTML = CFG.topicos.length
     ? secao('Meus temas', '<div class="lista-op">' + checks(CFG.topicos.map(t => ({
         id: t.id, nome: t.nome, n: arrT.filter(d => (d._m || []).includes(t.id)).length, on: !!t.ativo })), 'tema') + '</div>' +
-        (CFG.revistas.length && CFG.confianca_sempre !== false ? '<div class="fnota" style="margin:4px 2px 8px">Artigos das suas revistas de confiança aparecem sempre.</div>' : ''),
-        '<a onclick="abrirConfig(false)">Editar</a>')
+        '', '<a onclick="abrirConfig(false)">Editar</a>')
     : secao('Meus temas', '<div class="aviso-vazio">Você ainda não escolheu temas, então o site mostra tudo. Escolha os seus para filtrar.</div>',
         '<a onclick="abrirConfig(false)">Escolher</a>');
+  document.getElementById('sec-conf').innerHTML = CFG.revistas.length
+    ? secao('Revistas de confiança', '<div class="lista-op">' + checks(CFG.revistas.map((r, i) => ({
+        id: i, nome: r.nome, n: arrT.filter(d => (d._cr || []).includes(i)).length, on: !!r.mostrar })), 'conf') + '</div>' +
+        '<div class="fnota" style="margin:4px 2px 8px">' + (ativos.length
+          ? 'Marque para ver tudo o que a revista publicou, mesmo fora dos temas marcados. Sem a marca, só aparece o que combina com os temas.'
+          : 'Você não marcou temas, então já aparece tudo. A marca vale quando você escolher temas.') + '</div>', '<a onclick="abrirConfig(false)">Editar</a>')
+    : '';
   document.getElementById('sec-abelha').innerHTML = FILTROS.length ? facetaHtml(FILTROS[0]) : '';
   document.getElementById('so-conf').checked = soConf;
 
@@ -817,6 +824,7 @@ document.getElementById('sidebar').addEventListener('change', ev => {
   const tp = i.dataset.tipo, o = i.dataset.o;
   limite = POR_PAGINA;
   if (tp === 'tema') { const t = CFG.topicos.find(x => x.id === o); if (t) { t.ativo = i.checked; salvarCfg(); } }
+  else if (tp === 'conf') { const r = CFG.revistas[parseInt(o, 10)]; if (r) { r.mostrar = i.checked; salvarCfg(); } }
   else if (tp === 'rev') alternarSel(revistasSel, o);
   else if (tp === 'faceta') { const f = i.dataset.f; if (!fac[f]) fac[f] = []; alternarSel(fac[f], o); }
   render();
@@ -876,7 +884,7 @@ function modalHtml(inicial) {
     '</div>' +
     '<div class="sug-titulo">Seus temas</div><div id="cfg-temas" style="margin-top:8px"></div>' +
     '</section>' +
-    '<section><h3>2. Revistas de confiança</h3><p class="dica">São as revistas em que <b>tudo o que for publicado</b> aparece no seu feed, mesmo que não combine com nenhum tema. Escreva o nome ou o ISSN.</p>' +
+    '<section><h3>2. Revistas de confiança</h3><p class="dica">São as revistas em que você confia. Na barra lateral, você <b>marca</b> uma delas quando quiser ver <b>tudo o que ela publicou</b>, mesmo fora dos seus temas; sem a marca, valem só os temas escolhidos. Escreva o nome ou o ISSN.</p>' +
     '<div class="entrada"><input type="text" id="cfg-rev" placeholder="Ex.: Apidologie ou 0044-8435" onkeydown="if(event.key===\'Enter\'){procurarRevista();event.preventDefault();}"><button class="btn forte" onclick="procurarRevista()">Procurar</button></div>' +
     '<div class="achados" id="cfg-rev-res"></div><div class="chips" id="cfg-revs"></div><div class="sug-titulo">Sugestões</div><div class="chips" id="cfg-sug-revs"></div></section>' +
     '<section><h3>3. Conexões <span style="font-weight:400;font-size:13px;color:var(--mut)">(opcional)</span></h3>' +
