@@ -160,6 +160,34 @@
   .err-msg { color:var(--err); font-size:13px; font-weight:600; }
   .modal-rodape { padding:16px 28px 22px; display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; background:var(--surface); }
 
+  .form-tema { background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:14px 16px 6px; margin-bottom:14px; }
+  .form-tema.editando { border-color:var(--argila); }
+  .form-tema h4 { margin:0 0 10px; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--verde); }
+  .chip-input { display:flex; flex-wrap:wrap; gap:6px; align-items:center; padding:6px 8px; border:1px solid var(--line); border-radius:10px; background:var(--surface); min-height:44px; cursor:text; }
+  .chip-input input { flex:1; min-width:170px; border:none !important; outline:none; background:transparent !important; padding:6px 4px !important; font-size:14px; color:var(--ink); width:auto !important; }
+  .chip-input .chip { margin:0; }
+  .acoes-form { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:8px 0 10px; }
+  .tema-card { display:flex; justify-content:space-between; align-items:center; gap:12px; border:1px solid var(--line); border-radius:12px; padding:10px 14px; margin-bottom:8px; background:var(--surface); }
+  .tema-card.editando { border-color:var(--argila); background:var(--argila-claro); }
+  .tema-info b { font-size:15px; }
+  .tema-termos { font-size:12.5px; color:var(--mut); margin-top:2px; }
+  .tema-acoes { display:flex; gap:6px; flex:none; }
+  .previa { font-size:13px; color:var(--mut); margin:4px 0 8px; }
+  .previa b { color:var(--ink); }
+  .previa ul { margin:4px 0 0; padding-left:18px; }
+  .ideias { margin:2px 0 10px; }
+  .ideias .grupo { margin-bottom:8px; }
+  .ideias .rot2 { font-size:12px; color:var(--mut); margin-bottom:4px; }
+  .ideias .chips { margin:2px 0 4px; }
+  .chip .cnt { font-weight:500; opacity:.7; font-size:12px; }
+  .chip.zero { border-style:dashed; background:transparent; color:var(--mut); }
+  .chip.generica { border-color:var(--argila); background:var(--argila-claro); color:var(--argila); }
+  details.guia { margin:4px 0 12px; font-size:13px; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:8px 12px; }
+  details.guia summary { cursor:pointer; font-weight:600; color:var(--argila); }
+  details.guia ol { margin:8px 0 2px; padding-left:20px; }
+  details.guia li { margin-bottom:5px; }
+  .prompt-ia { margin-top:12px; padding-top:10px; border-top:1px solid var(--line); }
+  .prompt-ia textarea { width:100%; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.45; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:var(--bg); color:var(--ink); resize:vertical; }
   .toast-area { position:fixed; right:18px; bottom:18px; display:flex; flex-direction:column; gap:8px; z-index:60; }
   .toast { background:var(--ink); color:var(--bg); padding:10px 16px; border-radius:12px; font-size:13px; max-width:340px; box-shadow:var(--sombra); }
   .toast.erro { background:var(--err); color:#fff; }
@@ -254,7 +282,7 @@ const DADOS = [{"key": "doi:10.1111/geb.70307", "titulo": "Structural Colour in 
 const FILTROS_DEF = [{"nome": "Abelha", "rotulo_sem": "Sem grupo identificado", "opcoes": [{"nome": "Sem ferrão (Meliponini)", "termos": ["stingless bee", "Meliponini", "Meliponinae", "meliponine", "meliponiculture", "Melipona", "Trigona", "Tetragonula", "Tetragonisca", "Scaptotrigona", "Plebeia", "Frieseomelitta", "Nannotrigona", "Partamona", "Geotrigona", "Lestrimelitta", "Heterotrigona", "Austroplebeia", "Leurotrigona", "Friesella", "Meliponula", "Axestotrigona", "Cephalotrigona", "Oxytrigona", "Paratrigona", "Schwarziana", "Scaptotrigona", "Trigonisca", "Plebeina", "Dactylurina", "Lisotrigona", "Tetrigona", "Geniotrigona", "Lepidotrigona", "Homotrigona", "Hypotrigona"], "termos_titulo": []}, {"nome": "Mamangavas (Bombini)", "termos": ["Bombus", "bumble bee", "bumblebee", "Bombini"], "termos_titulo": []}, {"nome": "Apis (Apini)", "termos": ["Apini", "Apis mellifera", "Apis cerana", "Apis dorsata", "Apis florea", "Apis laboriosa", "Apis andreniformis", "Apis koschevnikovi", "honey bee", "honeybee"], "termos_titulo": []}, {"nome": "Solitárias", "termos": ["solitary bee", "trap nest", "trap-nest", "trap-nesting", "cavity-nesting", "cavity nesting", "ground-nesting", "mason bee", "leafcutter bee", "leaf-cutter bee", "carpenter bee", "mining bee", "bee hotel", "Osmia", "Megachile", "Xylocopa", "Andrena", "Anthophora", "Centris"], "termos_titulo": []}, {"nome": "Abelhas das orquídeas (Euglossini)", "termos": ["orchid bee", "Euglossini", "Euglossa", "Eulaema", "Eufriesea", "Exaerete"], "termos_titulo": []}]}, {"nome": "Tipo de estudo", "rotulo_sem": "Não identificado", "opcoes": [{"nome": "Revisão ou síntese", "termos": ["systematic review", "literature review", "meta-analysis", "metaanalysis", "meta-analytic", "bibliometric", "state of the art"], "termos_titulo": ["review", "overview", "synthesis", "primer", "perspective"]}, {"nome": "Experimento ou campo", "termos": ["field experiment", "field study", "field survey", "laboratory experiment", "experimental", "in situ", "field observations", "we measured", "we tested"], "termos_titulo": []}, {"nome": "Modelagem ou simulação", "termos": ["species distribution model", "niche model", "mathematical model", "agent-based", "simulation", "modelling", "modeling", "MaxEnt"], "termos_titulo": []}, {"nome": "Filogenia e taxonomia", "termos": ["phylogeny", "phylogenetic", "taxonomy", "systematics", "new species", "species delimitation", "molecular phylogeny", "biogeography"], "termos_titulo": []}, {"nome": "Genética e molecular", "termos": ["genome", "genomic", "transcriptome", "transcriptomic", "RNA-seq", "microsatellite", "DNA barcoding", "metabarcoding", "proteomic", "epigenetic", "genetic"], "termos_titulo": []}, {"nome": "Tecnologia e monitoramento", "termos": ["sensor", "Internet of Things", "IoT", "machine learning", "deep learning", "computer vision", "monitoring system", "RFID"], "termos_titulo": []}]}, {"nome": "Região", "rotulo_sem": "Região não citada", "opcoes": [{"nome": "Brasil", "termos": ["Brazil", "Brazilian", "Brasil", "brasileira", "São Paulo", "Amazon", "Amazonia", "Atlantic Forest", "Mata Atlântica", "Cerrado", "Caatinga", "Pantanal"], "termos_titulo": []}, {"nome": "Neotrópico (fora do Brasil)", "termos": ["Neotropical", "Neotropics", "Mexico", "Colombia", "Costa Rica", "Argentina", "Peru", "Ecuador", "Venezuela", "Central America", "South America", "Latin America", "Panama", "Bolivia", "Paraguay", "Chile", "Guatemala", "French Guiana"], "termos_titulo": []}, {"nome": "América do Norte", "termos": ["North America", "United States", "Canada", "California", "Florida", "Texas"], "termos_titulo": []}, {"nome": "Europa", "termos": ["Europe", "European", "Germany", "France", "Spain", "Italy", "United Kingdom", "Britain", "Netherlands", "Sweden", "Poland", "Switzerland", "Portugal"], "termos_titulo": []}, {"nome": "Ásia e Oceania", "termos": ["Asia", "Asian", "China", "Japan", "India", "Malaysia", "Thailand", "Indonesia", "Australia", "New Zealand", "Vietnam", "Philippines", "Taiwan", "Korea", "Borneo", "Sri Lanka"], "termos_titulo": []}, {"nome": "África", "termos": ["Africa", "African", "Kenya", "South Africa", "Tanzania", "Nigeria", "Ethiopia", "Uganda", "Ghana", "Cameroon"], "termos_titulo": []}]}];
 const NOV_DIAS = 7;
 const JANELAS = [3, 7, 15, 30, 60, 90, 0];
-const PADRAO = {"topicos": [{"nome": "Termorregulação, tolerância térmica e clima", "termos": ["thermoregulation", "thermal tolerance", "thermal limit", "heat stress", "heat wave", "cold tolerance", "critical temperature", "nest temperature", "brood temperature", "nest cooling", "fanning", "diapause", "climate change", "global warming", "urban heat island"]}, {"nome": "Comportamento social, castas e divisão de trabalho", "termos": ["division of labor", "division of labour", "caste", "queen", "worker reproduction", "eusociality", "eusocial", "sex determination", "age polyethism", "task allocation", "reproductive conflict", "haplodiploidy", "social evolution"]}, {"nome": "Comunicação, cognição e comportamento", "termos": ["communication", "pheromone", "chemical communication", "cuticular hydrocarbons", "recruitment", "learning", "cognition", "memory", "olfactory", "sensory", "ethology", "collective behavior", "collective behaviour"]}, {"nome": "Forrageamento e recursos florais", "termos": ["foraging", "foraging range", "flight distance", "flight range", "pollen collection", "pollen load", "pollen analysis", "palynology", "nectar", "floral resources", "floral preference", "host plant", "plant-bee interactions", "pollen specialization", "oligolectic"]}, {"nome": "Nidificação, defesa e parasitismo", "termos": ["nest architecture", "nest entrance", "nest defense", "nest defence", "guard bees", "robber", "cleptoparasitism", "cleptobiosis", "nest site", "nesting biology", "nest structure", "brood cell", "soldier"]}, {"nome": "Filogenia, sistemática e biogeografia", "termos": ["phylogeny", "phylogenetic", "systematics", "taxonomy", "biogeography", "classification", "species delimitation", "historical biogeography", "divergence", "checklist"]}, {"nome": "Ecologia urbana de abelhas", "termos": ["urban", "urbanization", "urbanisation", "city", "cities", "green space", "urban agriculture", "urban planning", "habitat fragmentation", "landscape ecology"]}, {"nome": "Ninhos-isca e abelhas solitárias", "termos": ["trap nest", "trap-nest", "trap-nesting", "cavity-nesting", "cavity nest", "nest box", "bee hotel", "artificial nest", "nesting structure", "solitary bee", "ground-nesting", "mason bee"]}, {"nome": "Diversidade, amostragem e conservação", "termos": ["biodiversity", "species richness", "bee diversity", "bee community", "sampling", "pan trap", "monitoring", "conservation", "wild bee", "native bee", "pollinator decline", "functional traits", "functional diversity", "species composition", "restoration"]}, {"nome": "Polinização e agroecossistemas", "termos": ["pollination service", "crop pollination", "agroecosystem", "greenhouse", "orchard", "buzz pollination", "managed pollinator", "pesticide", "neonicotinoid", "agriculture"]}, {"nome": "Modelagem de distribuição e mudanças no clima", "termos": ["species distribution model", "ecological niche model", "niche overlap", "range shift", "habitat suitability", "climate suitability", "future climate", "MaxEnt"]}, {"nome": "Meliponicultura, mel e pólen", "termos": ["pot-honey", "pot honey", "pot-pollen", "pot pollen", "bee bread", "honey", "propolis", "geopropolis", "fermentation", "microbiota", "microbial", "yeast", "lactic acid bacteria", "artificial diet", "colony management", "rearing"]}, {"nome": "Monitoramento eletrônico de colmeias", "termos": ["Internet of Things", "IoT", "sensor", "sensors", "precision beekeeping", "precision bee farming", "hive monitoring", "colony monitoring", "remote monitoring", "bee counting", "automated monitoring", "activity recording"]}], "revistas": [{"nome": "Apidologie", "issns": ["0044-8435", "1297-9678"], "padrao": true}, {"nome": "Journal of Apicultural Research", "issns": ["0021-8839", "2078-6913"], "padrao": true}, {"nome": "Bee World", "issns": ["0005-772X"], "padrao": true}], "colecao": "Radar de Abelhas"};
+const PADRAO = {"topicos": [{"nome": "Termorregulação, tolerância térmica e clima", "termos": ["thermoregulation", "thermal tolerance", "thermal limit", "heat stress", "heat wave", "cold tolerance", "critical temperature", "nest temperature", "brood temperature", "nest cooling", "fanning", "diapause", "climate change", "global warming", "urban heat island"]}, {"nome": "Comportamento social, castas e divisão de trabalho", "termos": ["division of labor", "division of labour", "caste", "queen", "worker reproduction", "eusociality", "eusocial", "sex determination", "age polyethism", "task allocation", "reproductive conflict", "haplodiploidy", "social evolution"]}, {"nome": "Comunicação, cognição e comportamento", "termos": ["communication", "pheromone", "chemical communication", "cuticular hydrocarbons", "recruitment", "learning", "cognition", "memory", "olfactory", "sensory", "ethology", "collective behavior", "collective behaviour"]}, {"nome": "Forrageamento e recursos florais", "termos": ["foraging", "foraging range", "flight distance", "flight range", "pollen collection", "pollen load", "pollen analysis", "palynology", "nectar", "floral resources", "floral preference", "host plant", "plant-bee interactions", "pollen specialization", "oligolectic"]}, {"nome": "Nidificação, defesa e parasitismo", "termos": ["nest architecture", "nest entrance", "nest defense", "nest defence", "guard bees", "robber", "cleptoparasitism", "cleptobiosis", "nest site", "nesting biology", "nest structure", "brood cell", "soldier"]}, {"nome": "Filogenia, sistemática e biogeografia", "termos": ["phylogeny", "phylogenetic", "systematics", "taxonomy", "biogeography", "classification", "species delimitation", "historical biogeography", "divergence", "checklist"]}, {"nome": "Ecologia urbana de abelhas", "termos": ["urban", "urbanization", "urbanisation", "city", "cities", "green space", "urban agriculture", "urban planning", "habitat fragmentation", "landscape ecology"]}, {"nome": "Ninhos-isca e abelhas solitárias", "termos": ["trap nest", "trap-nest", "trap-nesting", "cavity-nesting", "cavity nest", "nest box", "bee hotel", "artificial nest", "nesting structure", "solitary bee", "ground-nesting", "mason bee"]}, {"nome": "Diversidade, amostragem e conservação", "termos": ["biodiversity", "species richness", "bee diversity", "bee community", "sampling", "pan trap", "monitoring", "conservation", "wild bee", "native bee", "pollinator decline", "functional traits", "functional diversity", "species composition", "restoration"]}, {"nome": "Polinização e agroecossistemas", "termos": ["pollination service", "crop pollination", "agroecosystem", "greenhouse", "orchard", "buzz pollination", "managed pollinator", "pesticide", "neonicotinoid", "agriculture"]}, {"nome": "Modelagem de distribuição e mudanças no clima", "termos": ["species distribution model", "ecological niche model", "niche overlap", "range shift", "habitat suitability", "climate suitability", "future climate", "MaxEnt"]}, {"nome": "Meliponicultura, mel e pólen", "termos": ["pot-honey", "pot honey", "pot-pollen", "pot pollen", "bee bread", "honey", "propolis", "geopropolis", "fermentation", "microbiota", "microbial", "yeast", "lactic acid bacteria", "artificial diet", "colony management", "rearing"]}, {"nome": "Monitoramento eletrônico de colmeias", "termos": ["Internet of Things", "IoT", "sensor", "sensors", "precision beekeeping", "precision bee farming", "hive monitoring", "colony monitoring", "remote monitoring", "bee counting", "automated monitoring", "activity recording"]}], "revistas": [{"nome": "Apidologie", "issns": ["0044-8435", "1297-9678"], "padrao": true}, {"nome": "Journal of Apicultural Research", "issns": ["0021-8839", "2078-6913"], "padrao": true}, {"nome": "Bee World", "issns": ["0005-772X"], "padrao": true}], "vocabulario": [{"conceito": "Socialidade", "aliases": ["socialidade", "eussocialidade", "sociabilidade", "comportamento social", "vida social"], "palavras": ["eusociality", "eusocial", "social behavior", "division of labor", "caste", "queen", "worker", "kin selection", "colony organization", "altruism"]}, {"conceito": "Termorregulação", "aliases": ["termorregulacao", "temperatura do ninho", "calor", "estresse termico", "tolerancia termica"], "palavras": ["thermoregulation", "heat stress", "thermal tolerance", "nest temperature", "brood temperature", "fanning", "heat wave", "critical thermal maximum", "cooling"]}, {"conceito": "Mudanças climáticas", "aliases": ["mudancas climaticas", "clima", "aquecimento global", "seca", "fenologia"], "palavras": ["climate change", "global warming", "drought", "extreme weather", "phenology", "range shift", "species distribution model", "warming"]}, {"conceito": "Ecologia urbana", "aliases": ["ecologia urbana", "urbanizacao", "cidade", "cidades", "areas verdes", "urbano"], "palavras": ["urban ecology", "urbanization", "city", "green space", "urban garden", "heat island", "impervious surface", "urban bee"]}, {"conceito": "Nidificação e ninhos-isca", "aliases": ["ninho", "ninhos", "ninhos-isca", "ninho-isca", "nidificacao", "arquitetura do ninho"], "palavras": ["trap nest", "trap-nesting", "cavity-nesting", "nest box", "bee hotel", "nesting biology", "nest architecture", "nest site", "nest entrance", "ground-nesting"]}, {"conceito": "Forrageamento", "aliases": ["forrageamento", "forragear", "coleta de nectar", "coleta de polen", "voo de forrageio"], "palavras": ["foraging", "foraging range", "flight distance", "foraging behavior", "pollen collection", "nectar collection", "optimal foraging", "resource use", "recruitment"]}, {"conceito": "Comunicação", "aliases": ["comunicacao", "feromonio", "feromonios", "danca", "recrutamento"], "palavras": ["communication", "pheromone", "chemical communication", "cuticular hydrocarbons", "recruitment", "waggle dance", "vibrational signal", "olfactory communication"]}, {"conceito": "Cognição e aprendizado", "aliases": ["cognicao", "aprendizado", "aprendizagem", "memoria", "navegacao", "orientacao"], "palavras": ["learning", "memory", "cognition", "olfactory learning", "visual learning", "navigation", "decision making", "behavioral variation"]}, {"conceito": "Defesa e agressividade", "aliases": ["defesa", "defesa do ninho", "agressividade", "agressao", "guarda", "saque"], "palavras": ["nest defense", "guard bees", "aggression", "defensive behavior", "robbing", "cleptobiosis", "alarm pheromone"]}, {"conceito": "Polinização", "aliases": ["polinizacao", "polinizador", "polinizadores", "visitantes florais", "rede de polinizacao"], "palavras": ["pollination", "pollinator", "pollination service", "crop pollination", "pollen transfer", "flower visitation", "pollination network", "buzz pollination"]}, {"conceito": "Recursos florais e pólen", "aliases": ["recursos florais", "polen", "nectar", "flores", "plantas nativas", "palinologia"], "palavras": ["floral resources", "pollen", "nectar", "floral preference", "pollen analysis", "palynology", "host plant", "pollen diet", "plant-pollinator interaction", "oligolectic"]}, {"conceito": "Conservação", "aliases": ["conservacao", "declinio", "extincao", "ameaca", "ameacadas", "restauracao"], "palavras": ["conservation", "extinction risk", "pollinator decline", "habitat loss", "restoration", "endangered", "threatened species", "red list"]}, {"conceito": "Biodiversidade", "aliases": ["biodiversidade", "diversidade", "riqueza de especies", "composicao de especies", "inventario", "lista de especies"], "palavras": ["biodiversity", "species richness", "species diversity", "community composition", "functional diversity", "beta diversity", "species checklist", "inventory"]}, {"conceito": "Amostragem e métodos", "aliases": ["amostragem", "metodo de coleta", "armadilha", "monitoramento", "transecto"], "palavras": ["sampling", "pan trap", "bee bowl", "netting", "transect", "monitoring protocol", "sampling effort", "standardized sampling"]}, {"conceito": "Pesticidas", "aliases": ["agrotoxicos", "agrotoxico", "pesticidas", "inseticida", "neonicotinoide", "toxicidade", "defensivos"], "palavras": ["pesticide", "neonicotinoid", "insecticide", "glyphosate", "sublethal effects", "toxicity", "agrochemical", "fungicide", "exposure"]}, {"conceito": "Doenças e parasitas", "aliases": ["doencas", "doenca", "parasitas", "patogenos", "virus", "varroa", "nosema"], "palavras": ["disease", "pathogen", "parasite", "Varroa", "Nosema", "virus", "deformed wing virus", "foulbrood", "immune response"]}, {"conceito": "Nutrição", "aliases": ["nutricao", "alimentacao", "dieta", "proteina", "inanicao"], "palavras": ["nutrition", "diet", "protein", "lipid", "amino acids", "pollen quality", "starvation", "nutritional ecology", "feeding"]}, {"conceito": "Mel e própolis", "aliases": ["mel", "propolis", "geopropolis", "mel de pote", "polen armazenado"], "palavras": ["honey", "pot-honey", "propolis", "geopropolis", "bee bread", "pot-pollen", "honey composition", "antimicrobial"]}, {"conceito": "Microbioma e fermentação", "aliases": ["microbioma", "microbiota", "fermentacao", "bacterias", "leveduras", "simbiontes"], "palavras": ["microbiome", "microbiota", "gut bacteria", "yeast", "fermentation", "symbiont", "lactic acid bacteria"]}, {"conceito": "Genética e genômica", "aliases": ["genetica", "genomica", "genoma", "transcriptoma", "expressao genica", "dna"], "palavras": ["genome", "genomic", "population genetics", "microsatellite", "transcriptome", "RNA-seq", "DNA barcoding", "gene expression", "epigenetic"]}, {"conceito": "Filogenia e taxonomia", "aliases": ["filogenia", "taxonomia", "sistematica", "especie nova", "biogeografia"], "palavras": ["phylogeny", "taxonomy", "systematics", "new species", "species delimitation", "biogeography", "molecular phylogeny", "revision"]}, {"conceito": "Reprodução (rainha e machos)", "aliases": ["reproducao", "rainha", "rainhas", "zangao", "zangoes", "machos", "acasalamento", "determinacao do sexo"], "palavras": ["queen", "drone", "mating", "reproduction", "oviposition", "sex determination", "worker reproduction", "queen rearing", "polyandry"]}, {"conceito": "Enxameação e fundação", "aliases": ["enxameacao", "enxame", "fundacao de colonia", "divisao de colonia", "abandono"], "palavras": ["swarming", "colony founding", "reproductive swarming", "colony fission", "nest relocation", "absconding"]}, {"conceito": "Ciclo de vida e diapausa", "aliases": ["diapausa", "ciclo de vida", "sazonalidade", "hibernacao", "emergencia"], "palavras": ["diapause", "phenology", "seasonal activity", "overwintering", "life cycle", "emergence"]}, {"conceito": "Morfologia e características funcionais", "aliases": ["morfologia", "tamanho do corpo", "lingua", "caracteres funcionais", "voo"], "palavras": ["functional traits", "body size", "intertegular distance", "tongue length", "morphology", "flight performance", "wing"]}, {"conceito": "Monitoramento eletrônico", "aliases": ["sensores", "sensor", "monitoramento eletronico", "iot", "apicultura de precisao", "inteligencia artificial"], "palavras": ["sensor", "Internet of Things", "precision beekeeping", "hive monitoring", "machine learning", "computer vision", "acoustic monitoring", "RFID", "bee counting"]}, {"conceito": "Meliponicultura e manejo", "aliases": ["meliponicultura", "manejo", "criacao de abelhas", "caixas", "divisao de caixas"], "palavras": ["meliponiculture", "stingless beekeeping", "colony management", "rearing", "artificial diet", "colony division", "hive design", "management"]}, {"conceito": "Paisagem e uso da terra", "aliases": ["paisagem", "uso da terra", "fragmentacao", "conectividade", "cobertura florestal", "agricultura"], "palavras": ["landscape", "land use", "habitat fragmentation", "agricultural landscape", "forest cover", "connectivity", "landscape ecology"]}, {"conceito": "Espécies invasoras e competição", "aliases": ["invasoras", "exoticas", "competicao", "sobreposicao de nicho"], "palavras": ["invasive species", "exotic species", "alien species", "competition", "niche overlap", "resource competition"]}, {"conceito": "Abelhas solitárias", "aliases": ["abelhas solitarias", "solitarias", "abelha solitaria"], "palavras": ["solitary bee", "mason bee", "leafcutter bee", "Osmia", "Megachile", "Xylocopa", "Andrena", "cavity-nesting"]}, {"conceito": "Abelhas sem ferrão", "aliases": ["sem ferrao", "meliponini", "meliponineos", "jatai", "mandacaia", "uruçu", "urucu"], "palavras": ["stingless bee", "Meliponini", "Melipona", "Trigona", "Tetragonula", "Scaptotrigona", "Tetragonisca", "meliponine"]}, {"conceito": "Mamangavas", "aliases": ["mamangavas", "mamangava", "bombus", "abelhas de cauda"], "palavras": ["bumble bee", "bumblebee", "Bombus", "bumble bee decline", "colony growth", "queen bumble bee"]}, {"conceito": "Abelhas das orquídeas", "aliases": ["orquideas", "euglossini", "abelhas das orquideas", "fragrancias"], "palavras": ["orchid bee", "Euglossini", "Euglossa", "Eulaema", "fragrance collection", "male perfume"]}, {"conceito": "Fisiologia", "aliases": ["fisiologia", "metabolismo", "respiracao", "balanco hidrico", "estresse oxidativo", "energetica"], "palavras": ["metabolism", "respiration", "energetics", "water balance", "desiccation", "thermal physiology", "oxidative stress"]}, {"conceito": "Sobrevivência e longevidade", "aliases": ["sobrevivencia", "longevidade", "mortalidade", "envelhecimento"], "palavras": ["survival", "longevity", "mortality", "lifespan", "senescence"]}, {"conceito": "Redes de interação", "aliases": ["redes de interacao", "aninhamento", "especializacao", "generalizacao", "redes ecologicas"], "palavras": ["interaction network", "nestedness", "network structure", "specialization", "generalization", "plant-pollinator network"]}, {"conceito": "Cleptoparasitismo", "aliases": ["cleptoparasitismo", "parasitismo social", "cleptoparasita", "lestrimelitta"], "palavras": ["cleptoparasitism", "social parasitism", "brood parasite", "Lestrimelitta", "cuckoo bee"]}], "colecao": "Radar de Abelhas"};
 const FOTO = {"nome_cientifico": "Megachile rotundata", "nome_popular": "Alfalfa Leafcutter Bee", "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12208374/large.jpg", "credito": "(c) Heather Holm, some rights reserved (CC BY-NC), uploaded by Heather Holm", "licenca": "CC-BY-NC", "link": "https://www.inaturalist.org/taxa/52783"};
 const FILTROS = FILTROS_DEF.map(f => ({ nome: f.nome, opcoes: f.opcoes.map(o => o.nome).concat([f.rotulo_sem]) }));
 const POR_PAGINA = 40;
@@ -808,9 +836,11 @@ function abrirConfig(inicial) {
   TMP = JSON.parse(JSON.stringify(CFG));
   if (inicial && !TMP.revistas.length) TMP.revistas = revistaPadrao();
   TMP._inicial = !!inicial;
+  PROMPT_EDITADO = false;
   document.getElementById('modal-corpo').innerHTML = modalHtml(!!inicial);
   document.getElementById('modal').classList.add('on');
-  desenharTemas(); desenharRevistas();
+  FORM = { termos: [], editando: -1, cfg: null };
+  desenharForm(); desenharTemas(); desenharRevistas();
 }
 function fecharConfig() {
   document.getElementById('modal').classList.remove('on');
@@ -821,9 +851,31 @@ function modalHtml(inicial) {
   return '<div class="modal-topo"><h2>' + (inicial ? 'Bem-vindo ao seu radar de abelhas' : 'Meus temas e revistas') + '</h2><p>' +
     (inicial ? 'Vamos configurar em dois minutos: você escolhe os <b>temas</b> que quer acompanhar e as <b>revistas de confiança</b>. Tudo fica salvo neste navegador e dá para mudar quando quiser.'
              : 'Mude seus temas, suas revistas de confiança e as conexões. As escolhas ficam salvas neste navegador.') + '</p></div>' +
-    '<section><h3>1. Seus temas</h3><p class="dica">Escreva palavras-chave em inglês (é como os artigos são escritos). Para sinônimos, separe por vírgula: <i>thermoregulation, heat stress</i>. Os temas viram filtros marcados na barra lateral; sem nenhum tema, o site mostra tudo.</p>' +
-    '<div class="entrada"><input type="text" id="cfg-tema" placeholder="Ex.: foraging, nectar collection" onkeydown="if(event.key===\'Enter\'){addTemaDoCampo();event.preventDefault();}"><button class="btn forte" onclick="addTemaDoCampo()">Adicionar</button></div>' +
-    '<div class="chips" id="cfg-temas"></div><div class="sug-titulo">Sugestões (clique para adicionar)</div><div class="chips" id="cfg-sug-temas"></div></section>' +
+    '<section><h3>1. Seus temas</h3><p class="dica">Um tema é um assunto que você quer acompanhar. Dê um <b>título</b> e escreva as <b>palavras-chave</b> que o definem, em inglês (é como os artigos são escritos). Um artigo entra no tema se tiver <b>qualquer uma</b> das palavras no título ou no resumo. Sem nenhum tema, o site mostra todos os artigos.</p>' +
+    '<div class="form-tema" id="form-tema"><h4 id="ft-cab">Novo tema</h4>' +
+    '<div class="campo"><label for="ft-titulo">Título do tema</label><input type="text" id="ft-titulo" placeholder="Ex.: Socialidade" oninput="desenharIdeias();atualizarPrompt()" onkeydown="if(event.key===\'Enter\'){event.preventDefault();document.getElementById(\'ft-palavra\').focus();}"></div>' +
+    '<div class="campo"><label for="ft-palavra">Palavras-chave</label><div class="chip-input" onclick="document.getElementById(\'ft-palavra\').focus()"><span id="ft-chips" style="display:contents"></span>' +
+    '<input type="text" id="ft-palavra" autocomplete="off" placeholder="Digite uma palavra e tecle Enter (ex.: eusociality)" oninput="palavraInput(this)" onpaste="setTimeout(() => { palavraInput(this); flushPalavra(); }, 0)" onkeydown="palavraTecla(event,this)"></div>' +
+    '<div class="ajuda">Tecle <b>Enter</b> ou digite uma <b>vírgula</b> para adicionar cada palavra. Frases também valem, como <i>division of labor</i>.</div>' +
+    '<div class="err-msg" id="ft-aviso" style="font-size:12px;margin-top:4px"></div></div>' +
+    '<div class="acoes-form"><button class="btn forte" id="ft-salvar" onclick="salvarTema()">Adicionar tema</button><button class="btn" id="ft-cancelar" style="display:none" onclick="limparForm()">Cancelar edição</button><span id="ft-msg" class="err-msg"></span></div>' +
+    '<div class="previa" id="ft-previa"></div><div class="ideias" id="ft-ideias"></div>' +
+    '<details class="guia"><summary>Como escolher boas palavras-chave? (com prompt para IA)</summary><ol>' +
+    '<li><b>Pense em inglês.</b> Os artigos são escritos em inglês: <i>socialidade</i> vira <i>eusociality</i>, <i>social behavior</i>…</li>' +
+    '<li><b>Comece pelo conceito central e acrescente sinônimos</b> (eusocial, eusociality, social behavior). Quanto mais jeitos de dizer a mesma coisa, menos artigos escapam.</li>' +
+    '<li><b>Misture termos gerais e específicos</b> (<i>caste</i>, <i>division of labor</i>, <i>queen-worker conflict</i>). Evite palavras genéricas sozinhas, como <i>behavior</i>, <i>study</i> ou <i>species</i>: elas trazem de tudo.</li>' +
+    '<li><b>Plural não precisa:</b> <i>nest</i> já pega <i>nests</i>. Mas escreva as duas grafias quando existirem (<i>behavior</i> e <i>behaviour</i>).</li>' +
+    '<li><b>Use frases entre aspas mentais:</b> <i>heat stress</i> é bem melhor que <i>heat</i> e <i>stress</i> separados.</li>' +
+    '<li><b>Gêneros e espécies funcionam</b> (<i>Melipona</i>, <i>Bombus</i>, <i>Osmia bicornis</i>).</li>' +
+    '<li><b>Olhe o contador:</b> a etiqueta da palavra mostra quantos artigos carregados a usam. Zero = palavra rara ou erro de digitação; centenas = ampla demais.</li>' +
+    '<li><b>Revise depois de alguns dias:</b> veja o que entrou e ajuste (Editar).</li></ol>' +
+    '<div class="prompt-ia"><div style="font-weight:700;margin-bottom:2px">Peça ajuda a uma IA (ChatGPT, Claude, Gemini…)</div>' +
+    '<p class="ajuda" style="margin:2px 0 6px">1) Copie o prompt abaixo: ele já leva o título e as palavras que você escreveu. 2) Cole na IA que você usa. 3) Cole a resposta no campo de palavras-chave: cada palavra vira uma etiqueta. 4) Confira os contadores e apague o que não servir. A IA pode errar ou inventar termos.</p>' +
+    '<textarea id="ft-prompt" rows="14" oninput="PROMPT_EDITADO=true" aria-label="Prompt para copiar"></textarea>' +
+    '<div class="acoes-form"><button class="btn forte mini" onclick="copiarPrompt()">Copiar prompt</button><button class="btn mini" onclick="restaurarPrompt()">Restaurar texto</button></div></div></details>' +
+    '</div>' +
+    '<div class="sug-titulo">Seus temas</div><div id="cfg-temas" style="margin-top:8px"></div>' +
+    '</section>' +
     '<section><h3>2. Revistas de confiança</h3><p class="dica">São as revistas em que <b>tudo o que for publicado</b> aparece no seu feed, mesmo que não combine com nenhum tema. Escreva o nome ou o ISSN.</p>' +
     '<div class="entrada"><input type="text" id="cfg-rev" placeholder="Ex.: Apidologie ou 0044-8435" onkeydown="if(event.key===\'Enter\'){procurarRevista();event.preventDefault();}"><button class="btn forte" onclick="procurarRevista()">Procurar</button></div>' +
     '<div class="achados" id="cfg-rev-res"></div><div class="chips" id="cfg-revs"></div><div class="sug-titulo">Sugestões</div><div class="chips" id="cfg-sug-revs"></div></section>' +
@@ -837,26 +889,209 @@ function modalHtml(inicial) {
     '<div class="ajuda">O botão "Quero ler" cria a subpasta "Quero ler" dentro dela, e "Lido" cria a subpasta "Lido".</div></div></section>' +
     '<div class="modal-rodape"><button class="btn" onclick="fecharConfig()">' + (inicial ? 'Pular por enquanto' : 'Cancelar') + '</button><button class="btn forte" onclick="concluirConfig()">Salvar e ' + (inicial ? 'começar' : 'aplicar') + '</button></div>';
 }
-function nomeTema(t) { return esc(t.nome) + ((t.termos || []).length > 1 ? ' <span style="opacity:.7;font-weight:500">+' + (t.termos.length - 1) + '</span>' : ''); }
+let FORM = { termos: [], editando: -1, cfg: null };
+function limparForm() {
+  FORM = { termos: [], editando: -1, cfg: null };
+  const t = document.getElementById('ft-titulo'), p = document.getElementById('ft-palavra');
+  if (t) t.value = ''; if (p) p.value = '';
+  desenharForm(); desenharTemas();
+}
+const GENERICAS = ['bee', 'bees', 'behavior', 'behaviour', 'study', 'studies', 'effect', 'effects', 'species', 'insect', 'insects', 'analysis', 'research', 'review', 'model', 'data', 'result', 'results'];
+let _UNICOS = null, _UNICOS_N = -1;
+function unicos() {
+  if (_UNICOS && _UNICOS_N === ITENS.length) return _UNICOS;
+  const m = {}; ITENS.forEach(d => { if (!m[d.key]) { d._tt = ((d.titulo || '') + ' ' + (d.resumo || '')).toLowerCase(); m[d.key] = d; } });
+  _UNICOS = Object.values(m); _UNICOS_N = ITENS.length; _DF_ALL = null; return _UNICOS;
+}
+function casaPalavra(d, p) { return reTermo(p).test(d._tt || (d._tt = ((d.titulo || '') + ' ' + (d.resumo || '')).toLowerCase())); }
+function desenharChipsPalavras() {
+  const el = document.getElementById('ft-chips'); if (!el) return;
+  const base = unicos();
+  el.innerHTML = FORM.termos.map((p, i) => {
+    const n = base.filter(d => casaPalavra(d, p)).length, gen = GENERICAS.includes(p.toLowerCase());
+    const dica = gen ? 'Palavra muito genérica: pode trazer artigos fora do tema.' : n === 0 ? 'Nenhum artigo carregado usa esta palavra (palavra rara ou erro de digitação?).' : n + ' artigo(s) carregado(s) usam esta palavra.';
+    return '<span class="chip' + (n === 0 ? ' zero' : '') + (gen ? ' generica' : '') + '" title="' + esc(dica) + '">' + esc(p) + ' <span class="cnt">' + n + '</span><button class="x" title="Remover esta palavra" onclick="removerPalavra(' + i + ')">×</button></span>';
+  }).join('');
+  const av = document.getElementById('ft-aviso'), g = FORM.termos.filter(p => GENERICAS.includes(p.toLowerCase()));
+  if (av) av.textContent = g.length ? 'A palavra "' + g[0] + '" é muito genérica e pode trazer artigos fora do tema. Prefira frases mais específicas.' : '';
+  atualizarPrevia(); desenharIdeias(); atualizarPrompt();
+}
+function atualizarPrevia() {
+  const el = document.getElementById('ft-previa'); if (!el) return;
+  if (!FORM.termos.length) { el.innerHTML = 'Adicione palavras-chave para ver quantos artigos carregados combinam com o tema.'; return; }
+  const base = unicos(), hit = base.filter(d => FORM.termos.some(p => casaPalavra(d, p)));
+  el.innerHTML = 'Prévia: <b>' + hit.length + '</b> de ' + base.length + ' artigos carregados (últimos dias + clássicos) combinam com estas palavras.' +
+    (hit.length ? '<ul>' + hit.slice(0, 3).map(d => '<li>' + esc(d.titulo) + '</li>').join('') + '</ul>' : (base.length ? ' Tente sinônimos ou palavras mais gerais.' : ''));
+}
+// ---- ideias de palavras ----
+const STOP = new Set(('a about above after again against all also although among an and any are as at be because been before being between both but by can could did do does during each either else for from further had has have having here how however if in into is it its just may might more most much must no nor not of on once only or other our out over own per same should since so some such than that the their them then there these they this those through thus to too under until up upon use used using very was we were what when where which while who whom why will with within without would yet via et al').split(' '));
+const GENERICAS_TXT = new Set(('study studies result results show shows showed shown found find finding findings based suggest suggests suggested analysis analyses data effect effects high higher low lower increase increased decrease decreased new large small different similar important potential however mainly present presented provide provides provided research paper article review compared comparison across approach number total overall significant significantly respectively associated levels level rate rates years year time one two three first second known species bee bees insect insects').split(' '));
+let _DF_ALL = null;
+function tokensDe(t) { return (String(t).toLowerCase().match(/[a-z][a-z-]{3,}/g) || []).filter(w => !STOP.has(w) && !GENERICAS_TXT.has(w)); }
+function raiz(w) { return w.length > 4 ? w.replace(/ies$/, 'y').replace(/sses$/, 'ss').replace(/s$/, '') : w; }
+function termosDoc(d) {
+  const tk = tokensDe(d._tt || ''), out = new Set();
+  tk.forEach((w, i) => { out.add(raiz(w)); });
+  const bruto = String(d._tt || '').toLowerCase().match(/[a-z][a-z-]*/g) || [];
+  const bom = w => w.length >= 4 && !STOP.has(w) && !GENERICAS_TXT.has(w);
+  for (let i = 0; i + 1 < bruto.length; i++) { const a = bruto[i], b = bruto[i + 1]; if (bom(a) && bom(b)) out.add(raiz(a) + ' ' + raiz(b)); }
+  return out;
+}
+function dfTodos() {
+  if (_DF_ALL) return _DF_ALL;
+  const df = {}; unicos().forEach(d => termosDoc(d).forEach(t => { df[t] = (df[t] || 0) + 1; }));
+  _DF_ALL = df; return df;
+}
+function ideiasCoocorrencia(max) {
+  const base = unicos(), N = base.length;
+  if (!FORM.termos.length || N < 8) return [];
+  const alvo = base.filter(d => FORM.termos.some(p => casaPalavra(d, p)));
+  if (alvo.length < 3) return [];
+  const dfA = {}, forma = {}, dfT = dfTodos();
+  alvo.forEach(d => { termosDoc(d).forEach(t => { dfA[t] = (dfA[t] || 0) + 1; }); });
+  const jaTem = new Set(FORM.termos.map(p => raiz(p.toLowerCase())).concat(FORM.termos.map(p => p.toLowerCase())));
+  let cand = Object.keys(dfA).filter(t => dfA[t] >= 2 && dfA[t] / alvo.length >= (t.includes(' ') ? 0.2 : 0.12) && !jaTem.has(t)
+      && !FORM.termos.some(p => p.toLowerCase().includes(t)));
+  // uma frase que aparece nos mesmos artigos que uma de suas palavras ganha da palavra solta (mais específica)
+  const sobra = new Set(cand);
+  cand.filter(t => t.includes(' ')).forEach(b => b.split(' ').forEach(c => { if (dfA[c] === dfA[b]) sobra.delete(c); }));
+  cand = cand.filter(t => sobra.has(t));
+  return cand.map(t => ({ termo: t, n: dfA[t], pts: dfA[t] * Math.log((N + 1) / (dfT[t] || 1)) * (t.includes(' ') ? 1.15 : 1) }))
+    .sort((a, b) => b.pts - a.pts).slice(0, max || 10);
+}
+function ideiasVocabulario() {
+  const tit = norm(valor('ft-titulo')), usados = FORM.termos.map(p => p.toLowerCase());
+  const achou = [];
+  (PADRAO.vocabulario || []).forEach(v => {
+    const nomes = [v.conceito].concat(v.aliases || []).map(norm).filter(Boolean);
+    const portitulo = tit && nomes.some(n => (' ' + tit + ' ').includes(' ' + n + ' ') || tit === n);
+    const porpalavra = (v.palavras || []).some(p => usados.includes(p.toLowerCase()));
+    if (portitulo || porpalavra) achou.push({ v, ord: portitulo ? 0 : 1 });
+  });
+  return achou.sort((a, b) => a.ord - b.ord).slice(0, 3).map(x => ({ conceito: x.v.conceito, palavras: x.v.palavras.filter(p => !usados.includes(p.toLowerCase())), titulo: x.ord === 0 }))
+    .filter(x => x.palavras.length);
+}
+let IDEIAS_OA = null;
+function chipIdeia(p, n) { return '<span class="chip sug" onclick="usarIdeia(this.dataset.p)" data-p="' + esc(p) + '">＋ ' + esc(p) + (n ? ' <span class="cnt">' + n + '</span>' : '') + '</span>'; }
+function desenharIdeias() {
+  const el = document.getElementById('ft-ideias'); if (!el) return;
+  let h = '';
+  ideiasVocabulario().forEach(g => { h += '<div class="grupo"><div class="rot2">' + (g.titulo ? 'Ideias para "' + esc(g.conceito) + '"' : 'Ideias parecidas: ' + esc(g.conceito)) + ' (clique para adicionar)</div><div class="chips">' + g.palavras.map(p => chipIdeia(p)).join('') + '</div></div>'; });
+  const jaMostradas = new Set(ideiasVocabulario().flatMap(g => g.palavras.map(p => p.toLowerCase())));
+  const frasesMostradas = [...jaMostradas].filter(p => p.includes(' '));
+  const co = ideiasCoocorrencia(16).filter(x => !jaMostradas.has(x.termo) && !frasesMostradas.some(p => p.split(/\s+/).includes(x.termo))).slice(0, 10);
+  if (co.length) h += '<div class="grupo"><div class="rot2">Palavras que aparecem junto nos artigos carregados (o número é quantos artigos)</div><div class="chips">' + co.map(x => chipIdeia(x.termo, x.n)).join('') + '</div></div>';
+  if (IDEIAS_OA) {
+    if (IDEIAS_OA.erro) h += '<div class="err-msg" style="font-size:12px">' + esc(IDEIAS_OA.erro) + '</div>';
+    else IDEIAS_OA.topicos.forEach(t => { const ps = t.keywords.filter(p => !FORM.termos.some(x => x.toLowerCase() === p.toLowerCase())); if (ps.length) h += '<div class="grupo"><div class="rot2">Do OpenAlex, assunto "' + esc(t.nome) + '"</div><div class="chips">' + ps.map(p => chipIdeia(p)).join('') + '</div></div>'; });
+  }
+  if (FORM.termos.length || valor('ft-titulo')) h += '<button class="btn mini" id="ft-oa" onclick="ideiasOpenAlex()">Buscar mais ideias no OpenAlex</button>';
+  el.innerHTML = h;
+}
+function usarIdeia(p) { addPalavra(p); desenharChipsPalavras(); const i = document.getElementById('ft-palavra'); if (i) i.focus(); }
+async function ideiasOpenAlex() {
+  const q = FORM.termos[0] || valor('ft-titulo'); if (!q) return;
+  const b = document.getElementById('ft-oa'); if (b) { b.disabled = true; b.textContent = 'Buscando…'; }
+  try {
+    const j = await oaGet('/topics', { search: q, 'per-page': 3 }, valor('cfg-oakey') || (TMP && TMP.openalexKey) || '');
+    const ts = (j.results || []).map(t => ({ nome: t.display_name, keywords: (t.keywords || []).filter(Boolean) })).filter(t => t.keywords.length);
+    IDEIAS_OA = ts.length ? { topicos: ts } : { erro: 'O OpenAlex não achou assuntos para "' + q + '". Tente uma palavra em inglês.' };
+  } catch (e) { IDEIAS_OA = { erro: 'Não consegui buscar no OpenAlex: ' + (e.message || e) }; }
+  desenharIdeias();
+}
+function desenharForm() {
+  if (!document.getElementById('form-tema')) return;
+  const ed = FORM.editando >= 0;
+  desenharChipsPalavras();
+  document.getElementById('ft-cab').textContent = ed ? 'Editando o tema "' + (TMP.topicos[FORM.editando] || {}).nome + '"' : 'Novo tema';
+  IDEIAS_OA = null;
+  document.getElementById('ft-salvar').textContent = ed ? 'Salvar alterações' : 'Adicionar tema';
+  document.getElementById('ft-cancelar').style.display = ed ? 'inline-block' : 'none';
+  document.getElementById('form-tema').classList.toggle('editando', ed);
+  document.getElementById('ft-msg').textContent = '';
+}
+let PROMPT_EDITADO = false;
+function montarPrompt() {
+  const titulo = valor('ft-titulo'), tem = FORM.termos;
+  return [
+    'Você é um especialista em abelhas (ecologia, comportamento e taxonomia) e em busca bibliográfica.',
+    'Preciso de palavras-chave em INGLÊS para filtrar artigos científicos novos sobre abelhas.',
+    '',
+    'TEMA: ' + (titulo || '[ESCREVA AQUI O NOME DO TEMA, por exemplo: Socialidade]'),
+    '[SE QUISER, DESCREVA AQUI EM UMA OU DUAS FRASES O QUE VOCÊ QUER ACOMPANHAR NESSE TEMA]',
+    tem.length ? 'PALAVRAS QUE EU JÁ TENHO (não repita): ' + tem.join(', ') : null,
+    '',
+    'COMO O FILTRO FUNCIONA: ele procura cada palavra ou frase no TÍTULO e no RESUMO dos artigos, e o artigo entra se tiver QUALQUER uma delas. Plurais simples são tratados sozinhos (nest = nests), mas sinônimos e grafias diferentes (behavior/behaviour) não.',
+    '',
+    'O QUE EU QUERO:',
+    '1. Entre 15 e 30 palavras-chave ou frases curtas em inglês, do jeito que os pesquisadores escrevem em títulos e resumos.',
+    '2. Misture termos gerais do tema, termos específicos e sinônimos. Inclua variações de grafia (britânica e americana) e, quando fizer sentido, nomes de gêneros ou grupos de abelhas.',
+    '3. Prefira frases de 2 a 3 palavras a palavras soltas. Evite termos genéricos demais ("behavior", "study", "species", "bee"), que trariam artigos de outros assuntos.',
+    '4. Não numere, não explique e não use aspas.',
+    '',
+    'FORMATO DA RESPOSTA: somente as palavras e frases separadas por vírgula, em uma única linha, para eu copiar e colar.'
+  ].filter(l => l !== null).join('\n');
+}
+function atualizarPrompt() { const ta = document.getElementById('ft-prompt'); if (ta && !PROMPT_EDITADO) ta.value = montarPrompt(); }
+function restaurarPrompt() { PROMPT_EDITADO = false; atualizarPrompt(); }
+async function copiarPrompt() {
+  const ta = document.getElementById('ft-prompt'); if (!ta) return;
+  const aviso = () => toast('Prompt copiado! Cole na sua IA e depois cole a resposta no campo de palavras-chave.');
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) { await navigator.clipboard.writeText(ta.value); aviso(); return; }
+    ta.select(); if (document.execCommand('copy')) { aviso(); return; }
+    throw new Error('sem acesso à área de transferência');
+  } catch (e) { ta.select(); toast('Não consegui copiar sozinho: o texto está selecionado, use Ctrl+C.', true); }
+}
+function addPalavra(p) {
+  p = String(p || '').trim().replace(/^(\d+[.)]|[-•*])\s+/, '').replace(/^["'“”‘’(\[]+|["'“”‘’)\]]+$/g, '').replace(/\.+$/, '').replace(/\s+/g, ' ').trim();
+  if (p && !FORM.termos.some(x => x.toLowerCase() === p.toLowerCase())) FORM.termos.push(p);
+}
+function palavraInput(el) {   // vírgula, ponto e vírgula ou quebra de linha (ao colar uma lista) viram etiquetas
+  if (/[,;\n]/.test(el.value)) { const partes = el.value.split(/[,;\n]/); el.value = partes.pop(); partes.forEach(addPalavra); desenharChipsPalavras(); }
+}
+function palavraTecla(ev, el) {
+  if (ev.key === 'Enter') { ev.preventDefault(); addPalavra(el.value); el.value = ''; desenharChipsPalavras(); }
+  else if (ev.key === 'Backspace' && !el.value && FORM.termos.length) { FORM.termos.pop(); desenharChipsPalavras(); }
+}
+function flushPalavra() { const el = document.getElementById('ft-palavra'); if (el && el.value.trim()) { addPalavra(el.value); el.value = ''; desenharChipsPalavras(); } }
+function removerPalavra(i) { FORM.termos.splice(i, 1); desenharChipsPalavras(); }
+function cfgAindaValido(nomeCfg, termos) {   // se o usuário mexeu nas palavras de um modelo, deixa de usar as etiquetas prontas do robô
+  const m = (PADRAO.topicos || []).find(t => t.nome === nomeCfg); if (!m) return null;
+  const a = new Set(termos.map(x => norm(x))), b = new Set(m.termos.map(x => norm(x)));
+  return a.size === b.size && [...a].every(x => b.has(x)) ? nomeCfg : null;
+}
+function salvarTema() {
+  flushPalavra();
+  const nome = valor('ft-titulo').replace(/\s+/g, ' '), msg = document.getElementById('ft-msg');
+  const erro = t => { msg.textContent = t; return false; };
+  if (!nome) return erro('Dê um título ao tema.');
+  if (!FORM.termos.length) return erro('Escreva pelo menos uma palavra-chave.');
+  if (TMP.topicos.some((t, i) => i !== FORM.editando && norm(t.nome) === norm(nome))) return erro('Já existe um tema com esse título.');
+  const cfgNome = cfgAindaValido(FORM.cfg, FORM.termos);
+  if (FORM.editando >= 0) { const t = TMP.topicos[FORM.editando]; t.nome = nome; t.termos = FORM.termos.slice(); t.cfg = cfgNome; }
+  else TMP.topicos.push({ id: novoId(), nome, termos: FORM.termos.slice(), ativo: true, cfg: cfgNome });
+  limparForm();
+  return true;
+}
+function editarTema(i) {
+  const t = TMP.topicos[i]; if (!t) return;
+  FORM = { termos: (t.termos || []).slice(), editando: i, cfg: t.cfg || null };
+  document.getElementById('ft-titulo').value = t.nome;
+  desenharForm(); desenharTemas();
+  const f = document.getElementById('form-tema'); if (f.scrollIntoView) f.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+function removerTema(i) { TMP.topicos.splice(i, 1); if (FORM.editando === i) { limparForm(); return; } if (FORM.editando > i) FORM.editando--; desenharTemas(); }
 function desenharTemas() {
-  const el = document.getElementById('cfg-temas'), sg = document.getElementById('cfg-sug-temas');
+  const el = document.getElementById('cfg-temas');
   if (!el) return;
   el.innerHTML = TMP.topicos.length
-    ? TMP.topicos.map((t, i) => '<span class="chip" title="' + esc((t.termos || []).join(', ')) + '">' + nomeTema(t) + '<button class="x" title="Remover" onclick="removerTema(' + i + ')">×</button></span>').join('')
-    : '<span class="dica" style="margin:0">Nenhum tema ainda.</span>';
-  const tem = new Set(TMP.topicos.map(t => norm(t.nome)));
-  const sug = (PADRAO.topicos || []).map((t, i) => ({ t, i })).filter(x => !tem.has(norm(x.t.nome)));
-  sg.innerHTML = sug.length ? sug.map(x => '<span class="chip sug" title="' + esc((x.t.termos || []).slice(0, 8).join(', ')) + '" onclick="addSugTema(' + x.i + ')">＋ ' + esc(x.t.nome) + '</span>').join('')
-    : '<span class="dica" style="margin:0">Você já adicionou todas as sugestões.</span>';
+    ? TMP.topicos.map((t, i) => '<div class="tema-card' + (i === FORM.editando ? ' editando' : '') + '"><div class="tema-info"><b>' + esc(t.nome) + '</b>' +
+        '<div class="tema-termos">' + esc((t.termos || []).join(' · ')) + '</div></div><div class="tema-acoes">' +
+        '<button class="btn mini" onclick="editarTema(' + i + ')">Editar</button><button class="btn mini perigo" onclick="removerTema(' + i + ')">Remover</button></div></div>').join('')
+    : '<div class="dica" style="margin:0 0 10px">Você ainda não criou nenhum tema.</div>';
 }
-function addTemaDoCampo() {
-  const termos = valor('cfg-tema').split(',').map(s => s.trim()).filter(Boolean);
-  if (!termos.length) return;
-  if (!TMP.topicos.some(t => norm(t.nome) === norm(termos[0]))) TMP.topicos.push({ id: novoId(), nome: termos[0], termos, ativo: true, cfg: null });
-  document.getElementById('cfg-tema').value = ''; desenharTemas();
-}
-function addSugTema(i) { const s = PADRAO.topicos[i]; if (s) { TMP.topicos.push({ id: novoId(), nome: s.nome, termos: s.termos.slice(), ativo: true, cfg: s.nome }); desenharTemas(); } }
-function removerTema(i) { TMP.topicos.splice(i, 1); desenharTemas(); }
+
 function desenharRevistas() {
   const el = document.getElementById('cfg-revs'), sg = document.getElementById('cfg-sug-revs');
   if (!el) return;
@@ -909,6 +1144,8 @@ async function conectarZotero(silencioso) {
   } catch (e) { if (msg) { msg.className = 'err-msg'; msg.textContent = 'Não consegui conectar: ' + (e.message || e); } return false; }
 }
 async function concluirConfig() {
+  flushPalavra();
+  if (valor('ft-titulo') && FORM.termos.length) salvarTema();   // não perde um tema que ficou escrito e sem clicar em Adicionar
   TMP.openalexKey = valor('cfg-oakey');
   const novaChave = valor('cfg-zkey');
   if (novaChave !== TMP.zotero.key) { TMP.zotero.key = novaChave; TMP.zotero.user = ''; }
