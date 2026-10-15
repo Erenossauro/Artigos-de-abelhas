@@ -182,11 +182,11 @@ filtros:
                  Plectoplebeia, Proplebeia, Ptilotrigona, Scaptotrigona, Scaura, Schwarziana, Schwarzula, 
                  Tetragona, Tetragonisca, Trichotrigona, Trigona, Trigonisca]
       - nome: Mamangavas (Bombini)
-        termos: [Bombus, bumble bee, bumblebee, Bombini, Alpigenobombus, Alpinobombus, 
-         	        Bombias, Bombus, Cullumanobombus, Diversobombus, Kallobombus, Megabombus, Melanobombus, 
-                  Mendacibombus, Oligobombus, Orientalibombus, Paraeuglossa, Parascarabaeobombus, 
-                  Pressibombus, Pyrobombus, Rhodobombus, Robustobombus, Rubicundobombus, Subterraneobombus, 
-                  Thoracobombus, Trichobombus]
+        termos: [Bombus, bumble bee, bumblebee, Bombini, Alpigenobombus, Alpinobombus,
+                 Bombias, Cullumanobombus, Diversobombus, Kallobombus, Megabombus, Melanobombus,
+                 Mendacibombus, Oligobombus, Orientalibombus, Paraeuglossa, Parascarabaeobombus,
+                 Pressibombus, Pyrobombus, Rhodobombus, Robustobombus, Rubicundobombus, Subterraneobombus,
+                 Thoracobombus, Trichobombus]
       - nome: Apis (Apini)
         termos: [Apini, Apis mellifera, Apis cerana, Apis dorsata, Apis florea,
                  Apis laboriosa, Apis andreniformis, Apis koschevnikovi, honey bee, honeybee]
