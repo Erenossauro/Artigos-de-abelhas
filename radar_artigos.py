@@ -378,6 +378,14 @@ def _foto_de_especie(nome):
             "link": f"https://www.inaturalist.org/taxa/{tx['id']}"}
 
 
+def altura_foto(cfg):
+    """Altura máxima da foto do topo, em pixels (config: foto_do_dia > altura)."""
+    try:
+        return max(200, min(900, int((cfg.get("foto_do_dia") or {}).get("altura", 420))))
+    except (TypeError, ValueError):
+        return 420
+
+
 def foto_do_dia(cfg, state, hoje):
     """Escolhe a espécie do dia (por data) e guarda a foto no estado; em caso de falha, repete a última."""
     c = cfg.get("foto_do_dia") or {}
@@ -1012,24 +1020,32 @@ SITE_TEMPLATE = r"""<!doctype html>
   a { color:inherit; }
   button { font-family:inherit; }
 
-  /* ---------- topo com a foto do dia ---------- */
-  .hero { position:relative; min-height:300px; color:#fff; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;
+  /* ---------- topo com a foto do dia (a foto aparece INTEIRA, sem cortes) ---------- */
+  .hero { position:relative; color:#fff; overflow:hidden; --foto-altura:__FOTO_ALTURA__px;
     background:linear-gradient(135deg,var(--verde-esc),#6d5a3c); }
-  .hero-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .hero-sombra { position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,16,10,.55) 0%,rgba(20,16,10,.05) 38%,rgba(20,16,10,.72) 100%); }
-  .hero-in, .hero-legenda { position:relative; max-width:1180px; width:100%; margin:0 auto; padding:0 24px; }
+  .hero-fundo { position:absolute; left:-40px; top:-40px; width:calc(100% + 80px); height:calc(100% + 80px); object-fit:cover; filter:blur(28px) brightness(.55) saturate(1.1); }
+  .hero-sombra { position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,16,10,.5) 0%,rgba(20,16,10,.12) 50%,rgba(20,16,10,.55) 100%); }
+  .hero-in, .hero-corpo { position:relative; max-width:1180px; width:100%; margin:0 auto; padding-left:24px; padding-right:24px; }
   .hero-in { padding-top:22px; display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+  .hero-corpo { padding-top:20px; padding-bottom:26px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:28px; align-items:end; min-height:120px; }
+  .hero.sem-foto .hero-corpo { min-height:70px; padding-top:6px; }
   .marca { display:flex; align-items:center; gap:14px; }
   .marca h1 { margin:0; font-family:var(--serif); font-size:30px; font-weight:600; letter-spacing:-.01em; text-shadow:0 1px 8px rgba(0,0,0,.35); }
   .marca .sub { font-size:13px; opacity:.9; margin-top:2px; text-shadow:0 1px 6px rgba(0,0,0,.4); }
-  .hero-legenda { padding-bottom:22px; display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; }
+  .hero-legenda { align-self:end; }
   .abelha-dia .rot { font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.85; }
-  .abelha-dia .cient { font-family:var(--serif); font-size:24px; font-style:italic; text-shadow:0 1px 8px rgba(0,0,0,.5); }
-  .abelha-dia .pop { font-size:14px; opacity:.92; }
-  .credito { font-size:11px; opacity:.8; max-width:420px; text-align:right; }
+  .abelha-dia .cient { font-family:var(--serif); font-size:28px; font-style:italic; text-shadow:0 1px 8px rgba(0,0,0,.5); line-height:1.2; }
+  .abelha-dia .pop { font-size:15px; opacity:.92; margin-top:2px; }
+  .credito { font-size:11px; opacity:.8; max-width:420px; margin-top:10px; }
   .credito a { text-decoration:underline; }
+  .hero-foto { margin:0; position:relative; cursor:zoom-in; justify-self:end; }
+  .hero-foto img { display:block; width:auto; height:auto; max-width:min(100%,680px); max-height:var(--foto-altura); border-radius:14px; box-shadow:0 12px 36px rgba(0,0,0,.5); border:2px solid rgba(255,255,255,.2); }
+  .hero-foto .ampliar { position:absolute; right:10px; bottom:10px; background:rgba(20,16,10,.62); color:#fff; font-size:12px; padding:4px 11px; border-radius:999px; pointer-events:none; }
   .btn-hero { border:1px solid rgba(255,255,255,.65); background:rgba(20,16,10,.28); color:#fff; padding:8px 16px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; backdrop-filter:blur(4px); }
   .btn-hero:hover { background:rgba(255,255,255,.22); }
+  .lightbox { position:fixed; inset:0; background:rgba(15,12,8,.93); display:none; align-items:center; justify-content:center; z-index:70; cursor:zoom-out; padding:18px; }
+  .lightbox.on { display:flex; }
+  .lightbox img { max-width:96vw; max-height:92vh; object-fit:contain; border-radius:8px; }
 
   /* ---------- layout ---------- */
   .layout { max-width:1180px; margin:26px auto 60px; padding:0 24px; display:grid; grid-template-columns:280px minmax(0,1fr); gap:30px; align-items:start; }
@@ -1186,10 +1202,11 @@ SITE_TEMPLATE = r"""<!doctype html>
     .sidebar.aberta { display:block; }
     .btn-filtros { display:inline-block; }
     .marca h1 { font-size:24px; }
-    .hero { min-height:310px; }
     .hero-in { padding-top:18px; }
-    .abelha-dia .cient { font-size:20px; }
-    .credito { text-align:left; }
+    .hero-corpo { grid-template-columns:minmax(0,1fr); gap:14px; padding-top:14px; }
+    .hero-foto { order:-1; justify-self:center; }
+    .hero-foto img { max-height:min(var(--foto-altura),340px); max-width:100%; }
+    .abelha-dia .cient { font-size:22px; }
     .titulo { font-size:19px; }
     .seg button { padding:7px 12px; font-size:13px; }
     .modal-topo, .modal section, .modal-rodape { padding-left:18px; padding-right:18px; }
@@ -1197,8 +1214,8 @@ SITE_TEMPLATE = r"""<!doctype html>
 </style>
 </head>
 <body>
-<header class="hero" id="hero">
-  <img class="hero-img" id="hero-img" alt="" style="display:none">
+<header class="hero sem-foto" id="hero">
+  <img class="hero-fundo" id="hero-fundo" alt="" aria-hidden="true" style="display:none">
   <div class="hero-sombra"></div>
   <div class="hero-in">
     <div class="marca">
@@ -1213,8 +1230,14 @@ SITE_TEMPLATE = r"""<!doctype html>
     </div>
     <button class="btn-hero" onclick="abrirConfig(false)" title="Meus temas, revistas de confiança e conexões">⚙ Configurar</button>
   </div>
-  <div class="hero-legenda" id="hero-legenda"></div>
+  <div class="hero-corpo">
+    <div class="hero-legenda" id="hero-legenda"></div>
+    <figure class="hero-foto" id="hero-foto" style="display:none" onclick="abrirFoto()" title="Clique para ampliar">
+      <img id="hero-img" alt=""><span class="ampliar">🔍 Ampliar</span>
+    </figure>
+  </div>
 </header>
+<div class="lightbox" id="lightbox" onclick="fecharFoto()"><img id="lightbox-img" alt=""></div>
 
 <div class="layout" id="layout">
   <aside class="sidebar" id="sidebar">
@@ -1685,14 +1708,24 @@ function ordenar(xs) {
   });
 }
 function renderHero() {
-  const leg = document.getElementById('hero-legenda'), img = document.getElementById('hero-img');
+  const leg = document.getElementById('hero-legenda'), img = document.getElementById('hero-img'), fundo = document.getElementById('hero-fundo');
+  const fig = document.getElementById('hero-foto'), hero = document.getElementById('hero');
+  const semFoto = () => { fig.style.display = 'none'; fundo.style.display = 'none'; hero.classList.add('sem-foto'); };
   if (FOTO && FOTO.url) {
-    img.src = FOTO.url; img.alt = FOTO.nome_cientifico || 'Abelha do dia'; img.style.display = 'block'; img.onerror = () => { img.style.display = 'none'; };
+    img.src = FOTO.url; fundo.src = FOTO.url; img.alt = FOTO.nome_cientifico || 'Abelha do dia';
+    fig.style.display = 'block'; fundo.style.display = 'block'; hero.classList.remove('sem-foto');
+    img.onerror = semFoto;
     leg.innerHTML = '<div class="abelha-dia"><div class="rot">Abelha do dia</div><div class="cient">' + esc(FOTO.nome_cientifico) + '</div>' +
       (FOTO.nome_popular ? '<div class="pop">' + esc(FOTO.nome_popular) + '</div>' : '') + '</div>' +
       '<div class="credito">Foto: ' + esc(FOTO.credito || '') + ' · <a href="' + esc(seguroUrl(FOTO.link)) + '" target="_blank" rel="noopener">iNaturalist</a></div>';
-  } else { leg.innerHTML = ''; }
+  } else { semFoto(); leg.innerHTML = ''; }
 }
+function abrirFoto() {
+  if (!FOTO || !FOTO.url) return;
+  document.getElementById('lightbox-img').src = FOTO.url; document.getElementById('lightbox').classList.add('on');
+}
+function fecharFoto() { document.getElementById('lightbox').classList.remove('on'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharFoto(); });
 function renderLeitura() {
   const chaves = Object.keys(LEIT).filter(k => LEIT[k].status === aba).sort((a, b) => (LEIT[b].quando || '').localeCompare(LEIT[a].quando || ''));
   document.getElementById('count').textContent = chaves.length + (aba === 'quero' ? ' artigo(s) para ler' : ' artigo(s) lido(s)');
@@ -2207,6 +2240,7 @@ def gerar_site(cfg, state, hoje):
               .replace("__FILTROS_DEF__", filtros_json)
               .replace("__PADRAO__", padrao_json)
               .replace("__FOTO__", foto_json)
+              .replace("__FOTO_ALTURA__", str(altura_foto(cfg)))
               .replace("__NOVDIAS__", str(novidades_dias(cfg)))
               .replace("__JANELAS__", json.dumps(janelas_site(cfg)))
               .replace("__DADOS__", dados))
