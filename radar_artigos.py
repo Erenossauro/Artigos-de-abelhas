@@ -330,6 +330,7 @@ def padrao_para_site(cfg, state):
             vocab.append({"conceito": str(v["conceito"]), "aliases": [str(a) for a in v.get("aliases") or []],
                           "palavras": [str(p) for p in v["palavras"]]})
     return {"topicos": topicos, "revistas": revistas, "vocabulario": vocab,
+            "termos_abelha": termos_abelha(cfg), "rigor": str((cfg.get("abelhas") or {}).get("rigor", "normal")),
             "colecao": str((cfg.get("zotero") or {}).get("colecao") or "Radar de Abelhas")}
 
 
@@ -359,23 +360,38 @@ def _foto_livre(f):
     return bool(lic) and "reserved" not in lic and lic not in ("none", "null")
 
 
-def _foto_de_especie(nome):
-    res = (get_json(INAT_TAXA, {"q": nome, "rank": "species", "per_page": 1}).get("results") or [])
+def _fotos_de_especie(nome, maximo=1):
+    """Até 'maximo' fotos livres (Creative Commons) da espécie. Devolve (lista de fotos, nome encontrado no iNaturalist)."""
+    res = (get_json(INAT_TAXA, {"q": nome, "per_page": 5}).get("results") or [])
     if not res:
-        return None
-    tx = res[0]
-    foto = tx.get("default_photo") or {}
-    if not _foto_livre(foto):   # a foto padrão tem licença fechada: procura outra, com licença livre, da mesma espécie
+        return [], None
+    alvo = norm_j(nome)
+    tx = next((x for x in res if norm_j(x.get("name")) == alvo), res[0])
+    candidatas = []
+    dp = tx.get("default_photo") or {}
+    if _foto_livre(dp):
+        candidatas.append(dp)
+    if len(candidatas) < maximo:   # procura mais fotos livres da mesma espécie
         det = (get_json(f"{INAT_TAXA}/{tx['id']}", {}).get("results") or [{}])[0]
-        foto = next((tp.get("photo") for tp in det.get("taxon_photos") or [] if _foto_livre(tp.get("photo"))), None)
-        if not foto:
-            return None
-    url = foto.get("large_url") or (foto.get("url") or "").replace("square", "large") or foto.get("medium_url") or ""
-    if not url:
-        return None
-    return {"nome_cientifico": tx.get("name") or nome, "nome_popular": tx.get("preferred_common_name") or "",
-            "url": url, "credito": foto.get("attribution") or "", "licenca": str(foto.get("license_code") or "").upper(),
-            "link": f"https://www.inaturalist.org/taxa/{tx['id']}"}
+        for tp in det.get("taxon_photos") or []:
+            f = tp.get("photo") or {}
+            if _foto_livre(f) and all(f.get("id") is None or f.get("id") != c.get("id") for c in candidatas):
+                candidatas.append(f)
+            if len(candidatas) >= maximo:
+                break
+    fotos = []
+    for f in candidatas[:maximo]:
+        url = f.get("large_url") or (f.get("url") or "").replace("square", "large") or f.get("medium_url") or ""
+        if url:
+            fotos.append({"nome_cientifico": tx.get("name") or nome, "nome_popular": tx.get("preferred_common_name") or "",
+                          "url": url, "credito": f.get("attribution") or "", "licenca": str(f.get("license_code") or "").upper(),
+                          "link": f"https://www.inaturalist.org/taxa/{tx['id']}"})
+    return fotos, tx.get("name")
+
+
+def _foto_de_especie(nome):
+    fotos, _ = _fotos_de_especie(nome, 1)
+    return fotos[0] if fotos else None
 
 
 def altura_foto(cfg):
@@ -386,28 +402,56 @@ def altura_foto(cfg):
         return 420
 
 
-def foto_do_dia(cfg, state, hoje):
-    """Escolhe a espécie do dia (por data) e guarda a foto no estado; em caso de falha, repete a última."""
+def modo_foto(cfg):
+    m = str((cfg.get("foto_do_dia") or {}).get("modo", "aleatoria")).strip().lower()
+    return "dia" if m in ("dia", "do_dia", "diaria") else "aleatoria"
+
+
+def fotos_das_especies(cfg, state, hoje):
+    """Busca (e guarda em cache) fotos livres de TODAS as espécies escritas no config. O site sorteia uma a cada visita."""
     c = cfg.get("foto_do_dia") or {}
     if c.get("ativo") is False:
-        return None
-    cache = state.get("foto") or {}
-    if cache.get("data") == hoje.isoformat() and cache.get("foto"):
-        return cache["foto"]
-    especies = [str(x) for x in (c.get("especies") or ESPECIES_FOTO_PADRAO)]
-    inicio = hoje.toordinal() % len(especies)
-    for k in range(min(len(especies), 6)):
-        nome = especies[(inicio + k) % len(especies)]
+        return []
+    especies = []
+    for x in (c.get("especies") or ESPECIES_FOTO_PADRAO):
+        x = str(x).strip()
+        if x and norm_j(x) not in {norm_j(e) for e in especies}:
+            especies.append(x)
+    try:
+        por = max(1, min(5, int(c.get("fotos_por_especie", 1) or 1)))
+    except (TypeError, ValueError):
+        por = 1
+    cache = state.setdefault("fotos_cache", {})
+    chaves = {norm_j(e) for e in especies}
+    for k in [k for k in cache if k not in chaves]:   # espécies que saíram da lista
+        del cache[k]
+    todas, sem = [], []
+    for nome in especies:
+        chave = norm_j(nome)
+        reg = cache.get(chave)
         try:
-            f = _foto_de_especie(nome)
-        except Exception as e:
-            log(f"⚠ Foto do dia ({nome}): {e}")
-            f = None
-        if f:
-            state["foto"] = {"data": hoje.isoformat(), "foto": f}
-            log(f"Abelha do dia: {f['nome_cientifico']}")
-            return f
-    return cache.get("foto")
+            idade = (hoje - date.fromisoformat(reg["data"])).days if reg else 999
+            velho = (not reg) or reg.get("por") != por or idade > (45 if reg.get("fotos") else 7)   # sem foto: tenta de novo em 7 dias
+        except (ValueError, KeyError, TypeError):
+            velho = True
+        if velho:
+            try:
+                fotos, achado = _fotos_de_especie(nome, por)
+                reg = {"data": hoje.isoformat(), "por": por, "fotos": fotos, "nome": achado}
+                cache[chave] = reg
+                time.sleep(0.4)   # educação com o iNaturalist
+            except Exception as e:
+                log(f"⚠ Foto ({nome}): {e}")
+        if reg and reg.get("fotos"):
+            todas.extend(reg["fotos"])
+            if reg.get("nome") and norm_j(reg["nome"]) != chave:
+                log(f"ℹ \"{nome}\" foi encontrado no iNaturalist como \"{reg['nome']}\"")
+        else:
+            sem.append(nome)
+    if sem:
+        log("⚠ Sem foto livre no iNaturalist para: " + ", ".join(sem) + " (confira se o nome científico está certo)")
+    log(f"Fotos: {len(todas)} foto(s) de {len(especies) - len(sem)} das {len(especies)} espécies")
+    return todas
 
 
 def hash_filtros(cfg):
@@ -721,6 +765,43 @@ def coletar_revistas(cfg, state, ini, fim, b, chave="revistas"):
 
 
 # ----------------------------------------------------------------------------
+# Por que o artigo entrou? (motivo gravado em cada artigo) e rigor da busca
+# ----------------------------------------------------------------------------
+def motivo_de(r, cfg, escopo=None):
+    """Registra como o artigo chegou ao radar: o site mostra isso em "Por que entrou?"."""
+    if r.get("completa"):
+        return {"via": "revista", "revista": r.get("revista") or ""}
+    textos = (("título", (r.get("titulo") or "").lower()), ("resumo", (r.get("resumo") or "").lower()),
+              ("palavras-chave", " ".join(r.get("palavras") or []).lower()))
+    achou = []
+    for x in termos_abelha(cfg):
+        p = _padrao(x)
+        onde = [nome for nome, txt in textos if txt and p.search(txt)]
+        if onde:
+            achou.append([x, "+".join(onde)])
+    return {"via": "busca", "achou": achou[:10], "fonte": r.get("fonte") or ""}
+
+
+def passa_rigor(m, rigor):
+    """normal: qualquer termo | medio: termo no título/palavras-chave OU 2 termos diferentes | alto: termo no título/palavras-chave."""
+    rigor = str(rigor or "normal").strip().lower()
+    if m.get("via") != "busca" or rigor == "normal":
+        return True
+    achou = m.get("achou") or []
+    forte = any("título" in lugar or "palavras-chave" in lugar for _, lugar in achou)
+    if rigor == "alto":
+        return forte
+    return forte or len(achou) >= 2
+
+
+def motivo_classico(r, t):
+    txt = ((r.get("titulo") or "") + " " + (r.get("resumo") or "")).lower()
+    achou = lambda lst: [x for x in (lst or []) if _padrao(x).search(txt)][:6]
+    return {"via": "classico", "tema": t["nome"], "termos": achou(t.get("termos")), "contexto": achou(t.get("contexto")),
+            "citacoes": r.get("citacoes") or 0}
+
+
+# ----------------------------------------------------------------------------
 # Janela das Novidades (só os últimos N dias)
 # ----------------------------------------------------------------------------
 def novidades_dias(cfg):
@@ -991,6 +1072,7 @@ def para_site(r, topico, tipo, adicionado):
         "completa": bool(r.get("completa")),
         "tardio": bool(r.get("tardio")),
         "oa_url": r.get("oa_url") or "",
+        "motivo": r.get("motivo"),
     }
 
 
@@ -1039,7 +1121,7 @@ SITE_TEMPLATE = r"""<!doctype html>
   .credito { font-size:11px; opacity:.8; max-width:420px; margin-top:10px; }
   .credito a { text-decoration:underline; }
   .hero-foto { margin:0; position:relative; cursor:zoom-in; justify-self:end; }
-  .hero-foto img { display:block; width:auto; height:auto; max-width:min(100%,680px); max-height:var(--foto-altura); border-radius:14px; box-shadow:0 12px 36px rgba(0,0,0,.5); border:2px solid rgba(255,255,255,.2); }
+  .hero-foto img { display:block; width:auto; height:auto; max-width:min(680px,62vw); max-height:var(--foto-altura); border-radius:14px; box-shadow:0 12px 36px rgba(0,0,0,.5); border:2px solid rgba(255,255,255,.2); }
   .hero-foto .ampliar { position:absolute; right:10px; bottom:10px; background:rgba(20,16,10,.62); color:#fff; font-size:12px; padding:4px 11px; border-radius:999px; pointer-events:none; }
   .btn-hero { border:1px solid rgba(255,255,255,.65); background:rgba(20,16,10,.28); color:#fff; padding:8px 16px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; backdrop-filter:blur(4px); }
   .btn-hero:hover { background:rgba(255,255,255,.22); }
@@ -1192,6 +1274,14 @@ SITE_TEMPLATE = r"""<!doctype html>
   details.guia li { margin-bottom:5px; }
   .prompt-ia { margin-top:12px; padding-top:10px; border-top:1px solid var(--line); }
   .prompt-ia textarea { width:100%; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12.5px; line-height:1.45; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:var(--bg); color:var(--ink); resize:vertical; }
+  .chip.termo { cursor:default; margin:0 4px 4px 0; }
+  .link-ocultos { color:var(--argila); cursor:pointer; font-weight:600; text-decoration:underline; font-size:13px; }
+  .motivo-lista { margin:6px 0 4px; padding-left:20px; font-size:14px; }
+  .motivo-lista li { margin-bottom:7px; }
+  .modal code { background:var(--surface2); padding:1px 6px; border-radius:6px; font-size:12.5px; }
+  .modal section p { font-size:14px; margin:4px 0 8px; }
+  .facet-linha { font-size:14px; margin:5px 0; }
+  .oculto-linha { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid var(--line); font-size:14px; }
   .toast-area { position:fixed; right:18px; bottom:18px; display:flex; flex-direction:column; gap:8px; z-index:60; }
   .toast { background:var(--ink); color:var(--bg); padding:10px 16px; border-radius:12px; font-size:13px; max-width:340px; box-shadow:var(--sombra); }
   .toast.erro { background:var(--err); color:#fff; }
@@ -1253,6 +1343,7 @@ SITE_TEMPLATE = r"""<!doctype html>
     <button class="btn mais-filtros" id="btn-mais" onclick="alternarMais()">Mais filtros ▾</button>
     <div id="mais-dyn"></div>
     <div id="limpar-wrap"></div>
+    <div id="ocultos-link" class="fnota"></div>
     <div class="fnota" id="fnota"></div>
   </aside>
 
@@ -1288,6 +1379,7 @@ SITE_TEMPLATE = r"""<!doctype html>
 <footer>Dados abertos do OpenAlex e do Europe PMC · SJR: SCImago Journal Rank · fotos: iNaturalist.</footer>
 
 <div class="modal-fundo" id="modal"><div class="modal" id="modal-corpo" role="dialog" aria-modal="true"></div></div>
+<div class="modal-fundo" id="modal-motivo" onclick="if(event.target===this)fecharMotivo()"><div class="modal" id="motivo-corpo" role="dialog" aria-modal="true"></div></div>
 <div class="toast-area" id="toasts"></div>
 <script>
 const DADOS = __DADOS__;
@@ -1295,11 +1387,13 @@ const FILTROS_DEF = __FILTROS_DEF__;
 const NOV_DIAS = __NOVDIAS__;
 const JANELAS = __JANELAS__;
 const PADRAO = __PADRAO__;
-const FOTO = __FOTO__;
+const FOTOS = __FOTOS__;
+const FOTO_MODO = __FOTO_MODO__;
+let FOTO = null;
 const FILTROS = FILTROS_DEF.map(f => ({ nome: f.nome, opcoes: f.opcoes.map(o => o.nome).concat([f.rotulo_sem]) }));
 const POR_PAGINA = 40;
 const OA = 'https://api.openalex.org', ZOT = 'https://api.zotero.org';
-const K_CFG = 'radar_cfg_v2', K_LEIT = 'radar_leitura_v1', K_LIVE = 'radar_live_v1', K_VISTO = 'radar_live_visto_v1', K_ZOT = 'radar_zotero_v1';
+const K_CFG = 'radar_cfg_v2', K_LEIT = 'radar_leitura_v1', K_LIVE = 'radar_live_v1', K_VISTO = 'radar_live_visto_v1', K_ZOT = 'radar_zotero_v1', K_OCULT = 'radar_ocultos_v1';
 
 // ============================================================
 //  Utilidades
@@ -1415,6 +1509,7 @@ function recDeOA(w) {
     oa: !!(w.open_access || {}).is_oa, oa_url: (w.open_access || {}).oa_url || '', fonte: 'OpenAlex', completa: true, _otipo: w.type || ''
   };
   r.facetas = facetasDe(r);
+  r.motivo = { via: 'confianca', revista: r.revista };
   const hit = SJR_REV[norm(r.revista)];
   r.sjr = hit ? hit[0] : null; r.q = hit ? hit[1] : '';
   return r;
@@ -1465,6 +1560,7 @@ async function atualizarConfiaveisSeguro(forcar) {
 //  Leitura (Quero ler / Lido) e Zotero
 // ============================================================
 let LEIT = lsGet(K_LEIT, {});
+let OCULTOS = lsGet(K_OCULT, {});
 function salvarLeit() { lsSet(K_LEIT, LEIT); }
 const contar = st => Object.keys(LEIT).filter(k => LEIT[k].status === st).length;
 function snapshot(d) {
@@ -1593,6 +1689,7 @@ const ICO = {
   livro: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>',
   check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg>',
   zot: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></svg>',
+  info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
   aberto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg>'
 };
 function rotMes(ym) {
@@ -1676,6 +1773,7 @@ function acoesHtml(d) {
     '<button class="ac' + (st === 'quero' ? ' on' : '') + '" data-acao="quero" data-k="' + k + '" title="Guardar em Quero ler">' + ICO.livro + 'Quero ler</button>' +
     '<button class="ac argila' + (st === 'lido' ? ' on' : '') + '" data-acao="lido" data-k="' + k + '" title="Marcar como lido">' + ICO.check + 'Lido</button>' +
     '<button class="ac' + (z ? ' on' : '') + '" data-acao="zotero" data-k="' + k + '" title="Adicionar ao Zotero">' + ICO.zot + (z ? 'No Zotero' : 'Zotero') + '</button>' +
+    '<button class="ac" data-acao="motivo" data-k="' + k + '" title="Ver por que este artigo entrou">' + ICO.info + 'Por que entrou?</button>' +
     (d.oa_url ? '<a class="ac" href="' + esc(seguroUrl(d.oa_url)) + '" target="_blank" rel="noopener" title="Versão de acesso aberto">' + ICO.aberto + 'Texto livre</a>' : '') +
     '</div>';
 }
@@ -1707,15 +1805,25 @@ function ordenar(xs) {
     return padrao(a, b);
   });
 }
+function escolherFoto() {
+  if (!FOTOS.length) return null;
+  if (FOTO_MODO === 'dia') return FOTOS[Math.floor(Date.now() / 86400000) % FOTOS.length];
+  const ult = lsGet('radar_foto_ultima_v1', -1);
+  let i = Math.floor(Math.random() * FOTOS.length);
+  if (FOTOS.length > 1 && i === ult) i = (i + 1 + Math.floor(Math.random() * (FOTOS.length - 1))) % FOTOS.length;   // nunca repete a foto anterior
+  lsSet('radar_foto_ultima_v1', i);
+  return FOTOS[i];
+}
 function renderHero() {
+  FOTO = escolherFoto();
   const leg = document.getElementById('hero-legenda'), img = document.getElementById('hero-img'), fundo = document.getElementById('hero-fundo');
   const fig = document.getElementById('hero-foto'), hero = document.getElementById('hero');
   const semFoto = () => { fig.style.display = 'none'; fundo.style.display = 'none'; hero.classList.add('sem-foto'); };
   if (FOTO && FOTO.url) {
-    img.src = FOTO.url; fundo.src = FOTO.url; img.alt = FOTO.nome_cientifico || 'Abelha do dia';
+    img.src = FOTO.url; fundo.src = FOTO.url; img.alt = FOTO.nome_cientifico || 'Abelha';
     fig.style.display = 'block'; fundo.style.display = 'block'; hero.classList.remove('sem-foto');
     img.onerror = semFoto;
-    leg.innerHTML = '<div class="abelha-dia"><div class="rot">Abelha do dia</div><div class="cient">' + esc(FOTO.nome_cientifico) + '</div>' +
+    leg.innerHTML = '<div class="abelha-dia"><div class="rot">' + (FOTO_MODO === 'dia' ? 'Abelha do dia' : 'Uma abelha ao acaso') + '</div><div class="cient">' + esc(FOTO.nome_cientifico) + '</div>' +
       (FOTO.nome_popular ? '<div class="pop">' + esc(FOTO.nome_popular) + '</div>' : '') + '</div>' +
       '<div class="credito">Foto: ' + esc(FOTO.credito || '') + ' · <a href="' + esc(seguroUrl(FOTO.link)) + '" target="_blank" rel="noopener">iNaturalist</a></div>';
   } else { semFoto(); leg.innerHTML = ''; }
@@ -1725,7 +1833,97 @@ function abrirFoto() {
   document.getElementById('lightbox-img').src = FOTO.url; document.getElementById('lightbox').classList.add('on');
 }
 function fecharFoto() { document.getElementById('lightbox').classList.remove('on'); }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharFoto(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { fecharFoto(); fecharMotivo(); } });
+// ============================================================
+//  "Por que entrou?" e artigos ocultados
+// ============================================================
+function motivoDe(d) {
+  if (d.motivo) return d.motivo;
+  const t = (d.titulo || '').toLowerCase(), a = (d.resumo || '').toLowerCase(), ach = [];
+  (PADRAO.termos_abelha || []).forEach(x => {
+    const lug = []; if (reTermo(x).test(t)) lug.push('título'); if (reTermo(x).test(a)) lug.push('resumo');
+    if (lug.length) ach.push([x, lug.join('+')]);
+  });
+  return { via: d.completa ? 'revista' : 'busca', achou: ach, revista: d.revista, antigo: true };
+}
+const chipTermo = (t, lugar) => '<span class="chip termo">' + esc(t) + (lugar ? ' <span class="cnt">' + esc(String(lugar).replace(/\+/g, ' e ')) + '</span>' : '') + '</span>';
+function porqueChegou(d, m) {
+  if (m.via === 'revista') return 'Veio por ser uma <b>revista só de abelhas</b> da lista do robô (<i>' + esc(m.revista || d.revista) + '</i>): entra tudo o que ela publica, sem olhar palavras.';
+  if (m.via === 'confianca') return 'Veio da busca <b>ao vivo</b> da sua revista de confiança <i>' + esc(m.revista) + '</i>: entra tudo o que ela publica.';
+  if (m.via === 'classico') {
+    const p = (m.termos || []).concat(m.contexto || []);
+    return 'É um <b>clássico</b> do tema <b>' + esc(m.tema) + '</b> (um dos mais citados, ' + (m.citacoes || 0) + ' citações).' + (p.length ? ' Palavras: ' + p.map(x => chipTermo(x)).join('') : '');
+  }
+  if (m.via === 'tema') return 'Busca por tema (modo antigo): tema <b>' + esc(m.tema) + '</b>, pontuação ' + (m.pontos != null ? m.pontos : '?') + '.';
+  const ach = m.achou || [];
+  if (ach.length) return 'Busca por <b>palavras de abelha</b>: encontrou ' + ach.map(x => chipTermo(x[0], x[1])).join('') + '.';
+  return 'Busca por palavras de abelha, mas <b>nenhuma delas aparece escrita</b> no título nem no resumo carregados. O OpenAlex achou por uma variação da palavra, pelas palavras-chave ou por um trecho do resumo que não está aqui. <b>É um bom candidato a ser irrelevante.</b>';
+}
+function porqueNoFeed(d) {
+  const ativos = CFG.topicos.filter(t => t.ativo);
+  if (!ativos.length) return 'Você não marcou nenhum tema, então o site mostra tudo.';
+  const txt = ((d.titulo || '') + ' ' + (d.resumo || '')).toLowerCase();
+  const casados = ativos.filter(t => (d._m || []).includes(t.id)).map(t => ({ nome: t.nome, termos: (t.termos || []).filter(x => reTermo(x).test(txt)).slice(0, 5) }));
+  const marcadas = (d._cr || []).filter(i => CFG.revistas[i] && CFG.revistas[i].mostrar).map(i => CFG.revistas[i].nome);
+  let h = '';
+  if (casados.length) h += 'Combina com o tema marcado: ' + casados.map(c => '<b>' + esc(c.nome) + '</b> ' + (c.termos.length ? c.termos.map(x => chipTermo(x)).join('') : '<span class="dica">(pelas etiquetas do robô)</span>')).join(' ') + '.';
+  if (marcadas.length) h += ' Também aparece porque você marcou a revista de confiança <b>' + marcadas.map(esc).join(', ') + '</b>.';
+  return h || 'Hoje ele não passaria pelos temas marcados: você deve estar vendo este artigo em uma das suas listas (Quero ler / Lidos).';
+}
+function porqueClassificado(d) {
+  const tit = (d.titulo || '').toLowerCase(), tudo = tit + ' ' + (d.resumo || '').toLowerCase();
+  return FILTROS_DEF.map(f => {
+    const ops = (d.facetas && d.facetas[f.nome]) || [];
+    const partes = ops.map(op => {
+      const o = f.opcoes.find(x => x.nome === op);
+      const termos = o ? (o.termos || []).filter(t => reTermo(t).test(tudo)).concat((o.termos_titulo || []).filter(t => reTermo(t).test(tit))).slice(0, 4) : [];
+      return '<b>' + esc(op) + '</b> ' + (termos.length ? termos.map(t => chipTermo(t)).join('') : (o ? '<span class="dica">(palavra no resumo completo, fora do trecho carregado)</span>' : '<span class="dica">(nenhuma palavra encontrada)</span>'));
+    });
+    return '<div class="facet-linha">' + esc(f.nome) + ': ' + (partes.join(' · ') || '—') + '</div>';
+  }).join('') || '<p class="dica">Sem categorias configuradas.</p>';
+}
+function abrirMotivo(key) {
+  const d = IDX[key] || (LEIT[key] && LEIT[key].snap); if (!d) return;
+  const m = motivoDe(d);
+  document.getElementById('motivo-corpo').innerHTML =
+    '<div class="modal-topo"><h2>Por que este artigo está aqui?</h2><p>' + esc(d.titulo) + '</p></div>' +
+    '<section><h3>1. Como ele chegou ao radar</h3><p>' + porqueChegou(d, m) + '</p>' +
+    (m.antigo ? '<p class="dica">Refeito agora com o título e o trecho do resumo carregados, porque este artigo é anterior ao registro de motivos.</p>' : '') +
+    (m.fonte ? '<p class="dica">Fonte: ' + esc(m.fonte) + '</p>' : '') + '</section>' +
+    '<section><h3>2. Por que ele aparece no seu feed</h3><p>' + porqueNoFeed(d) + '</p></section>' +
+    '<section><h3>3. Como foi classificado</h3>' + porqueClassificado(d) + '</section>' +
+    '<section><h3>Não tem a ver com abelhas?</h3><ul class="motivo-lista">' +
+    '<li>Se a palavra encontrada tem outro sentido (por exemplo <i>bee</i> em <i>bee-eater</i>, um pássaro), bloqueie-a no título com <code>excluir &gt; termos</code> no <code>config.yaml</code> (ex.: <code>bee-eater</code>) ou tire-a de <code>abelhas &gt; termos</code>.</li>' +
+    '<li>Para exigir mais de toda a busca, use <code>abelhas &gt; rigor: medio</code> ou <code>alto</code>.</li>' +
+    '<li>"Ocultar" guarda o artigo como irrelevante só no seu navegador. O painel "Ocultos" mostra quais palavras mais trouxeram artigos que você ocultou.</li></ul></section>' +
+    '<div class="modal-rodape"><button class="btn perigo" data-k="' + esc(d.key) + '" onclick="ocultar(this.dataset.k)">Não é sobre abelhas: ocultar</button><button class="btn forte" onclick="fecharMotivo()">Fechar</button></div>';
+  document.getElementById('modal-motivo').classList.add('on');
+}
+function fecharMotivo() { const m = document.getElementById('modal-motivo'); if (m) m.classList.remove('on'); }
+function ocultar(key) {
+  const d = IDX[key] || (LEIT[key] && LEIT[key].snap); if (!d) return;
+  const m = motivoDe(d);
+  OCULTOS[key] = { titulo: d.titulo, revista: d.revista || '', via: m.via, termos: (m.achou || []).map(x => x[0]), quando: hojeISO() };
+  lsSet(K_OCULT, OCULTOS); fecharMotivo(); render();
+  toast('Artigo ocultado. Para desfazer, abra "Ocultos" na barra lateral.');
+}
+function restaurar(key) { delete OCULTOS[key]; lsSet(K_OCULT, OCULTOS); render(); if (Object.keys(OCULTOS).length) abrirOcultos(); else fecharMotivo(); }
+function statsOcultos() {
+  const c = {}; Object.values(OCULTOS).forEach(o => (o.termos || []).forEach(t => { c[t] = (c[t] || 0) + 1; }));
+  return Object.keys(c).map(t => [t, c[t]]).sort((a, b) => b[1] - a[1]);
+}
+function abrirOcultos() {
+  const ks = Object.keys(OCULTOS).sort((a, b) => (OCULTOS[b].quando || '').localeCompare(OCULTOS[a].quando || '')), st = statsOcultos();
+  document.getElementById('motivo-corpo').innerHTML =
+    '<div class="modal-topo"><h2>Artigos ocultados (' + ks.length + ')</h2><p>Eles ficam escondidos só neste navegador. Restaure se escondeu sem querer.</p></div>' +
+    '<section><h3>Palavras que mais trouxeram artigos ocultados</h3>' + (st.length
+      ? '<p>' + st.slice(0, 12).map(x => chipTermo(x[0], x[1] + '×')).join('') + '</p><p class="dica">Se uma palavra aparece muito aqui, ela pode estar trazendo artigos fora do assunto. Revise-a em <code>abelhas &gt; termos</code> do <code>config.yaml</code>, ou bloqueie um termo problemático em <code>excluir &gt; termos</code>.</p>'
+      : '<p class="dica">Ainda não há palavras registradas (os artigos ocultados vieram de revistas inteiras ou de clássicos).</p>') + '</section>' +
+    '<section><h3>Lista</h3>' + (ks.map(k => '<div class="oculto-linha"><div><b>' + esc(OCULTOS[k].titulo) + '</b><div class="dica" style="margin:0">' + esc(OCULTOS[k].revista) + '</div></div><button class="btn mini" data-k="' + esc(k) + '" onclick="restaurar(this.dataset.k)">Restaurar</button></div>').join('') || '<p class="dica">Nenhum.</p>') + '</section>' +
+    '<div class="modal-rodape"><button class="btn forte" onclick="fecharMotivo()">Fechar</button></div>';
+  document.getElementById('modal-motivo').classList.add('on');
+}
+
 function renderLeitura() {
   const chaves = Object.keys(LEIT).filter(k => LEIT[k].status === aba).sort((a, b) => (LEIT[b].quando || '').localeCompare(LEIT[a].quando || ''));
   document.getElementById('count').textContent = chaves.length + (aba === 'quero' ? ' artigo(s) para ler' : ' artigo(s) lido(s)');
@@ -1746,7 +1944,9 @@ function render() {
   ZIT = (lsGet(K_ZOT, { itens: {} }).itens) || {};
   if (leit) { renderLeitura(); return; }
 
-  const base = ITENS.filter(d => d.tipo === aba);
+  const base = ITENS.filter(d => d.tipo === aba && !OCULTOS[d.key]);
+  const nOc = Object.keys(OCULTOS).length;
+  document.getElementById('ocultos-link').innerHTML = nOc ? '<a class="link-ocultos" onclick="abrirOcultos()">Ocultos (' + nOc + ')</a>' : '';
   const ativos = CFG.topicos.filter(t => t.ativo);
   const passaTema = d => !ativos.length || ativos.some(t => (d._m || []).includes(t.id)) || (d._cr || []).some(i => CFG.revistas[i] && CFG.revistas[i].mostrar);
   const passaTudo = (d, ig) => {
@@ -1853,7 +2053,7 @@ document.getElementById('sidebar').addEventListener('change', ev => {
 document.getElementById('lista').addEventListener('click', ev => {
   const b = ev.target.closest('button[data-acao]'); if (!b) return;
   const k = b.dataset.k, a = b.dataset.acao;
-  if (a === 'quero' || a === 'lido') marcar(k, a); else if (a === 'zotero') enviarZotero(k);
+  if (a === 'quero' || a === 'lido') marcar(k, a); else if (a === 'zotero') enviarZotero(k); else if (a === 'motivo') abrirMotivo(k);
 });
 
 // ============================================================
@@ -2226,12 +2426,12 @@ def gerar_site(cfg, state, hoje):
     dados = json.dumps(saida, ensure_ascii=False).replace("</", "<\\/")
     filtros_json = json.dumps(definicao_filtros_js(cfg), ensure_ascii=False).replace("</", "<\\/")
     try:
-        foto = foto_do_dia(cfg, state, hoje)
+        fotos = fotos_das_especies(cfg, state, hoje)
     except Exception as e:
-        log(f"⚠ Foto do dia indisponível: {e}")
-        foto = (state.get("foto") or {}).get("foto")
+        log(f"⚠ Fotos indisponíveis: {e}")
+        fotos = []
     padrao_json = json.dumps(padrao_para_site(cfg, state), ensure_ascii=False).replace("</", "<\\/")
-    foto_json = json.dumps(foto, ensure_ascii=False).replace("</", "<\\/")
+    fotos_json = json.dumps(fotos, ensure_ascii=False).replace("</", "<\\/")
     site = cfg.get("site", {})
     pagina = (SITE_TEMPLATE
               .replace("__TITULO__", html.escape(site.get("titulo", "Radar de artigos")))
@@ -2239,7 +2439,8 @@ def gerar_site(cfg, state, hoje):
               .replace("__ATUALIZADO__", hoje.strftime("%d/%m/%Y"))
               .replace("__FILTROS_DEF__", filtros_json)
               .replace("__PADRAO__", padrao_json)
-              .replace("__FOTO__", foto_json)
+              .replace("__FOTOS__", fotos_json)
+              .replace("__FOTO_MODO__", json.dumps(modo_foto(cfg)))
               .replace("__FOTO_ALTURA__", str(altura_foto(cfg)))
               .replace("__NOVDIAS__", str(novidades_dias(cfg)))
               .replace("__JANELAS__", json.dumps(janelas_site(cfg)))
@@ -2328,6 +2529,7 @@ def garantir_fila_classicos(cfg, state):
                         and scopus_ok(r, escopo)][: c["por_topico"]]
             for r in recs:
                 r["facetas"] = classificar(r["titulo"], r.get("resumo"), comp)
+                r["motivo"] = motivo_classico(r, t)
             fila[t["nome"]] = [leve(r) for r in recs]
             log(f"Clássicos carregados: {t['nome']} ({len(recs)})")
         except Exception as e:
@@ -2423,8 +2625,19 @@ def run_diario(cfg, state, dias, enviar):
             recs = [r for r in recs
                     if r.get("completa")
                     or (revista_ok(r["revista"], cfg) and not excluida(r, cfg) and scopus_ok(r, escopo))]
+        if amplo or revistas_modo:
+            for r in recs:
+                r["motivo"] = motivo_de(r, cfg, escopo)
+        if amplo:   # rigor: quão exigente é a busca por palavras (config: abelhas > rigor)
+            rigor = (cfg.get("abelhas") or {}).get("rigor", "normal")
+            antes = len(recs)
+            recs = [r for r in recs if passa_rigor(r["motivo"], rigor)]
+            if len(recs) != antes:
+                log(f"Rigor \"{rigor}\": {antes - len(recs)} artigo(s) descartado(s) por não terem palavra de abelha em lugar forte")
         for r in recs:
             r["score"] = score(r, t)
+            if not amplo and not revistas_modo:
+                r["motivo"] = {"via": "tema", "tema": t["nome"], "pontos": r["score"]}
         novos = [r for r in recs
                  if r["key"] not in vistos
                  and "t:" + norm_title(r["titulo"]) not in vistos
@@ -2770,6 +2983,11 @@ def avaliar_artigo(r, cfg, state, hoje=None):
             termos = termos_abelha(cfg)
             ok = any(_padrao(t).search(texto) for t in termos)
             sem_res = not (r.get("resumo") or "").strip()
+            m_ = motivo_de(r, cfg)
+            rigor_ = (cfg.get("abelhas") or {}).get("rigor", "normal")
+            ver("Rigor da busca (abelhas > rigor: " + str(rigor_) + ")", passa_rigor(m_, rigor_),
+                "Termos achados: " + (", ".join(f"{t} ({l})" for t, l in m_["achou"]) or "nenhum escrito no título/resumo (o OpenAlex pode ter achado por variação da palavra)")
+                + ". normal = qualquer termo; medio = termo no título ou 2 termos diferentes; alto = termo no título/palavras-chave.")
             ver("Cita abelhas no título ou resumo", ok,
                 f"Palavras procuradas: {', '.join(termos)}."
                 + (" O OpenAlex NÃO tem o resumo deste artigo (editoras como Springer Nature e Elsevier não liberam o resumo de artigos fechados), então só o título foi analisado." if sem_res else ""))
