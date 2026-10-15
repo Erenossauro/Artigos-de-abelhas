@@ -176,22 +176,24 @@ filtros:
     opcoes:
       - nome: Sem ferrão (Meliponini)
         termos: [stingless bee, Meliponini, Meliponinae, meliponine, meliponiculture,
-                 Melipona, Trigona, Tetragonula, Tetragonisca, Scaptotrigona, Plebeia,
-                 Frieseomelitta, Nannotrigona, Partamona, Geotrigona, Lestrimelitta,
-                 Heterotrigona, Austroplebeia, Leurotrigona, Friesella, Meliponula,
-                 Axestotrigona, Cephalotrigona, Oxytrigona, Paratrigona, Schwarziana,
-                 Scaptotrigona, Trigonisca, Plebeina, Dactylurina, Lisotrigona,
-                 Tetrigona, Geniotrigona, Lepidotrigona, Homotrigona, Hypotrigona]
+                 Aparatrigona, Camargoia, Celetrigona, Cephalotrigona, Dolichotrigona, Duckeola, Friesella, 
+                 Frieseomelitta, Geotrigona, Lestrimelitta, Leurotrigona, Melipona, Meliwillea, Mourella, 
+                 Nannotrigona, Nogueirapis, Oxytrigona, Parapartamona, Paratrigona, Paratrigonoides, Partamona, Plebeia, 
+                 Plectoplebeia, Proplebeia, Ptilotrigona, Scaptotrigona, Scaura, Schwarziana, Schwarzula, 
+                 Tetragona, Tetragonisca, Trichotrigona, Trigona, Trigonisca]
       - nome: Mamangavas (Bombini)
-        termos: [Bombus, bumble bee, bumblebee, Bombini]
+        termos: [Bombus, bumble bee, bumblebee, Bombini, Alpigenobombus, Alpinobombus, 
+         	        Bombias, Bombus, Cullumanobombus, Diversobombus, Kallobombus, Megabombus, Melanobombus, 
+                  Mendacibombus, Oligobombus, Orientalibombus, Paraeuglossa, Parascarabaeobombus, 
+                  Pressibombus, Pyrobombus, Rhodobombus, Robustobombus, Rubicundobombus, Subterraneobombus, 
+                  Thoracobombus, Trichobombus]
       - nome: Apis (Apini)
         termos: [Apini, Apis mellifera, Apis cerana, Apis dorsata, Apis florea,
                  Apis laboriosa, Apis andreniformis, Apis koschevnikovi, honey bee, honeybee]
       - nome: Solitárias
-        termos: [solitary bee, trap nest, trap-nest, trap-nesting, cavity-nesting,
-                 cavity nesting, ground-nesting, mason bee, leafcutter bee, leaf-cutter bee,
-                 carpenter bee, mining bee, bee hotel, Osmia, Megachile, Xylocopa,
-                 Andrena, Anthophora, Centris]
+        termos: [solitary bee, mason bee, leafcutter bee, leaf-cutter bee,
+                 carpenter bee, mining bee, Osmia, Megachile, Xylocopa,
+                 Andrena, Anthophora, Centris, Wild bee]
       - nome: Abelhas das orquídeas (Euglossini)
         termos: [orchid bee, Euglossini, Euglossa, Eulaema, Eufriesea, Exaerete]
 
