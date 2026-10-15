@@ -70,6 +70,13 @@ revistas:
 
 # O que conta como "citar abelhas" no modo amplo:
 abelhas:
+  # RIGOR da busca por palavras (para tirar artigos que não têm nada a ver):
+  #   normal -> basta uma palavra de abelha no título, no resumo ou nas palavras-chave
+  #   medio  -> palavra no título/palavras-chave, OU pelo menos 2 palavras diferentes no resumo
+  #   alto   -> palavra no título ou nas palavras-chave (resumo sozinho não basta)
+  # Artigos das "revistas_de_abelhas" não passam por esse teste (entra tudo delas).
+  # Dica: para barrar uma palavra problemática, use "excluir" (mais abaixo).
+  rigor: normal
   # Muitos artigos só dizem "Apis cerana" ou "Bombus terrestris" e nunca a palavra "bee".
   # Por isso a lista tem também nomes de grupos. Acrescente os que quiser (sem vírgula dentro do nome).
   termos: [bee, honeybee, honey bee, bumblebee, bumble bee, Anthophila, Apoidea, Apidae, Meliponini,
@@ -91,6 +98,7 @@ classicos:
 # ------------------------------------------------------------
 excluir:
   onde: titulo
+  # Para barrar ruído no TÍTULO, acrescente as palavras aqui. Ex.: termos: [bee-eater, beetle]
   termos: []               # vazio = nada é excluído (Apis mellifera / honey bee APARECEM). Para voltar a barrar:
                            # termos: [Apis mellifera, honey bee, honeybee, honey-bee]
   manter_se_no_titulo:
@@ -467,16 +475,31 @@ topicos:
     termos: [bee, Anthophila, Apoidea, Meliponini]
 
 # ============================================================
-#  ABELHA DO DIA (foto do iNaturalist no topo do site)
-#  A espécie muda a cada dia, em ordem. Só entram fotos com licença Creative Commons;
-#  o crédito do fotógrafo aparece sob a foto. Escreva os nomes científicos que quiser.
+#  FOTO DA ABELHA NO TOPO DO SITE (iNaturalist)
+#  Escreva em "especies" os nomes científicos das abelhas que você quer ver.
+#  A cada vez que você abre ou atualiza o site, aparece uma foto diferente, sorteada
+#  entre elas (sem repetir a anterior). O robô busca as fotos livres (Creative Commons)
+#  de TODAS as espécies da lista; o crédito do fotógrafo aparece sob a foto.
+#  Se um nome estiver errado ou sem foto livre, o registro da execução (Actions) avisa.
+#  modo: aleatoria -> muda a cada atualização da página (padrão)
+#        dia       -> uma foto por dia, igual o dia todo
+#  fotos_por_especie: quantas fotos diferentes guardar de cada espécie (1 a 5). Com 3,
+#                     uma lista de 45 espécies vira até 135 fotos para sortear.
 # ============================================================
 foto_do_dia:
   ativo: true
-  modo: aleatoria        # aleatoria = muda a cada atualização | dia = uma foto por dia
-  fotos_por_especie: 1   # de 1 a 5
-  altura: 420
-    especies: [Meliponini, Euglossini, Bombini, Apini]
+  modo: aleatoria
+  fotos_por_especie: 1
+  altura: 420          # altura máxima da foto no topo, em pixels (200 a 900). A foto aparece inteira; clique nela para ampliar.
+  especies: [Melipona quadrifasciata, Bombus terrestris, Apis cerana, Tetragonisca angustula, Xylocopa frontalis,
+             Osmia bicornis, Euglossa cordata, Bombus pauloensis, Scaptotrigona postica, Centris analis,
+             Apis mellifera, Andrena flavipes, Trigona spinipes, Megachile rotundata, Melipona scutellaris,
+             Bombus impatiens, Eulaema nigrita, Halictus rubicundus, Plebeia droryana, Xylocopa virginica,
+             Frieseomelitta varia, Lasioglossum zephyrum, Bombus lapidarius, Melipona subnitida, Agapostemon virescens,
+             Partamona helleri, Osmia lignaria, Apis dorsata, Nannotrigona testaceicornis, Ceratina calcarata,
+             Bombus morio, Augochlora pura, Tetragonula carbonaria, Anthophora plumipes, Oxytrigona tataira,
+             Bombus vosnesenskii, Melipona beecheii, Colletes hederae, Xylocopa violacea, Exaerete smaragdina,
+             Lestrimelitta limao, Habropoda laboriosa, Bombus pascuorum, Trigona fulviventris, Meliponula bocandei]
 
 # Nome da pasta principal criada no Zotero (dentro dela ficam "Quero ler" e "Lido").
 zotero:
