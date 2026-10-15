@@ -473,16 +473,10 @@ topicos:
 # ============================================================
 foto_do_dia:
   ativo: true
-  altura: 420          # altura máxima da foto no topo, em pixels (200 a 900). A foto aparece inteira; clique nela para ampliar.
-  especies: [Melipona quadrifasciata, Bombus terrestris, Apis cerana, Tetragonisca angustula, Xylocopa frontalis,
-             Osmia bicornis, Euglossa cordata, Bombus pauloensis, Scaptotrigona postica, Centris analis,
-             Apis mellifera, Andrena flavipes, Trigona spinipes, Megachile rotundata, Melipona scutellaris,
-             Bombus impatiens, Eulaema nigrita, Halictus rubicundus, Plebeia droryana, Xylocopa virginica,
-             Frieseomelitta varia, Lasioglossum zephyrum, Bombus lapidarius, Melipona subnitida, Agapostemon virescens,
-             Partamona helleri, Osmia lignaria, Apis dorsata, Nannotrigona testaceicornis, Ceratina calcarata,
-             Bombus morio, Augochlora pura, Tetragonula carbonaria, Anthophora plumipes, Oxytrigona tataira,
-             Bombus vosnesenskii, Melipona beecheii, Colletes hederae, Xylocopa violacea, Exaerete smaragdina,
-             Lestrimelitta limao, Habropoda laboriosa, Bombus pascuorum, Trigona fulviventris, Meliponula bocandei]
+  modo: aleatoria        # aleatoria = muda a cada atualização | dia = uma foto por dia
+  fotos_por_especie: 1   # de 1 a 5
+  altura: 420
+    especies: [Meliponini, Euglossini, Bombini, Apini]
 
 # Nome da pasta principal criada no Zotero (dentro dela ficam "Quero ler" e "Lido").
 zotero:
