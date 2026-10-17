@@ -491,7 +491,7 @@ foto_do_dia:
   modo: aleatoria
   fotos_por_especie: 1
   altura: 420          # altura máxima da foto no topo, em pixels (200 a 900). A foto aparece inteira; clique nela para ampliar.
-  especies: [bees = [
+  especies: [
     # Abelhas solitárias — Andrenidae, Halictidae e grupos relacionados
     "Andrena flavipes", "Andrena cineraria", "Andrena haemorrhoa",
     "Andrena vaga", "Andrena dorsata", "Andrena nitida", "Andrena bicolor",
