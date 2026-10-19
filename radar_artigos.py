@@ -329,7 +329,12 @@ def padrao_para_site(cfg, state):
         if isinstance(v, dict) and v.get("conceito") and v.get("palavras"):
             vocab.append({"conceito": str(v["conceito"]), "aliases": [str(a) for a in v.get("aliases") or []],
                           "palavras": [str(p) for p in v["palavras"]]})
+    temas_ini = [{"nome": str(t["nome"]), "termos": [str(p) for p in (t.get("palavras") or t.get("termos") or [])]}
+                 for t in cfg.get("temas_iniciais") or [] if isinstance(t, dict) and t.get("nome")]
+    revistas_ini = [{"nome": str(x["nome"]), "issns": [str(i) for i in (x.get("issns") or [])]}
+                    for x in cfg.get("revistas_iniciais") or [] if isinstance(x, dict) and x.get("nome")]
     return {"topicos": topicos, "revistas": revistas, "vocabulario": vocab,
+            "temas_iniciais": temas_ini, "revistas_iniciais": revistas_ini,
             "termos_abelha": termos_abelha(cfg), "rigor": str((cfg.get("abelhas") or {}).get("rigor", "normal")),
             "colecao": str((cfg.get("zotero") or {}).get("colecao") or "Radar de Abelhas")}
 
@@ -746,14 +751,14 @@ def coletar_revistas(cfg, state, ini, fim, b, chave="revistas"):
     recs, erros = [], 0
     for ids, so_abelhas in ((ids_tudo, False), (ids_abelha, True)):
         for k in range(0, len(ids), 50):
-            filtros = ["primary_location.source.id:" + "|".join(ids[k:k + 50]),
+            filtros = ["locations.source.id:" + "|".join(ids[k:k + 50]),   # qualquer localização, não só a principal
                        "type:" + "|".join(TIPOS_ACEITOS),
                        f"from_publication_date:{ini}", f"to_publication_date:{fim}"]
             if so_abelhas:
                 filtros.append("title_and_abstract.search:" + topic_query({"termos": termos_abelha(cfg)}))
             try:
                 params = _params_openalex(filtros, "publication_date:desc", 100)
-                lote = [_rec_openalex(w) for w in _paginar_openalex(params, int(b.get("max_paginas", 100)), 100)]
+                lote = [_rec_openalex(w, set(ids[k:k + 50])) for w in _paginar_openalex(params, int(b.get("max_paginas", 100)), 100)]
                 if not so_abelhas:
                     for r in lote:
                         r["completa"] = True
@@ -904,9 +909,19 @@ def resumo_custo():
         f"(grátis até US$ {'1,00' if chave else '0,10'} por dia)")
 
 
-def _rec_openalex(w):
-    loc = w.get("primary_location") or {}
-    src = loc.get("source") or {}
+def _fonte_do_artigo(w, ids=None):
+    """A revista do artigo. Com 'ids' (IDs de revistas que você escolheu), procura entre TODAS as localizações a que
+    pertence a elas: o OpenAlex às vezes escolhe um repositório (HAL, PubMed Central...) como localização principal."""
+    if ids:
+        for loc in (w.get("locations") or []):
+            s_ = (loc or {}).get("source") or {}
+            if (s_.get("id") or "").rsplit("/", 1)[-1] in ids:
+                return s_
+    return (w.get("primary_location") or {}).get("source") or {}
+
+
+def _rec_openalex(w, ids=None):
+    src = _fonte_do_artigo(w, ids)
     autores = [
         (a.get("author") or {}).get("display_name", "")
         for a in (w.get("authorships") or [])
@@ -916,7 +931,7 @@ def _rec_openalex(w):
         "titulo": strip_tags(w.get("display_name") or w.get("title") or ""),
         "autores": autores,
         "revista": src.get("display_name") or "",
-        "issn": [i for i in ((src.get("issn") or []) + [src.get("issn_l")]) if i],
+        "issn": list(dict.fromkeys(i for i in ((src.get("issn") or []) + [src.get("issn_l")]) if i)),
         "data": w.get("publication_date") or "",
         "ano": w.get("publication_year"),
         "resumo": abstract_from_inverted(w.get("abstract_inverted_index")),
@@ -1393,6 +1408,7 @@ let FOTO = null;
 const FILTROS = FILTROS_DEF.map(f => ({ nome: f.nome, opcoes: f.opcoes.map(o => o.nome).concat([f.rotulo_sem]) }));
 const POR_PAGINA = 40;
 const OA = 'https://api.openalex.org', ZOT = 'https://api.zotero.org';
+const DIAS_LIVE = 120;   // quantos dias para trás as revistas de confiança são buscadas ao vivo
 const K_CFG = 'radar_cfg_v2', K_LEIT = 'radar_leitura_v1', K_LIVE = 'radar_live_v1', K_VISTO = 'radar_live_visto_v1', K_ZOT = 'radar_zotero_v1', K_OCULT = 'radar_ocultos_v1';
 
 // ============================================================
@@ -1493,8 +1509,17 @@ function facetasDe(r) {
   });
   return out;
 }
-function recDeOA(w) {
-  const src = ((w.primary_location || {}).source) || {};
+function fonteDe(w, issns) {   // a revista do artigo: procura em TODAS as localizações (o OpenAlex às vezes põe um repositório como principal)
+  if (issns && issns.size) {
+    for (const loc of (w.locations || [])) {
+      const s = (loc && loc.source) || {}, lista = [].concat(s.issn || [], s.issn_l ? [s.issn_l] : []);
+      if (lista.some(x => issns.has(x))) return s;
+    }
+  }
+  return ((w.primary_location || {}).source) || {};
+}
+function recDeOA(w, issns) {
+  const src = fonteDe(w, issns);
   const autoresL = (w.authorships || []).map(a => (a.author || {}).display_name || '').filter(Boolean);
   const doi = limparDoi(w.doi);
   const titulo = String(w.display_name || w.title || '').replace(/<[^>]+>/g, '');
@@ -1528,19 +1553,19 @@ async function atualizarConfiaveis(forcar) {
   const assin = rs.map(r => r.issns.join('|')).sort().join(';');
   const cache = lsGet(K_LIVE, null);
   if (!forcar && cache && cache.assin === assin && Date.now() - cache.t < 6 * 3600 * 1000) { LIVE = cache.itens || []; return; }
-  const issns = [...new Set(rs.flatMap(r => r.issns))];
-  const ini = diaISO(-30), fim = hojeISO(), brutos = [];
+  const issns = [...new Set(rs.flatMap(r => r.issns))], setIssn = new Set(issns);
+  const ini = diaISO(-DIAS_LIVE), fim = diaISO(60), brutos = [];   // 'fim' no futuro: a data de capa de algumas revistas vem adiantada
   for (let i = 0; i < issns.length; i += 25) {
     for (let pag = 1; pag <= 5; pag++) {
       const j = await oaGet('/works', {
-        filter: 'primary_location.source.issn:' + issns.slice(i, i + 25).join('|') + ',type:article|review|preprint,from_publication_date:' + ini + ',to_publication_date:' + fim,
+        filter: 'locations.source.issn:' + issns.slice(i, i + 25).join('|') + ',type:article|review|preprint,from_publication_date:' + ini + ',to_publication_date:' + fim,
         sort: 'publication_date:desc', 'per-page': 100, page: pag });
       const lote = j.results || []; brutos.push(...lote);
       if (lote.length < 100) break;
     }
   }
   const visto = lsGet(K_VISTO, {}), hoje = hojeISO(), corteTardio = diaISO(-7);
-  const itens = brutos.map(recDeOA).filter(r => ['article', 'review', 'preprint'].includes(r._otipo)).map(r => {
+  const itens = brutos.map(w => recDeOA(w, setIssn)).filter(r => ['article', 'review', 'preprint'].includes(r._otipo)).map(r => {
     delete r._otipo;
     if (!visto[r.key]) visto[r.key] = hoje;
     r.adicionado = visto[r.key]; r.tardio = (r.data || '').slice(0, 10) < corteTardio;
@@ -1924,6 +1949,59 @@ function abrirOcultos() {
   document.getElementById('modal-motivo').classList.add('on');
 }
 
+// ============================================================
+//  "Falta algum artigo?": compara o OpenAlex com o que está no radar
+// ============================================================
+function razoesEscondido(d) {
+  const r = [];
+  if (OCULTOS[d.key]) r.push('você ocultou este artigo');
+  if (aba !== 'novo') r.push('você está na aba "' + (aba === 'classico' ? 'Clássicos' : aba === 'quero' ? 'Quero ler' : 'Lidos') + '", e este artigo é uma Novidade');
+  const ativos = CFG.topicos.filter(t => t.ativo);
+  if (ativos.length && !ativos.some(t => (d._m || []).includes(t.id)) && !(d._cr || []).some(i => CFG.revistas[i] && CFG.revistas[i].mostrar))
+    r.push('não combina com os temas marcados e a revista não está marcada');
+  if (soConf && !d._c) r.push('"Só revistas de confiança" está marcado e esta revista não é uma delas');
+  if (revistasSel.length && !revistasSel.includes(d.revista)) r.push('filtro de revista escolhido (' + revistasSel.join(', ') + ')');
+  if (aba === 'novo' && !passaJanela(d)) r.push('fora da janela de tempo escolhida (' + rotL(JANELAS[janelaIdx]) + ')');
+  if (!passaPeriodo(d)) r.push('filtro de período');
+  if (!passaQuartil(d)) r.push('filtro de qualidade (SJR)');
+  FILTROS.forEach(f => { const sel = fac[f.nome]; if (sel && sel.length && !opcoesDe(d, f.nome).some(o => sel.includes(o))) r.push('filtro "' + f.nome + '": ' + sel.join(', ')); });
+  if (busca && !textoDe(d).includes(busca)) r.push('a busca por "' + busca + '"');
+  return r;
+}
+async function conferirRevista(i) {
+  const r = CFG.revistas[i]; if (!r) return;
+  const corpo = document.getElementById('motivo-corpo'), topo = '<div class="modal-topo"><h2>Conferindo: ' + esc(r.nome) + '</h2><p>Compara o que o OpenAlex tem desta revista (últimos ' + DIAS_LIVE + ' dias) com o que está no radar.</p></div>';
+  const abrir = h => { corpo.innerHTML = topo + h; document.getElementById('modal-motivo').classList.add('on'); };
+  if (!(r.issns || []).length) { abrir('<section><p class="err-msg">Esta revista não tem ISSN salvo, então não dá para conferir. Remova-a e adicione de novo pela busca em ⚙ Configurar.</p></section><div class="modal-rodape"><button class="btn forte" onclick="fecharMotivo()">Fechar</button></div>'); return; }
+  abrir('<section><p>Consultando o OpenAlex…</p></section>');
+  let obras = [];
+  try {
+    for (let pag = 1; pag <= 3; pag++) {
+      const j = await oaGet('/works', { filter: 'locations.source.issn:' + r.issns.join('|') + ',from_publication_date:' + diaISO(-DIAS_LIVE), sort: 'publication_date:desc', 'per-page': 100, page: pag });
+      const lote = j.results || []; obras = obras.concat(lote); if (lote.length < 100) break;
+    }
+  } catch (e) { abrir('<section><p class="err-msg">Não consegui consultar o OpenAlex: ' + esc(e.message || e) + '</p></section><div class="modal-rodape"><button class="btn forte" onclick="fecharMotivo()">Fechar</button></div>'); return; }
+  const setI = new Set(r.issns), visiveis = [], escondidos = [], faltam = [];
+  obras.forEach(w => {
+    const rec = recDeOA(w, setI), d = IDX[rec.key];
+    if (!d) { faltam.push({ rec, motivo: ['article', 'review', 'preprint'].includes(rec._otipo) ? 'ainda não foi carregado: use "Atualizar agora"' : 'tipo "' + (rec._otipo || 'desconhecido') + '" (o site só mostra artigo, revisão e preprint)' }); return; }
+    const rz = razoesEscondido(d); if (rz.length) escondidos.push({ d, rz }); else visiveis.push(d);
+  });
+  const linha = (t, data, extra) => '<div class="oculto-linha"><div><b>' + esc(t) + '</b><div class="dica" style="margin:0">' + esc(fmtData(data) || data || '') + (extra ? ' · ' + extra : '') + '</div></div></div>';
+  const porTipo = faltam.filter(x => x.motivo.startsWith('tipo')).length;
+  abrir('<section><h3>Resumo</h3><p>O OpenAlex lista <b>' + obras.length + '</b> trabalhos desta revista. Destes: <b>' + visiveis.length + '</b> aparecem agora na sua lista, <b>' + escondidos.length + '</b> estão carregados mas escondidos pelos seus filtros, e <b>' + faltam.length + '</b> não estão carregados' + (faltam.length ? ' (' + porTipo + ' por serem de outro tipo, como errata ou editorial)' : '') + '.</p></section>' +
+    (escondidos.length ? '<section><h3>Escondidos pelos seus filtros (' + escondidos.length + ')</h3>' + escondidos.slice(0, 25).map(x => linha(x.d.titulo, x.d.data, x.rz.map(t => '<span class="chip termo">' + esc(t) + '</span>').join(''))).join('') + '</section>' : '') +
+    (faltam.length ? '<section><h3>Não carregados (' + faltam.length + ')</h3>' + faltam.slice(0, 25).map(x => linha(x.rec.titulo, x.rec.data, esc(x.motivo))).join('') + '</section>' : '') +
+    '<div class="modal-rodape"><button class="btn" onclick="atualizarAgora(' + i + ')">Atualizar agora</button><button class="btn forte" onclick="verSoRevista(' + i + ')">Ver tudo desta revista, sem filtros</button><button class="btn" onclick="fecharMotivo()">Fechar</button></div>');
+}
+async function atualizarAgora(i) { await atualizarConfiaveisSeguro(true); conferirRevista(i); }
+function verSoRevista(i) {
+  const r = CFG.revistas[i]; if (!r) return;
+  limparFiltros(); r.mostrar = true; salvarCfg();
+  revistasSel = [...new Set(ITENS.filter(d => d.tipo === 'novo' && (d._cr || []).includes(i)).map(d => d.revista))];
+  janelaIdx = JANELAS.length - 1; aba = 'novo'; fecharMotivo(); render();
+}
+
 function renderLeitura() {
   const chaves = Object.keys(LEIT).filter(k => LEIT[k].status === aba).sort((a, b) => (LEIT[b].quando || '').localeCompare(LEIT[a].quando || ''));
   document.getElementById('count').textContent = chaves.length + (aba === 'quero' ? ' artigo(s) para ler' : ' artigo(s) lido(s)');
@@ -1984,7 +2062,9 @@ function render() {
         id: i, nome: r.nome, n: arrT.filter(d => (d._cr || []).includes(i)).length, on: !!r.mostrar })), 'conf') + '</div>' +
         '<div class="fnota" style="margin:4px 2px 8px">' + (ativos.length
           ? 'Marque para ver tudo o que a revista publicou, mesmo fora dos temas marcados. Sem a marca, só aparece o que combina com os temas.'
-          : 'Você não marcou temas, então já aparece tudo. A marca vale quando você escolher temas.') + '</div>', '<a onclick="abrirConfig(false)">Editar</a>')
+          : 'Você não marcou temas, então já aparece tudo. A marca vale quando você escolher temas.') + '</div>' +
+        '<div class="fnota" style="margin:0 2px 8px">Falta algum artigo? Conferir: ' + CFG.revistas.map((r, i) => '<a class="link-ocultos" onclick="conferirRevista(' + i + ')">' + esc(r.nome) + '</a>').join(' · ') + '</div>',
+        '<a onclick="abrirConfig(false)">Editar</a>')
     : '';
   document.getElementById('sec-abelha').innerHTML = FILTROS.length ? facetaHtml(FILTROS[0]) : '';
   document.getElementById('so-conf').checked = soConf;
@@ -2060,10 +2140,14 @@ document.getElementById('lista').addEventListener('click', ev => {
 //  Janela de configuração (abre sozinha na primeira visita)
 // ============================================================
 let TMP = null;
-function revistaPadrao() { return (PADRAO.revistas || []).filter(r => r.padrao).map(r => ({ nome: r.nome, issns: r.issns.slice() })); }
+function revistaPadrao() {
+  if ((PADRAO.revistas_iniciais || []).length) return PADRAO.revistas_iniciais.map(r => ({ nome: r.nome, issns: r.issns.slice() }));
+  return (PADRAO.revistas || []).filter(r => r.padrao).map(r => ({ nome: r.nome, issns: r.issns.slice() }));
+}
 function abrirConfig(inicial) {
   TMP = JSON.parse(JSON.stringify(CFG));
   if (inicial && !TMP.revistas.length) TMP.revistas = revistaPadrao();
+  if (inicial && !TMP.topicos.length) TMP.topicos = (PADRAO.temas_iniciais || []).map(t => ({ id: novoId(), nome: t.nome, termos: t.termos.slice(), ativo: true, cfg: null }));
   TMP._inicial = !!inicial;
   PROMPT_EDITADO = false;
   document.getElementById('modal-corpo').innerHTML = modalHtml(!!inicial);
@@ -2078,7 +2162,7 @@ function fecharConfig() {
 }
 function modalHtml(inicial) {
   return '<div class="modal-topo"><h2>' + (inicial ? 'Bem-vindo ao seu radar de abelhas' : 'Meus temas e revistas') + '</h2><p>' +
-    (inicial ? 'Vamos configurar em dois minutos: você escolhe os <b>temas</b> que quer acompanhar e as <b>revistas de confiança</b>. Tudo fica salvo neste navegador e dá para mudar quando quiser.'
+    (inicial ? 'Vamos configurar em dois minutos: você escolhe os <b>temas</b> que quer acompanhar e as <b>revistas de confiança</b>. Tudo fica salvo neste navegador e dá para mudar quando quiser. <b>Já configurou em outro aparelho?</b> Role até a seção 4 e cole o link.'
              : 'Mude seus temas, suas revistas de confiança e as conexões. As escolhas ficam salvas neste navegador.') + '</p></div>' +
     '<section><h3>1. Seus temas</h3><p class="dica">Um tema é um assunto que você quer acompanhar. Dê um <b>título</b> e escreva as <b>palavras-chave</b> que o definem, em inglês (é como os artigos são escritos). Um artigo entra no tema se tiver <b>qualquer uma</b> das palavras no título ou no resumo. Sem nenhum tema, o site mostra todos os artigos.</p>' +
     '<div class="form-tema" id="form-tema"><h4 id="ft-cab">Novo tema</h4>' +
@@ -2116,6 +2200,11 @@ function modalHtml(inicial) {
     '<div class="ajuda">Crie em zotero.org/settings/keys marcando "Allow library access" e "Allow write access". O ID da biblioteca é descoberto sozinho.</div></div>' +
     '<div class="campo"><label for="cfg-zcol">Pasta principal no Zotero</label><input type="text" id="cfg-zcol" value="' + esc(TMP.zotero.colecao || COLECAO_PADRAO) + '">' +
     '<div class="ajuda">O botão "Quero ler" cria a subpasta "Quero ler" dentro dela, e "Lido" cria a subpasta "Lido".</div></div></section>' +
+    '<section><h3>4. Usar em outro aparelho (celular)</h3><p class="dica">Seus temas e revistas ficam salvos <b>só neste aparelho</b>. Para ter os mesmos no celular, gere um link aqui e abra-o no celular (mande para você mesmo por WhatsApp ou e-mail). Nada passa por servidor: a configuração vai dentro do próprio link.</p>' +
+    '<label style="font-size:13px;display:flex;gap:8px;align-items:flex-start;margin-bottom:8px"><input type="checkbox" id="sync-chaves" style="margin-top:3px"><span>Incluir também as minhas chaves (OpenAlex e Zotero). <b>Cuidado:</b> quem tiver o link poderá usá-las.</span></label>' +
+    '<div class="acoes-form"><button class="btn forte" onclick="gerarLink()">Gerar link para o celular</button><button class="btn" id="btn-compartilhar" style="display:none" onclick="compartilharLink()">Compartilhar…</button></div><div id="sync-saida"></div>' +
+    '<div class="campo"><label for="sync-colar">Já tem um link ou código de outro aparelho? Cole aqui</label><div class="entrada" style="margin-bottom:4px"><input type="text" id="sync-colar" placeholder="Cole o link (ou só o código)" autocomplete="off"><button class="btn" onclick="importarDoCampo()">Importar</button></div><div id="sync-msg" class="err-msg" style="font-size:12px"></div></div>' +
+    '<div class="campo"><div class="ajuda">Quer que <b>todo aparelho novo</b> já comece com estes temas, sem link? Copie o texto abaixo e cole no fim do <code>config.yaml</code> (no GitHub). Vale para qualquer navegador na primeira visita.</div><button class="btn mini" onclick="copiarYaml()">Copiar como texto para o config.yaml</button></div></section>' +
     '<div class="modal-rodape"><button class="btn" onclick="fecharConfig()">' + (inicial ? 'Pular por enquanto' : 'Cancelar') + '</button><button class="btn forte" onclick="concluirConfig()">Salvar e ' + (inicial ? 'começar' : 'aplicar') + '</button></div>';
 }
 let FORM = { termos: [], editando: -1, cfg: null };
@@ -2390,10 +2479,118 @@ async function concluirConfig() {
   if (mudouRev || eraPrimeira) atualizarConfiaveisSeguro(true);
 }
 
+// ============================================================
+//  Levar a configuração para outro aparelho (link) e temas iniciais
+// ============================================================
+const B64U = {
+  enc: bytes => { let t = ''; bytes.forEach(b => { t += String.fromCharCode(b); }); return btoa(t).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); },
+  dec: txt => { let t = String(txt).replace(/-/g, '+').replace(/_/g, '/'); while (t.length % 4) t += '='; return Uint8Array.from(atob(t), c => c.charCodeAt(0)); }
+};
+async function empacotar(obj) {
+  const bytes = new TextEncoder().encode(JSON.stringify(obj));
+  if (window.CompressionStream && window.Response) {
+    try {
+      const cs = new CompressionStream('deflate-raw'), w = cs.writable.getWriter(); w.write(bytes).catch(() => {}); w.close().catch(() => {});
+      return 'z' + B64U.enc(new Uint8Array(await new Response(cs.readable).arrayBuffer()));
+    } catch (e) { /* cai para o formato sem compressão */ }
+  }
+  return 'p' + B64U.enc(bytes);
+}
+async function desempacotar(cod) {
+  cod = String(cod || '').trim(); const tipo = cod[0], bytes = B64U.dec(cod.slice(1));
+  let texto;
+  if (tipo === 'p') texto = new TextDecoder().decode(bytes);
+  else if (tipo === 'z') {
+    if (!window.DecompressionStream || !window.Response) throw new Error('este navegador não abre links comprimidos (atualize o navegador)');
+    const ds = new DecompressionStream('deflate-raw'), w = ds.writable.getWriter(); w.write(bytes).catch(() => {}); w.close().catch(() => {});   // o erro de dados quebrados é tratado abaixo, na leitura
+    texto = new TextDecoder().decode(new Uint8Array(await new Response(ds.readable).arrayBuffer()));
+  } else throw new Error('código inválido');
+  const obj = JSON.parse(texto);
+  if (!obj || typeof obj !== 'object' || (!Array.isArray(obj.t) && !Array.isArray(obj.r))) throw new Error('o código não tem temas nem revistas');
+  return obj;
+}
+function montarPacote(comChaves) {
+  const f = TMP || CFG, z = f.zotero || {};
+  const o = { v: 1, t: f.topicos.map(t => [t.nome, t.termos || [], t.ativo ? 1 : 0]), r: f.revistas.map(r => [r.nome, r.issns || [], r.mostrar ? 1 : 0]), zc: z.colecao || COLECAO_PADRAO };
+  if (comChaves) o.k = { oa: valor('cfg-oakey') || f.openalexKey || '', zk: valor('cfg-zkey') || z.key || '', zu: z.user || '' };
+  return o;
+}
+let LINK_GERADO = '';
+async function copiarTexto(texto, aviso) {
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) { await navigator.clipboard.writeText(texto); toast(aviso); return true; }
+    const ta = document.createElement('textarea'); ta.value = texto; document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy'); ta.remove(); if (ok) { toast(aviso); return true; }
+  } catch (e) { /* segue para o aviso abaixo */ }
+  toast('Não consegui copiar sozinho: selecione o texto e use Ctrl+C.', true); return false;
+}
+async function gerarLink() {
+  const out = document.getElementById('sync-saida'); if (!out) return;
+  const f = TMP || CFG;
+  if (!f.topicos.length && !f.revistas.length) { out.innerHTML = '<div class="err-msg" style="font-size:12px">Ainda não há temas nem revistas para levar.</div>'; return; }
+  const cod = await empacotar(montarPacote(!!(document.getElementById('sync-chaves') || {}).checked));
+  LINK_GERADO = location.href.split('#')[0] + '#config=' + cod;
+  out.innerHTML = '<div class="campo"><label for="sync-link">Seu link (' + f.topicos.length + ' tema(s), ' + f.revistas.length + ' revista(s))</label><div class="entrada" style="margin-bottom:4px"><input type="text" id="sync-link" readonly value="' + esc(LINK_GERADO) + '" onclick="this.select()"><button class="btn forte" onclick="copiarLink()">Copiar</button></div><div class="ajuda">Abra este link no celular: ele pergunta se você quer importar. Tamanho: ' + LINK_GERADO.length + ' caracteres.</div></div>';
+  const bt = document.getElementById('btn-compartilhar'); if (bt) bt.style.display = navigator.share ? 'inline-block' : 'none';
+}
+function copiarLink() { if (LINK_GERADO) copiarTexto(LINK_GERADO, 'Link copiado! Abra no celular.'); }
+async function compartilharLink() {
+  if (!LINK_GERADO || !navigator.share) return;
+  try { await navigator.share({ title: 'Meu Radar de Abelhas', text: 'Minha configuração do Radar de Abelhas', url: LINK_GERADO }); } catch (e) { /* o usuário cancelou */ }
+}
+function yamlTemas() {
+  const f = TMP || CFG, q = x => (/[:#\[\]{},&*!|>'"%@`]|^\s|\s$|^$/.test(String(x)) ? JSON.stringify(String(x)) : String(x));
+  let y = 'temas_iniciais:\n' + (f.topicos.map(t => '  - nome: ' + q(t.nome) + '\n    palavras: [' + (t.termos || []).map(q).join(', ') + ']').join('\n') || '  []');
+  y += '\n\nrevistas_iniciais:\n' + (f.revistas.map(r => '  - nome: ' + q(r.nome) + '\n    issns: [' + (r.issns || []).join(', ') + ']').join('\n') || '  []');
+  return y + '\n';
+}
+function copiarYaml() { copiarTexto(yamlTemas(), 'Texto copiado! Cole no fim do config.yaml e confirme (Commit changes).'); }
+function codigoDoTexto(txt) { const m = String(txt || '').match(/#config=([A-Za-z0-9_\-]+)/); return m ? m[1] : String(txt || '').trim(); }
+async function importarDoCampo() {
+  const msg = document.getElementById('sync-msg'), txt = valor('sync-colar'); if (msg) msg.textContent = '';
+  if (!txt) { if (msg) msg.textContent = 'Cole o link ou o código primeiro.'; return; }
+  try { abrirImportacao(await desempacotar(codigoDoTexto(txt))); }
+  catch (e) { if (msg) msg.textContent = 'Não consegui ler este link/código: ' + (e.message || e); }
+}
+let PACOTE = null;
+function abrirImportacao(obj) {
+  PACOTE = obj; const t = obj.t || [], r = obj.r || [];
+  document.getElementById('motivo-corpo').innerHTML =
+    '<div class="modal-topo"><h2>Importar configuração</h2><p>Esta configuração foi gerada em outro aparelho.</p></div>' +
+    '<section><h3>Temas (' + t.length + ')</h3><p>' + (t.slice(0, 8).map(x => '<span class="chip termo">' + esc(x[0]) + '</span>').join('') || '—') + (t.length > 8 ? ' e mais ' + (t.length - 8) : '') + '</p>' +
+    '<h3>Revistas de confiança (' + r.length + ')</h3><p>' + (r.slice(0, 8).map(x => '<span class="chip termo">' + esc(x[0]) + '</span>').join('') || '—') + '</p>' +
+    (obj.k ? '<p class="err-msg">Este link inclui chaves (OpenAlex/Zotero). Importe só se confiar em quem o gerou.</p>' : '') + '</section>' +
+    '<div class="modal-rodape"><button class="btn" onclick="cancelarImportacao()">Cancelar</button><button class="btn" onclick="aplicarImportacao(\'juntar\')">Juntar com o que tenho</button><button class="btn forte" onclick="aplicarImportacao(\'substituir\')">Substituir o que tenho</button></div>';
+  document.getElementById('modal-motivo').classList.add('on');
+}
+function cancelarImportacao() { PACOTE = null; fecharMotivo(); if (lsGet(K_CFG, null) === null && !TMP) abrirConfig(true); }
+function aplicarImportacao(modo) {
+  const o = PACOTE; if (!o) return; PACOTE = null; fecharMotivo();
+  if (TMP) { document.getElementById('modal').classList.remove('on'); TMP = null; }
+  const novosT = (o.t || []).map(x => ({ id: novoId(), nome: String(x[0]), termos: (x[1] || []).map(String), ativo: !!x[2], cfg: null }));
+  const novasR = (o.r || []).map(x => ({ nome: String(x[0]), issns: (x[1] || []).map(String), mostrar: !!x[2] }));
+  if (modo === 'substituir') { CFG.topicos = novosT; CFG.revistas = novasR; }
+  else {
+    novosT.forEach(n => { const ex = CFG.topicos.find(t => norm(t.nome) === norm(n.nome)); if (ex) ex.termos = [...new Set((ex.termos || []).concat(n.termos))]; else CFG.topicos.push(n); });
+    novasR.forEach(n => { const ex = CFG.revistas.find(r => norm(r.nome) === norm(n.nome)); if (ex) { ex.issns = [...new Set((ex.issns || []).concat(n.issns))]; if (n.mostrar) ex.mostrar = true; } else CFG.revistas.push(n); });
+  }
+  if (o.zc) CFG.zotero.colecao = String(o.zc);
+  if (o.k) { if (o.k.oa) CFG.openalexKey = String(o.k.oa); if (o.k.zk) { CFG.zotero.key = String(o.k.zk); CFG.zotero.user = String(o.k.zu || ''); } }
+  salvarCfg(); montarItens(); render();
+  toast('Configuração importada: ' + CFG.topicos.length + ' tema(s) e ' + CFG.revistas.length + ' revista(s) de confiança.');
+  atualizarConfiaveisSeguro(true);
+}
+async function verificarImportacao() {
+  const m = String(location.hash || '').match(/^#config=([A-Za-z0-9_\-]+)/); if (!m) return false;
+  const limpar = () => { try { history.replaceState(null, '', location.href.split('#')[0]); } catch (e) { /* ignora */ } };
+  try { const obj = await desempacotar(m[1]); limpar(); abrirImportacao(obj); return true; }
+  catch (e) { limpar(); toast('Não consegui abrir este link de configuração: ' + (e.message || e), true); return false; }
+}
+
 renderHero();
 montarItens();
 render();
-if (PRIMEIRA_VEZ) abrirConfig(true); else atualizarConfiaveisSeguro(false);
+verificarImportacao().then(abriu => { if (!abriu) { if (PRIMEIRA_VEZ) abrirConfig(true); else atualizarConfiaveisSeguro(false); } });
 </script>
 </body>
 </html>
@@ -2419,7 +2616,9 @@ def gerar_site(cfg, state, hoje):
     por_issn, por_titulo = carregar_sjr(cfg)
     saida = []
     for d in itens:
-        x = {k: v for k, v in d.items() if k != "issn" or d.get("completa")}
+        x = {k: v for k, v in d.items() if k != "issn"}
+        if d.get("issn"):
+            x["issn"] = list(d["issn"])[:2]
         hit = sjr_de(d, por_issn, por_titulo)
         x["sjr"], x["q"] = (hit[0], hit[1]) if hit else (None, "")
         saida.append(x)
@@ -2628,6 +2827,13 @@ def run_diario(cfg, state, dias, enviar):
         if amplo or revistas_modo:
             for r in recs:
                 r["motivo"] = motivo_de(r, cfg, escopo)
+            arq_idx = {d_["key"]: d_ for d_ in state.get("arquivo", [])}
+            for r in recs:   # artigo guardado antes de a revista entrar na lista: passa a valer como "revista inteira"
+                d_ = arq_idx.get(r["key"])
+                if d_ is not None and r.get("completa") and not d_.get("completa"):
+                    d_["completa"], d_["issn"], d_["motivo"] = True, r.get("issn") or d_.get("issn"), r.get("motivo")
+                    if r.get("revista"):
+                        d_["revista"] = r["revista"]
         if amplo:   # rigor: quão exigente é a busca por palavras (config: abelhas > rigor)
             rigor = (cfg.get("abelhas") or {}).get("rigor", "normal")
             antes = len(recs)
@@ -2715,7 +2921,7 @@ def _achar_fonte(alvo):
     alvo = (alvo or "").strip()
     if re.fullmatch(r"\d{4}-?\d{3}[\dXx]", alvo):
         issn = alvo if "-" in alvo else alvo[:4] + "-" + alvo[4:]
-        return f"primary_location.source.issn:{issn}", f"ISSN {issn}"
+        return f"locations.source.issn:{issn}", f"ISSN {issn}"
     params = {"search": alvo, "per-page": 5}
     if os.getenv("OPENALEX_MAILTO"):
         params["mailto"] = os.environ["OPENALEX_MAILTO"]
@@ -2726,7 +2932,7 @@ def _achar_fonte(alvo):
         return None, None
     esc = next((x for x in res if norm_j(x.get("display_name")) == norm_j(alvo)), res[0])
     sid = (esc.get("id") or "").rsplit("/", 1)[-1]
-    return f"primary_location.source.id:{sid}", f"{esc.get('display_name')} ({esc.get('issn_l') or 'sem ISSN'})"
+    return f"locations.source.id:{sid}", f"{esc.get('display_name')} ({esc.get('issn_l') or 'sem ISSN'})"
 
 
 def _entrada_da_fonte(cfg, state, filtro_fonte, chave="revistas"):
